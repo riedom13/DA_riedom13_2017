@@ -1,0 +1,1395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WS>
+  <Solution>
+    <Project>
+      <Settings>
+        <Section name="AOKBox" ver="1.1">
+          <P id="AOKBoxLineTypeID" val="2" />
+          <P id="AOKBoxLineCID" val="59" />
+          <P id="AOKBoxLineWidth" val="0" />
+          <P id="AOKBoxTextPos" val="LinksOben" />
+          <P id="AOKBoxFontSize" val="3.75" />
+        </Section>
+        <Section name="Article" ver="1.8">
+          <P id="ArticleConnectionType" val="ACCESS" />
+          <P id="ArticleAccessDbPathName" val="wscadSuite_MaterialBA.MDB" />
+          <P id="ArticleAssignFieldAccess" val="Default" />
+          <P id="ArticleConnectionStringSQL" val="Provider=SQLOLEDB.1;" />
+          <P id="ArticleAssignFieldSQL" val="" />
+          <P id="ArticleConnectionStringOLE" val="" />
+          <P id="ArticleAssignFieldOLE" val="Default" />
+          <P id="ArticleConnectionStringMySQL" val="" />
+          <P id="ArticleAssignFieldMySQL" val="Default" />
+          <P id="ArticleManagerInclSelection" val="True" />
+          <P id="ArticleManagerFilterExact" val="False" />
+          <P id="DBSynchronizationActivate" val="False" />
+          <P id="DBFieldOnlineDocuments" val="WscadDbField§artOnlineDocuID" />
+          <P id="UniverseArticleBibSymbUpdate" val="False" />
+          <P id="UniverseArticleDataUpdate" val="False" />
+          <P id="ERPOldArticleMessage" val="Obsolete" />
+        </Section>
+        <Section name="ArticleBA" ver="1.2">
+          <P id="ArticleConnectionType" val="ACCESS" />
+          <P id="ArticleAccessDbPathName" val="BADatapointmanager\BA_Basisobjekte_2017.mdb" />
+          <P id="TableNameAccess" val="BA 3813" />
+          <P id="ArticleConnectionStringSQL" val="Provider=SQLOLEDB.1;" />
+          <P id="TableNameSQL" val="" />
+          <P id="ArticleConnectionStringOLE" val="" />
+          <P id="TableNameOLE" val="" />
+          <P id="BAAccessDbDatenpunktverwaltung" val="BADatapointmanager\DB_Generator2017.accde" />
+        </Section>
+        <Section name="AssignSymbols" ver="1.0">
+          <P id="CableSymbolSet">
+            <SymbolNormSet id="Default">
+              <AssignSymbolSettings id="CableHorizontal" SymbolLIBDataSourceLocation="0" SymbolLibrary="ADERN.wsLIB" SymbolReferenceName="Kabel_waagrecht" SymbolVariantID="0" />
+              <AssignSymbolSettings id="CableVertical" SymbolLIBDataSourceLocation="0" SymbolLibrary="ADERN.wsLIB" SymbolReferenceName="Kabel_senkrecht" SymbolVariantID="0" />
+            </SymbolNormSet>
+          </P>
+          <P id="ContactorSymbolSet">
+            <SymbolNormSet id="Default">
+              <AssignSymbolSettings id="Lamp" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_02_Hilfsschuetz, Relais.wsLIB" SymbolReferenceName="Lampe-Kontakt" SymbolVariantID="0" />
+              <AssignSymbolSettings id="PowerCloseContactor1Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschuetz.wsLIB" SymbolReferenceName="Hauptkontakt-1S" SymbolVariantID="0" />
+              <AssignSymbolSettings id="PowerCloseContactor2Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschuetz.wsLIB" SymbolReferenceName="Hauptkontakt-2S" SymbolVariantID="0" />
+              <AssignSymbolSettings id="PowerCloseContactor3Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschuetz.wsLIB" SymbolReferenceName="Hauptkontakt-3S" SymbolVariantID="0" />
+              <AssignSymbolSettings id="PowerCloseContactor4Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschuetz.wsLIB" SymbolReferenceName="Hauptkontakt-4S" SymbolVariantID="0" />
+              <AssignSymbolSettings id="PowerOpenContactor1Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschuetz.wsLIB" SymbolReferenceName="Hauptkontakt-1O" SymbolVariantID="0" />
+              <AssignSymbolSettings id="PowerOpenContactor2Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschuetz.wsLIB" SymbolReferenceName="Hauptkontakt-2O" SymbolVariantID="0" />
+              <AssignSymbolSettings id="PowerOpenContactor3Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschuetz.wsLIB" SymbolReferenceName="Hauptkontakt-3O" SymbolVariantID="0" />
+              <AssignSymbolSettings id="PowerOpenContactor4Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschuetz.wsLIB" SymbolReferenceName="Hauptkontakt-4O" SymbolVariantID="0" />
+              <AssignSymbolSettings id="CloseContactorGeneral" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_02_Hilfsschuetz, Relais.wsLIB" SymbolReferenceName="Hilfskontakt-S" SymbolVariantID="0" />
+              <AssignSymbolSettings id="CloseContactorAdvanced" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-frühschließer" SymbolVariantID="0" />
+              <AssignSymbolSettings id="CloseContactorRetarded" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-spätschließer" SymbolVariantID="0" />
+              <AssignSymbolSettings id="CloseContactorSlowActing" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-ansprechverzögert" SymbolVariantID="0" />
+              <AssignSymbolSettings id="CloseContactorSlowRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-rückfallverzögert" SymbolVariantID="0" />
+              <AssignSymbolSettings id="CloseContactorSlowActingAndRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-an-ab-verzögert" SymbolVariantID="0" />
+              <AssignSymbolSettings id="OpenContactorGeneral" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_02_Hilfsschuetz, Relais.wsLIB" SymbolReferenceName="Hilfskontakt-O" SymbolVariantID="0" />
+              <AssignSymbolSettings id="OpenContactorAdvanced" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-frühöffner" SymbolVariantID="0" />
+              <AssignSymbolSettings id="OpenContactorRetarded" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-spätöffner" SymbolVariantID="0" />
+              <AssignSymbolSettings id="OpenContactorSlowActing" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-ansprechverzögert" SymbolVariantID="0" />
+              <AssignSymbolSettings id="OpenContactorSlowRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-rückfallverzögert" SymbolVariantID="0" />
+              <AssignSymbolSettings id="OpenContactorSlowActingAndRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-an-ab-verzögert" SymbolVariantID="0" />
+              <AssignSymbolSettings id="ChangeoverContactorGeneral" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_02_Hilfsschuetz, Relais.wsLIB" SymbolReferenceName="Hilfskontakt-W" SymbolVariantID="0" />
+              <AssignSymbolSettings id="ChangeoverContactorSlowActing" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-W-ansprechverzögert" SymbolVariantID="0" />
+              <AssignSymbolSettings id="ChangeoverContactorSlowRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-W-rückfallverzögert" SymbolVariantID="0" />
+              <AssignSymbolSettings id="ChangeoverContactorSlowActingAndRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-W-an-ab-verzögert" SymbolVariantID="0" />
+            </SymbolNormSet>
+          </P>
+          <P id="PlugSymbolSet">
+            <SymbolNormSet id="Default">
+              <AssignSymbolSettings id="BuchseUnten" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Buchse-&gt;unten" SymbolVariantID="0" />
+              <AssignSymbolSettings id="BuchseOben" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Buchse-&gt;oben" SymbolVariantID="0" />
+              <AssignSymbolSettings id="BuchseLinks" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Buchse-&gt;links" SymbolVariantID="0" />
+              <AssignSymbolSettings id="BuchseRechts" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Buchse-&gt;rechts" SymbolVariantID="0" />
+              <AssignSymbolSettings id="SteckerUnten" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Stecker-&gt;unten" SymbolVariantID="0" />
+              <AssignSymbolSettings id="SteckerOben" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Stecker-&gt;oben" SymbolVariantID="0" />
+              <AssignSymbolSettings id="SteckerLinks" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Stecker-&gt;links" SymbolVariantID="0" />
+              <AssignSymbolSettings id="SteckerRechts" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Stecker-&gt;rechts" SymbolVariantID="0" />
+            </SymbolNormSet>
+          </P>
+          <P id="TerminalSymbolSet">
+            <SymbolNormSet id="Default">
+              <AssignSymbolSettings id="Terminal" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\02_01_Klemmen (Standard).wsLIB" SymbolReferenceName="Klemme (allgemein)" SymbolVariantID="0" />
+            </SymbolNormSet>
+          </P>
+        </Section>
+        <Section name="AuxLines" ver="1.0">
+          <AuxLinesItem id="0" ftype="wsELD" size="0 0" dimid="1" val="" />
+          <AuxLinesItem id="1" ftype="wsPLD" size="0 0" dimid="1" val="H72.5;H82.5;H92.5;H107.5;H127.5;V25;V70;V85;V100;V150" />
+          <AuxLinesItem id="2" ftype="wsCTD" size="500 349" dimid="1" val="H217" />
+          <AuxLinesItem id="3" ftype="wsCTD" size="500 350" dimid="1" val="H217" />
+          <AuxLinesItem id="4" ftype="wsELD" size="420 297" dimid="1" val="H157.5;H142.5;H125;H110;H92.5;H77.5;H60;H45;H27.5;H25;H22.5;H20;H17.5;H15;H12.5;H146;H174;H222;H32" />
+          <AuxLinesItem id="5" ftype="wsELD" size="420 298" dimid="1" val="H157.5;H142.5;H125;H110;H92.5;H77.5;H60;H45;H27.5;H25;H22.5;H20;H17.5;H15;H12.5;H84;H226" />
+        </Section>
+        <Section name="BMNumbering" ver="1.0">
+          <P id="BMNumberingType" val="NameNo" />
+          <P id="BMNumberingFromTopToBottom" val="False" />
+          <P id="BMNumberingSubPage" val="True" />
+        </Section>
+        <Section name="Box" ver="1.2">
+          <P id="CBoxSperreSymbolsMatlisteDefault" val="False" />
+          <P id="CBoxBezugUebernahmeStandardsymbol" val="True" />
+          <P id="CBoxBezugUebernahmeSpule" val="True" />
+          <P id="CBoxBezugUebernahmeHauptelementSps" val="True" />
+          <P id="CBoxBezugUebernahmeKabel" val="True" />
+          <P id="CBoxBezugUebernahmeKlemmen" val="True" />
+          <P id="CBoxBezugUebernahmeStecker" val="True" />
+          <P id="CBoxBreakOpenConnectionLine" val="True" />
+          <P id="CBoxDeleteConnectionIntern" val="False" />
+          <P id="CBoxWSPinFormID" val="6" />
+          <P id="CBoxLineTypeID" val="0" />
+          <P id="CBoxLineCID" val="38" />
+          <P id="CBoxLineWidth" val="0" />
+          <P id="CBoxQVUnten" val="False" />
+          <P id="CBoxQVUntenAnzahlProSpalte" val="0" />
+          <P id="BBoxWSPinFormID" val="6" />
+          <P id="BBoxLineTypeID" val="0" />
+          <P id="BBoxLineCID" val="38" />
+          <P id="BBoxLineWidth" val="0" />
+        </Section>
+        <Section name="Building" ver="1.1">
+          <P id="BuildingDoorAutoUmlenkung" val="True" />
+          <P id="BuildingDoorAbstandTop" val="True" />
+          <P id="BuildingDoorAbstandInMM" val="200" />
+          <P id="BuildingWindowAutoUmlenkung" val="True" />
+          <P id="BuildingWindowAbstandTop" val="True" />
+          <P id="BuildingWindowAbstandInMM" val="200" />
+          <P id="BuildingStockwerkStartwertInMM" val="0" />
+          <P id="BuildingStockwerkRaumHeightInMM" val="2500" />
+          <P id="BuildingStockwerkDeckendickeInMM" val="260" />
+          <P id="BuildingStartpunktVisible" val="True" />
+          <P id="BuildingShowConnections" val="False" />
+          <P id="BuildingStartpunktInMM" val="0,0" />
+        </Section>
+        <Section name="BuildingWallDesign" ver="1.0">
+          <P id="WDBetonOhneStahl" val="Percent05" />
+          <P id="WDBetonMitStahl" val="Percent10" />
+          <P id="WDFertigBetonMitStahl" val="Percent25" />
+          <P id="WDKies" val="LargeConfetti" />
+          <P id="WDBoden" val="ZigZag" />
+          <P id="WDDaemmstoff" val="Shingle" />
+          <P id="WDVollholz_quer" val="DashedVertical" />
+          <P id="WDVollholz_laengs" val="DashedHorizontal" />
+          <P id="WDMauerwerk" val="HorizontalBrick" />
+          <P id="WDSand" val="Divot" />
+          <P id="WDPutz" val="DiagonalCross" />
+          <P id="WDDichtstoff" val="LightDownwardDiagonal" />
+          <P id="WDAbdichtung" val="WideDownwardDiagonal" />
+          <P id="WDMetall" val="LargeGrid" />
+        </Section>
+        <Section name="Cabinet" ver="2.13">
+          <P id="CabinetMontageHilfe" val="MontageHilfeOn" />
+          <P id="CabinetPageEnabledOptions" val="True" />
+          <P id="CabinetPageMasstab" val="0.2" />
+          <P id="CabinetPageWSRaster" val="None�Value_10�0.1" />
+          <P id="CabinetSpacingHorizontalMM" val="0" />
+          <P id="CabinetKlemmennummerIsHide" val="2" />
+          <P id="CabinetKlemmennummerWinkel" val="0" />
+          <P id="CabinetShowOnlyFirstChildLayer" val="True" />
+          <P id="CabinetByMoveShowDimensions" val="True" />
+          <P id="CabinetShowPins" val="True" />
+          <P id="CabinetShowPinTexts" val="True" />
+          <P id="CabinetShowBMKBackground" val="False" />
+          <P id="CabinetRefreshArticleSymbolSizeScale" val="True" />
+          <P id="CabinetBMKHideInNoneElectricElements" val="True" />
+          <P id="CabinetBMKOnlyFirstSymbolInTBlocks" val="True" />
+          <P id="CabinetBMKViewFromSymbol" val="True" />
+          <P id="CabinetBMKViewAutomatic" val="False" />
+          <P id="CabinetBMKViewHorizontal" val="False" />
+          <P id="CabinetBMKViewVertical" val="False" />
+          <P id="CabinetBMKFontSize" val="2.5" />
+          <P id="CabinetBMKIsDrawTextScaled" val="False" />
+          <P id="CabinetBMKBibSymbAssignFontSize" val="True" />
+          <P id="CabinetBMKBibSymbAssignView" val="True" />
+          <P id="ExterneVerbindungsdateiVerwenden" val="False" />
+          <P id="CabinetRouting" val="False" />
+          <P id="CabinetRoutingIncludeWireWithoutCrosssection" val="True" />
+          <P id="CabinetRoutingMaxSpaceSymbolToCableChannel" val="200" />
+          <P id="CabinetRoutingMaxCableChannelFilling" val="50" />
+          <P id="CabinetRoutingAddLengthTyp" val="None" />
+          <P id="CabinetRoutingAddLengthPercent" val="0" />
+          <P id="CabinetRoutingAddLengthValueMM" val="0" />
+          <P id="CabinetRoutingAddLengthValueMMPerBend" val="0" />
+          <P id="CabinetRoutingAddLengthValueStartBend" val="1" />
+          <P id="CabinetRoutingUpdatePinsFromArticleDB" val="True" />
+          <P id="CabinetShowCableChannelFilling" val="True" />
+          <P id="CabinetStandardAnschlussAnschlag" val="1" />
+          <P id="CabinetReportUseDoppelHuelse" val="False" />
+        </Section>
+        <Section name="Cable" ver="1.5">
+          <P id="CableSymbolLibrarySenkrecht" val="ADERN.wsLIB" />
+          <P id="CableSymbolVariantIDSenkrecht" val="0" />
+          <P id="CableSymbolRefnameSenkrecht" val="Kabel_senkrecht" />
+          <P id="CableSymbolWSLIBDataSourceLocationSenkrecht" val="0" />
+          <P id="CableSymbolLibraryWaagrecht" val="ADERN.wsLIB" />
+          <P id="CableSymbolVariantIDWaagrecht" val="0" />
+          <P id="CableSymbolRefnameWaagrecht" val="Kabel_waagrecht" />
+          <P id="CableSymbolWSLIBDataSourceLocationWaagrecht" val="0" />
+          <P id="CableLineTypeID" val="0" />
+          <P id="CableDuplicateLineTypeID" val="1" />
+          <P id="CableShieldLineTypeID" val="2" />
+          <P id="CableDrawLine" val="True" />
+          <P id="CableShieldFunctionText" val="" />
+          <P id="CableShieldPinname" val="" />
+          <P id="CableShieldRadiusMM" val="2" />
+          <P id="CableSpacingRefnameSymbolnameSnap" val="True" />
+          <P id="CableSpacingRefnameSymbolnameMM" val="0" />
+          <P id="CableTextAlignment" val="2" />
+          <P id="CableInheritVisibilityFromRefname" val="True" />
+          <P id="CableInheritRotationFromLine" val="True" />
+          <P id="CableShowSymbolnameAtFirstWire" val="True" />
+          <P id="CableInheritUnit" val="True" />
+          <P id="CableInheritField" val="True" />
+          <P id="CableInheritAOKFromAOKBox" val="True" />
+          <P id="CableChartDeleteExisting" val="False" />
+          <P id="CableChartSortRefnameByDIN" val="True" />
+          <P id="CableManager" val="True" />
+          <P id="CableManagerCheckDuplicate" val="True" />
+          <P id="CableManagerSelectedTabPageTag" val="FromState" />
+          <P id="CableNumberingFromTopToBottom" val="True" />
+          <P id="CableNumberingSubscribeAll" val="False" />
+          <P id="CableNumberingCountConsecuteively" val="True" />
+          <P id="CableNumberingInheritTerminalNumber" val="False" />
+          <P id="CableAutoNumBMK" val="True" />
+          <P id="CableLibraryGrafChart" val="GrafikKabel.wsLIB" />
+        </Section>
+        <Section name="Connection" ver="1.2">
+          <P id="ConnectionNodeShowAsCircle" val="True" />
+          <P id="ConnectionResolveIntoZV" val="True" />
+          <P id="ConnectionDefaultSetEnabled" val="False" />
+          <P id="ConnectionLineWidth" val="0" />
+          <P id="ConnectionLineColorID" val="0" />
+          <P id="ConnectionLineTypeID" val="0" />
+        </Section>
+        <Section name="ContactorPLC" ver="1.4">
+          <P id="ContactorManager" val="True" />
+          <P id="ContactorManagerStrongContactControl" val="False" />
+          <P id="ContactorManagerSelectedTabPageTag" val="FromState" />
+          <P id="ContactorManagerFunctiontextFromCoilToContact" val="True" />
+          <P id="ContactorManagerSetFunctiontextVerticalPos" val="False" />
+          <P id="ContactorLibrary" val="Kamm.wsLIB" />
+          <P id="ContactorManagerRestoreCombsOldPos" val="True" />
+          <P id="PLCManager" val="True" />
+          <P id="PLCManagerAssignByAdress" val="False" />
+          <P id="PLCManagerSelectedTabPageTag" val="FromState" />
+          <P id="PLCInheritCommentFromCopiedIO" val="True" />
+          <P id="PLCExcelExportWithArticle" val="False" />
+          <P id="PLCSpacingMM" val="0" />
+          <P id="PLCChannelPrefixInput" val="E" />
+          <P id="PLCChannelPrefixOutput" val="A" />
+          <P id="AssignSymbolSet">
+            <AssignSymbolSettings id="StandardPin" SymbolLIBDataSourceLocation="0" SymbolLibrary="" SymbolReferenceName="" SymbolVariantID="0" />
+            <AssignSymbolSettings id="Lamp" SymbolLIBDataSourceLocation="0" SymbolLibrary="" SymbolReferenceName="" SymbolVariantID="0" />
+            <AssignSymbolSettings id="PowerCloseContactor1Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschütz.wsLIB" SymbolReferenceName="Hauptkontakt-1S" SymbolVariantID="0" />
+            <AssignSymbolSettings id="PowerCloseContactor3Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschütz.wsLIB" SymbolReferenceName="Hauptkontakt-3S" SymbolVariantID="0" />
+            <AssignSymbolSettings id="PowerCloseContactor4Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschütz.wsLIB" SymbolReferenceName="Hauptkontakt-4S" SymbolVariantID="0" />
+            <AssignSymbolSettings id="CloseContactorGeneral" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_02_Hilfsschütz, Relais.wsLIB" SymbolReferenceName="Hilfskontakt-S" SymbolVariantID="0" />
+            <AssignSymbolSettings id="CloseContactorAdvanced" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-frühschließer" SymbolVariantID="0" />
+            <AssignSymbolSettings id="CloseContactorRetarded" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-spätschließer" SymbolVariantID="0" />
+            <AssignSymbolSettings id="CloseContactorSlowActing" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-ansprechverzögert" SymbolVariantID="0" />
+            <AssignSymbolSettings id="CloseContactorSlowRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-rückfallverzögert" SymbolVariantID="0" />
+            <AssignSymbolSettings id="CloseContactorSlowActingAndRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-S-an-ab-verzögert" SymbolVariantID="0" />
+            <AssignSymbolSettings id="OpenContactorGeneral" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_02_Hilfsschütz, Relais.wsLIB" SymbolReferenceName="Hilfskontakt-O" SymbolVariantID="0" />
+            <AssignSymbolSettings id="OpenContactorAdvanced" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-frühöffner" SymbolVariantID="0" />
+            <AssignSymbolSettings id="OpenContactorRetarded" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-spätöffner" SymbolVariantID="0" />
+            <AssignSymbolSettings id="OpenContactorSlowActing" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-ansprechverzögert" SymbolVariantID="0" />
+            <AssignSymbolSettings id="OpenContactorSlowRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-rückfallverzögert" SymbolVariantID="0" />
+            <AssignSymbolSettings id="ChangeoverContactorGeneral" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_02_Hilfsschütz, Relais.wsLIB" SymbolReferenceName="Hilfskontakt-W" SymbolVariantID="0" />
+            <AssignSymbolSettings id="ChangeoverContactorSlowActing" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-W-ansprechverzögert" SymbolVariantID="0" />
+            <AssignSymbolSettings id="ChangeoverContactorSlowRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-W-rückfallverzögert" SymbolVariantID="0" />
+            <AssignSymbolSettings id="ChangeoverContactorSlowActingAndRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-W-an-ab-verzögert" SymbolVariantID="0" />
+            <AssignSymbolSettings id="PowerCloseContactor2Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschütz.wsLIB" SymbolReferenceName="Hauptkontakt-2S" SymbolVariantID="0" />
+            <AssignSymbolSettings id="OpenContactorSlowActingAndRelease" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_05_Spezielle Kontakte.wsLIB" SymbolReferenceName="Hilfskontakt-O-an-ab-verzögert" SymbolVariantID="0" />
+            <AssignSymbolSettings id="PowerOpenContactor1Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschütz.wsLIB" SymbolReferenceName="Hauptkontakt-1O" SymbolVariantID="0" />
+            <AssignSymbolSettings id="PowerOpenContactor2Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschütz.wsLIB" SymbolReferenceName="Hauptkontakt-2O" SymbolVariantID="0" />
+            <AssignSymbolSettings id="PowerOpenContactor3Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschütz.wsLIB" SymbolReferenceName="Hauptkontakt-3O" SymbolVariantID="0" />
+            <AssignSymbolSettings id="PowerOpenContactor4Pole" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\08_01_Leistungsschütz.wsLIB" SymbolReferenceName="Hauptkontakt-4O" SymbolVariantID="0" />
+          </P>
+          <P id="PLCUseSymboltextForGenerating" val="False" />
+          <P id="PLCIgnoreBMKAtImport" val="True" />
+        </Section>
+        <Section name="CrossReferences" ver="2.4">
+          <P id="QVPrefix" val="/" />
+          <P id="QVPagenumberPathSeparator" val="." />
+          <P id="QVSpaceBetweenAOKPagePath" val="True" />
+          <P id="QVLineDestination" val="0" />
+          <P id="QVReflectorContact" val="40;2.5;True;True;True" />
+          <P id="QVDistanceMM" val="1" />
+          <P id="QVDistanceMMVertically" val="2" />
+          <P id="QVLineInheritLocation" val="True" />
+          <P id="QVLineInheritSite" val="True" />
+          <P id="QVLineInheritUnit" val="True" />
+          <P id="QVLineInheritField" val="True" />
+          <P id="QVLineShowAOKEquals" val="False" />
+          <P id="QVLineAutoCreate" val="True" />
+          <P id="QVLineIsVisible" val="True" />
+          <P id="QVSchuetzInheritLocation" val="True" />
+          <P id="QVSchuetzInheritSite" val="True" />
+          <P id="QVSchuetzInheritUnit" val="True" />
+          <P id="QVSchuetzInheritField" val="True" />
+          <P id="QVSchuetzShowAOKEquals" val="False" />
+          <P id="QVSchuetzAutoCreate" val="True" />
+          <P id="QVSchuetzIsVisible" val="True" />
+          <P id="QVContact" val="True" />
+          <P id="QVContactIsVisible" val="True" />
+          <P id="QVSPSInheritLocation" val="True" />
+          <P id="QVSPSInheritSite" val="True" />
+          <P id="QVSPSInheritUnit" val="True" />
+          <P id="QVSPSInheritField" val="True" />
+          <P id="QVSPSShowAOKEquals" val="False" />
+          <P id="QVSPSAutoCreate" val="True" />
+          <P id="QVSPSIsVisible" val="True" />
+          <P id="QVSideElement" val="True" />
+          <P id="QVSideElementIsVisible" val="True" />
+          <P id="QVVertKlemmeInheritLocation" val="True" />
+          <P id="QVVertKlemmeInheritSite" val="True" />
+          <P id="QVVertKlemmeInheritUnit" val="True" />
+          <P id="QVVertKlemmeInheritField" val="True" />
+          <P id="QVVertKlemmeShowAOKEquals" val="False" />
+          <P id="QVVertKlemmeAutoCreate" val="True" />
+          <P id="QVVertKlemmeIsVisible" val="True" />
+          <P id="QVIndPlatzhalterInheritLocation" val="True" />
+          <P id="QVIndPlatzhalterInheritSite" val="True" />
+          <P id="QVIndPlatzhalterInheritUnit" val="True" />
+          <P id="QVIndPlatzhalterInheritField" val="True" />
+          <P id="QVIndPlatzhalterShowAOKEquals" val="False" />
+          <P id="QVIndPlatzhalterAutoCreate" val="True" />
+          <P id="QVIndPlatzhalterIsVisible" val="True" />
+          <P id="QVGtBoxInheritLocation" val="True" />
+          <P id="QVGtBoxInheritSite" val="True" />
+          <P id="QVGtBoxInheritUnit" val="True" />
+          <P id="QVGtBoxInheritField" val="True" />
+          <P id="QVGtBoxShowAOKEquals" val="False" />
+          <P id="QVGtBoxAutoCreate" val="True" />
+          <P id="QVGtBoxIsVisible" val="True" />
+          <P id="QVKTPSideElementInheritLocation" val="True" />
+          <P id="QVKTPSideElementInheritSite" val="True" />
+          <P id="QVKTPSideElementInheritUnit" val="True" />
+          <P id="QVKTPSideElementInheritField" val="True" />
+          <P id="QVKTPSideElementShowAOKEquals" val="False" />
+          <P id="QVKTPSideElementIsVisible" val="True" />
+          <P id="QVKTPSideElementSPSInheritLocation" val="True" />
+          <P id="QVKTPSideElementSPSInheritSite" val="True" />
+          <P id="QVKTPSideElementSPSInheritUnit" val="True" />
+          <P id="QVKTPSideElementSPSInheritField" val="True" />
+          <P id="QVKTPSideElementSPSShowAOKEquals" val="False" />
+          <P id="QVKTPSideElementSPSIsVisible" val="True" />
+          <P id="QVShowOverallTechnology" val="True" />
+          <P id="QVPfadanzeigeHorizontal" val="True" />
+          <P id="QVPfadanzeigeVertikal" val="True" />
+          <P id="QVInheritAOKOptimizedView" val="True" />
+          <P id="TechnologyQVPrefixDictionary" val="1�EE�True�3�EI�True�2�CE�False�5�FE�True�4�BA�True�6�EE1pol�True�7�PI�True" />
+          <P id="TechnologyQVPrefix" val="/" />
+          <P id="TechnologyQVPagePrefix" val=":" />
+          <P id="TechnologyQVPfadanzeigeHorizontal" val="True" />
+          <P id="TechnologyQVPfadanzeigeVertikal" val="True" />
+          <P id="TechnologyQVPrefixTextFromDCC" val="False" />
+          <P id="TechnologyQVUsedLinks" val="1|3�True�2�2�True�1�4�True�3�5�True�4�6�True�5�7�True�6|3|1�True�2�2�True�1�4�True�3�5�True�4�6�True�5�7�True�6|2|1�False�1�3�False�2�4�False�3�5�False�4�6�False�5�7�False�6|4|1�True�1�2�True�2�3�True�3�5�True�4�6�True�5�7�True�6|5|1�True�1�2�True�2�3�True�3�4�True�4�6�True�5�7�True�6|6|1�True�1�2�True�2�3�True�3�4�True�4�5�True�5�7�True�6|7|1�True�1�2�True�2�3�True�3�4�True�4�5�True�5�6�True�6" />
+        </Section>
+        <Section name="Data" ver="1.4">
+          <P id="FarbcodeDBConnectionType" val="XML" />
+          <P id="FarbcodeXMLPathName" val="ColorCodes.xml" />
+          <P id="FarbcodeOverwrite" val="False" />
+        </Section>
+        <Section name="Directories" ver="3.6">
+          <P id="DirLibrary" val="Libraries\" />
+          <P id="DirMacros" val="Macros\" />
+          <P id="DirTemplates" val="Templates\" />
+          <P id="DirDatabases" val="Databases\" />
+        </Section>
+        <Section name="Fluid" ver="1.0">
+          <P id="FluidShowBMKBorder" val="True" />
+        </Section>
+        <Section name="InstallationZonen" ver="1.2">
+          <P id="BuildZonen">
+            <Item id="1" name="OKRohfussboden" val="0" />
+            <Item id="2" name="UntWaagrechteZone" val="300" />
+            <Item id="3" name="Fenster" val="750" />
+            <Item id="-2" name="Schalter" val="1050" />
+            <Item id="4" name="MittlWaagrechteZone" val="1150" />
+            <Item id="5" name="Wandauslass" val="1900" />
+            <Item id="6" name="ObWaagrechteZone" val="2200" />
+            <Item id="7" name="UKDecke" val="10000" />
+            <Item id="8" name="InDecke" val="10010" />
+            <Item id="-1" name="RaumGrenze" val="10020" />
+          </P>
+        </Section>
+        <Section name="KlemmeHNElement" ver="1.6">
+          <P id="TerminalSplitAllowMorePinPerSide" val="False" />
+          <P id="TerminalAutoNumBMK" val="True" />
+          <P id="TerminalInheritUnit" val="True" />
+          <P id="TerminalInheritField" val="True" />
+          <P id="TerminalInheritAOKFromAOKBox" val="True" />
+          <P id="TerminalNumberingFromTopToBottom" val="True" />
+          <P id="TerminalNumberingMultiLevelSameNumber" val="False" />
+          <P id="TerminalNumberingSubscribeAll" val="False" />
+          <P id="TerminalNumberingCountConsecuteively" val="True" />
+          <P id="TerminalNumberingShowConsecuteivelyNumber" val="True" />
+          <P id="TerminalNumberingPositionOnBottom" val="True" />
+          <P id="TerminalNumberingDirection" val="0" />
+          <P id="TerminalNumberingTakeLockedNoIntoAccount" val="True" />
+          <P id="TerminalNumberingShowPathVerticalInRefName" val="False" />
+          <P id="TerminalMaterialListInheritFunctionText" val="0" />
+          <P id="TerminalManager" val="True" />
+          <P id="TerminalManagerSelectedTabPageTag" val="FromState" />
+          <P id="HNElementManager" val="True" />
+          <P id="HNElementManagerSelectedTabPageTag" val="FromState" />
+          <P id="HNElementManagerTransferFunktionstexts" val="True" />
+          <P id="TerminalSymbolLibrary" val="DIN 81346\02_01_Klemmen (Standard).wsLIB" />
+          <P id="TerminalSymbolWSGuid" val="041A33EB63294C639D263BD1BBA04714-88CE23CC082CAC33" />
+          <P id="TerminalSymbolVariantID" val="0" />
+          <P id="TerminalSymbolRefname" val="Klemme (allgemein)" />
+          <P id="TerminalSymbolWSLIBDataSourceLocation" val="0" />
+          <P id="TerminalLibraryGrafChart" val="Grafikvorlagen.wsLIB" />
+        </Section>
+        <Section name="Languages" ver="1.1">
+          <P id="ElementShowTexte" val="7" />
+          <P id="ElementShowVariable" val="7" />
+          <P id="ElementShowSPSTexte" val="7" />
+          <P id="ElementShowTInSymbol" val="7" />
+          <P id="ElementShowTInRahmen" val="7" />
+          <P id="ElementShowLeitungsnamen" val="1" />
+          <P id="ElementShowBlockText" val="7" />
+          <P id="ElementShowTexteInListe" val="7" />
+          <P id="EnableLanguageH" val="True" />
+          <P id="EnableLanguageF" val="False" />
+          <P id="EnableLanguageS" val="False" />
+          <P id="EnableFontF" val="False" />
+          <P id="EnableFontS" val="False" />
+          <P id="FontF" val="Verdana, 8pt" />
+          <P id="FontS" val="Arial, 5pt" />
+          <P id="ColorFontF" val="Black" />
+          <P id="ColorFontS" val="Black" />
+          <P id="HauptspracheName" val="(Default)" />
+          <P id="Fremdsprache1" val="EN" />
+          <P id="Fremdsprache2" val="(Default)" />
+          <P id="EnableLanguageFilter" val="False" />
+          <P id="LanguageFilter" val="" />
+          <P id="FarbcodeSpracheName" val="(Default)" />
+          <P id="LanguagePrioName" val="(Default)" />
+        </Section>
+        <Section name="Layer" ver="1.0">
+          <Layer id="0" lid="0" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0" />
+          <Layer id="1" lid="1" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="2" lid="2" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="3" lid="3" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="4" lid="4" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0" />
+          <Layer id="5" lid="5" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="6" lid="6" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="7" lid="7" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="8" lid="8" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="9" lid="9" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="10" lid="10" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="11" lid="11" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="12" lid="12" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="13" lid="13" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="14" lid="14" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="15" lid="15" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="16" lid="16" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0" />
+          <Layer id="17" lid="17" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="18" lid="18" on="True" locked="True" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0" />
+          <Layer id="19" lid="19" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="3" />
+          <Layer id="39" lid="39" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="40" lid="40" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="41" lid="41" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="42" lid="42" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="46" lid="46" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="43" lid="43" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="47" lid="47" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="53" lid="53" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="54" lid="54" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="55" lid="55" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="44" lid="44" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="45" lid="45" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="49" lid="49" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="50" lid="50" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="51" lid="51" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="52" lid="52" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="27" lid="27" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="48" lid="48" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="2" />
+          <Layer id="80" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">Verlegesystem</N>
+            <N id="EN">Installation system</N>
+          </Layer>
+          <Layer id="81" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">Kabelrinne</N>
+            <N id="EN">Cable tray</N>
+          </Layer>
+          <Layer id="82" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">Deckenrohre</N>
+            <N id="EN">Ceiling pipes</N>
+          </Layer>
+          <Layer id="83" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="84" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="85" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="4">
+            <N id="DE">Automationsschemata</N>
+            <N id="EN">Funktion Diagram</N>
+          </Layer>
+          <Layer id="86" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="4">
+            <N id="DE">Regeldiagramme</N>
+            <N id="EN">Control Diagram</N>
+          </Layer>
+          <Layer id="87" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="4">
+            <N id="DE">Linker Automationsschemata</N>
+            <N id="EN">Link Funktion Diagram</N>
+          </Layer>
+          <Layer id="88" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="4">
+            <N id="DE">Regelstrukur inkl. Verbindungslinien</N>
+            <N id="EN">Control and Strucure</N>
+          </Layer>
+          <Layer id="89" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="90" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="91" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="92" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="93" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="94" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="95" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="96" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="97" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="98" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="99" lid="80" on="True" locked="False" colorOn="False" cid="1" frAC="False" ltAC="" SymbolTechnology="0">
+            <N id="DE">-----</N>
+          </Layer>
+          <Layer id="100" lid="100" on="True" locked="False" colorOn="False" cid="136" frAC="False" ltAC="" SymbolTechnology="1">
+            <N id="DE">0</N>
+          </Layer>
+          <Layer id="101" lid="100" on="True" locked="False" colorOn="False" cid="383" frAC="False" ltAC="" SymbolTechnology="1">
+            <N id="DE">BOARD_OUTLINE</N>
+          </Layer>
+          <Layer id="102" lid="100" on="True" locked="False" colorOn="False" cid="134" frAC="False" ltAC="" SymbolTechnology="1">
+            <N id="DE">PINS_BOTTOM</N>
+          </Layer>
+        </Section>
+        <Section name="Lexicon" ver="1.3">
+          <P id="OnlineDictionaryURL" val="http://www.wscad.com" />
+          <P id="Bibliotheksname" val="True" />
+          <P id="TexteAllgemein" val="True" />
+          <P id="TexteImSymbol" val="True" />
+          <P id="Symbolnamen" val="True" />
+          <P id="TexteImRahmen" val="False" />
+          <P id="Variable" val="False" />
+          <P id="SPSTexte" val="True" />
+          <P id="Leitungsnamen" val="False" />
+          <P id="Blocktext" val="False" />
+          <P id="TexteQuerverweis" val="False" />
+          <P id="TexteReferenzname" val="False" />
+          <P id="TextBeginntMitZiffer" val="True" />
+          <P id="TextBestehtNurAusZiffern" val="False" />
+          <P id="TextBeginntMitDoppelPunkt" val="True" />
+          <P id="TextBeginntMitPlus" val="True" />
+          <P id="TextBeginntMitIstgleich" val="True" />
+          <P id="TextBeginntMitStrich" val="True" />
+          <P id="TextNurCAPS" val="True" />
+          <P id="WordMaxLength" val="0" />
+          <P id="FehlendeTexteEintragen" val="False" />
+          <P id="Wortweise" val="False" />
+          <P id="ShowExplorerAfterProcess" val="False" />
+          <P id="OverWriteTexts" val="False" />
+          <P id="LastLanguageFrom" val="(Default)" />
+          <P id="LastLanguageTo" val="(Default)" />
+          <P id="ConnectionType" val="ACCESS" />
+          <P id="ExportConnectionType" val="UNDEFINED" />
+          <P id="SQLConnectionString" val="Provider=SQLOLEDB.1;" />
+          <P id="ExportSQLConnectionString" val="" />
+          <P id="ExportTableName" val="" />
+          <P id="LexSQLTableName" val="Lexikon" />
+          <P id="BlacklistSQLTableName" val="BlackList" />
+          <P id="AccessDbPathName" val="WSCAD_Lexikon.mdb" />
+          <P id="AccessUserName" val="" />
+          <P id="AccessPassword" val="" />
+          <P id="AccessTableName" val="Lexikon" />
+          <P id="AccessBlacklistTableName" val="BlackList" />
+          <P id="XMLDBFileName" val="" />
+          <P id="LexXmlDBTableName" val="Lexikon" />
+          <P id="BlacklistXmlDBTableName" val="BlackList" />
+          <P id="OLEDBConnectionString" val="" />
+          <P id="LexOLEDBTableName" val="Lexikon" />
+          <P id="BlacklistOLEDBTableName" val="BlackList" />
+          <P id="LanguageBase" val="" />
+          <P id="LanguageTranslate" val="" />
+        </Section>
+        <Section name="Misc" ver="1.25">
+          <P id="DateFormatString" val="dd'.'MM'.'yy" />
+          <P id="MultilangTextEditEnable" val="True" />
+          <P id="PrintTerminalPinnames" val="True" />
+          <P id="PrintTerminalInternKenzzeichen" val="True" />
+          <P id="ProjectStructureCopyKeepReference" val="True" />
+          <P id="ShowAllItems" val="False" />
+          <P id="ShowAllLayers" val="False" />
+          <P id="ShowLadder" val="True" />
+          <P id="ShowAuxLines" val="True" />
+          <P id="ShowAuxLinesReflectorContact" val="True" />
+          <P id="ShowFloorTransparency" val="False" />
+          <P id="ShowBlockText" val="False" />
+          <P id="ShowCable" val="True" />
+          <P id="ShowConverterErrorPoints" val="True" />
+          <P id="ShowCoordinatesInMillimeter" val="True" />
+          <P id="ShowDimensions" val="True" />
+          <P id="ShowGrid" val="False" />
+          <P id="ShowLanguageFlag" val="True" />
+          <P id="ShowOnlyClientRegion" val="False" />
+          <P id="ShowPfadBar" val="True" />
+          <P id="ShowReferenceNamesBold" val="False" />
+          <P id="ShowSperrenBMKNummerierung" val="False" />
+          <P id="ShowSperrenLeitungsanschluss" val="True" />
+          <P id="ShowSperrenMaterialliste" val="False" />
+          <P id="ShowSperrenSchrankaufbau" val="False" />
+          <P id="ShowVerbindungsattribute" val="False" />
+          <P id="ShowVerbindungsattributtexte" val="False" />
+          <P id="ShowZuordnung" val="False" />
+          <P id="ShowZVAsPoints" val="False" />
+          <P id="TraceLevelProtocol" val="Information" />
+          <P id="WorkingDirectionHorizontal" val="True" />
+          <P id="WriteToProtocolFile" val="True" />
+        </Section>
+        <Section name="Plug" ver="1.5">
+          <P id="PlugSpacingRefnameSymbolnameSnap" val="True" />
+          <P id="PlugSpacingRefnameSymbolnameMM" val="0" />
+          <P id="PlugTextAlignment" val="0" />
+          <P id="PlugManager" val="True" />
+          <P id="PlugManagerSelectedTabPageTag" val="FromState" />
+          <P id="PlugSocketInheritUnit" val="True" />
+          <P id="PlugSocketInheritField" val="True" />
+          <P id="PlugSocketInheritAOKFromAOKBox" val="True" />
+          <P id="PlugNumberingFromTopToBottom" val="True" />
+          <P id="PlugNumberingSubscribeAll" val="False" />
+          <P id="PlugNumberingCountConsecuteively" val="True" />
+          <P id="PlugNumberingInheritTerminalNumber" val="False" />
+          <P id="PlugAutoNumBMK" val="True" />
+          <P id="AssignSymbolSet">
+            <AssignSymbolSettings id="BuchseUnten" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Buchse-&gt;unten" SymbolVariantID="0" />
+            <AssignSymbolSettings id="BuchseOben" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Buchse-&gt;oben" SymbolVariantID="0" />
+            <AssignSymbolSettings id="BuchseLinks" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Buchse-&gt;links" SymbolVariantID="0" />
+            <AssignSymbolSettings id="BuchseRechts" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Buchse-&gt;rechts" SymbolVariantID="0" />
+            <AssignSymbolSettings id="SteckerUnten" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Stecker-&gt;unten" SymbolVariantID="0" />
+            <AssignSymbolSettings id="SteckerOben" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Stecker-&gt;oben" SymbolVariantID="0" />
+            <AssignSymbolSettings id="SteckerLinks" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Stecker-&gt;links" SymbolVariantID="0" />
+            <AssignSymbolSettings id="SteckerRechts" SymbolLIBDataSourceLocation="0" SymbolLibrary="DIN 81346\03_02_Industriestecker.wsLIB" SymbolReferenceName="Stecker-&gt;rechts" SymbolVariantID="0" />
+          </P>
+          <P id="PlugQV" val="False" />
+        </Section>
+        <Section name="Potential" ver="1.3">
+          <P id="PotentialShow" val="True" />
+          <P id="PotentialPresentation">
+            <Item id="1" name="L1" cid="1" pattern="0" size="0" rTag="" colorCode="#sw" crossSection="1,5" type="H07V-K" partNumber="" stromschiene="" />
+            <Item id="2" name="L2" cid="1" pattern="0" size="0" rTag="" colorCode="#sw" crossSection="1,5" type="H07V-K" partNumber="" stromschiene="" />
+            <Item id="3" name="L3" cid="1" pattern="0" size="0" rTag="" colorCode="#sw" crossSection="1,5" type="H07V-K" partNumber="" stromschiene="" />
+            <Item id="4" name="N" cid="22" pattern="1" size="0" rTag="" colorCode="#bl" crossSection="1,5" type="H07V-K" partNumber="" stromschiene="" />
+            <Item id="5" name="PE" cid="38" pattern="2" size="0" rTag="" colorCode="|GN|&amp;-|YE" crossSection="1,5" type="H07V-K" partNumber="" stromschiene="" />
+            <Item id="6" name="L+" cid="59" pattern="0" size="0" rTag="" colorCode="#rt" crossSection="1,5" type="H07V-K" partNumber="" stromschiene="" />
+            <Item id="7" name="M" cid="22" pattern="0" size="0" rTag="" colorCode="#bl" crossSection="1,5" type="H07V-K" partNumber="" stromschiene="" />
+          </P>
+        </Section>
+        <Section name="Report" ver="1.6">
+          <P id="ReportDateiinhaltAddBMK" val="True" />
+          <P id="IsStandardListFrameAvailable" val="False" />
+          <P id="StandardListFramePath" val="" />
+          <P id="ReportAllProjectDBRebuild" val="False" />
+          <P id="ReportLineStepFromTemplate" val="True" />
+          <P id="AutoPDFExportByProjectClose" val="False" />
+        </Section>
+        <Section name="Symbol" ver="1.16">
+          <P id="SymbolLoadAutoAdaptComponentSize" val="True" />
+          <P id="SymbolLoadTakeDatabaseValues" val="True" />
+          <P id="SymbolLoadUseMagnet" val="False" />
+          <P id="SymbolLoadMagnetSize" val="1" />
+          <P id="SymbolLoadUseSelection" val="False" />
+          <P id="SymbolLoadUseCategory" val="True" />
+          <P id="SymbolBMKCaseSensitive" val="False" />
+          <P id="SymbolBMKValidWithoutPrefix" val="False" />
+          <P id="SymbolShowAllwaysFullBMK" val="False" />
+          <P id="SymbolAutoConnect" val="True" />
+          <P id="SymbolLoadLinenameInput" val="True" />
+          <P id="SymbolBMKStromkreisExtension" val="False" />
+          <P id="SymbolBMKStromkreisSeperator" val=" " />
+          <P id="SymbolBMKFromNorm" val="True" />
+          <P id="CopyKeepPosition" val="True" />
+          <P id="SymbolPropertiesIncludeEIinEE" val="True" />
+          <P id="SymbolEditorPaperSizeWidthMM" val="500" />
+          <P id="SymbolEditorPaperSizeHeightMM" val="500" />
+          <P id="SymbolEditorRasterTyp" val="Lines" />
+          <P id="SymbolSkalierungsFaktor" val="100" />
+          <P id="LastSymbolScaleFactor" val="1" />
+          <P id="SymbolNormalizeUseSymbolTextConfig" val="False" />
+          <P id="SymbolNormalizeUseExistSymbolText" val="True" />
+          <P id="SymbolDeleteFromMatExplorer" val="Ask" />
+          <P id="SymbolTexte">
+            <Item id="Sondertext.1" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.2" val="Attribute§artTEXT2" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">Zusatztext 2</N>
+              <N id="EN">Additional texts 2</N>
+              <N id="HU">Text.2</N>
+              <N id="NL">Text.2</N>
+              <N id="PL">Tekst dodatkowy 2</N>
+            </Item>
+            <Item id="Sondertext.3" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.4" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.5" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.6" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.7" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.8" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.9" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.10" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.11" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.12" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.13" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.14" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.15" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.16" val="" Electrotechnics="True" Cabinet="True" Installation="True" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.17" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="True" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">Zylindergröße</N>
+              <N id="EN">Cylinder size</N>
+              <N id="HU">Hengerméret</N>
+              <N id="NL">Cilindergrootte</N>
+              <N id="PL">Rozmiar cylindra</N>
+            </Item>
+            <Item id="Sondertext.18" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="True" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">Baugröße</N>
+              <N id="EN">Mounting size</N>
+              <N id="HU">Méret</N>
+              <N id="NL">Maat</N>
+              <N id="PL">Rozmiar</N>
+            </Item>
+            <Item id="Sondertext.19" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="True" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">Anschlußgröße</N>
+              <N id="EN">Connection size</N>
+              <N id="HU">Csatlakozóméret</N>
+              <N id="NL">Verbindings maat</N>
+              <N id="PL">Wielkość przyłącza</N>
+            </Item>
+            <Item id="Sondertext.20" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="True" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">Volumenstrom</N>
+              <N id="EN">Volume flow</N>
+              <N id="HU">Térfogatáram</N>
+              <N id="NL">Volume stroming</N>
+              <N id="PL">Strumień obiętości</N>
+            </Item>
+            <Item id="Sondertext.21" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="True" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">Kraft</N>
+              <N id="EN">Strength</N>
+              <N id="HU">Erő</N>
+              <N id="NL">Kracht</N>
+              <N id="PL">Siła</N>
+            </Item>
+            <Item id="Sondertext.22" val="WscadDbField§baaSensorMeasuringStart" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="True" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MW-Liste Messbereich Anfang</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.23" val="WscadDbField§baaSensorMeasuringFinish" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="True" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MW/Zähler-Liste Messbereich Ende (Nennmenge)</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.24" val="WscadDbField§baaSensorMeasurandPressure" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="True" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MW-Liste Messgröße</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.25" val="WscadDbField§baaSensor_MeterListUnit" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="True" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MW/Zähler-Liste Gebertypmesseinheit</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.26" val="WscadDbField§baaValveActuatorPositionIndicatorSwitch" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="True" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">KL-Liste Endlagenschalter</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.27" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">KL-Liste örtliche mechanische Stellungsanzeige</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.28" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">Zähler-Liste Zählernummer</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.29" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">Raum / Achsenbezeichnung</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.30" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">Allgemeines Infofeld</N>
+              <N id="EN">General info field</N>
+              <N id="HU">Általános információs mező</N>
+              <N id="NL">Algemene info veld</N>
+              <N id="PL">Pole informacji ogólnych</N>
+            </Item>
+            <Item id="Sondertext.31" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">Allgemeines Zusatzfeld</N>
+              <N id="EN">General description field</N>
+              <N id="HU">Általános kiegészítő mező</N>
+              <N id="NL">Algemene beschrijving veld</N>
+              <N id="PL">Pole dodatkowe informacji ogólnych</N>
+            </Item>
+            <Item id="Sondertext.32" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">SO-Signalkennzeichen</N>
+              <N id="EN">SO-signal indicator</N>
+              <N id="HU">SO-jel jelölés</N>
+              <N id="NL">SO-signaal indicator</N>
+              <N id="PL">SO-wskaźnik sygnału</N>
+            </Item>
+            <Item id="Sondertext.33" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">SA-Liste Leistung in kW</N>
+              <N id="EN">SA-list power in kW</N>
+              <N id="HU">SA-lista teljesítmény kW-ban</N>
+              <N id="NL">SA-lijst Output in kW</N>
+              <N id="PL">Lista-SA, Moc w kW</N>
+            </Item>
+            <Item id="Sondertext.34" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">SA-Liste Delta T</N>
+              <N id="EN">SA-List Delta T</N>
+              <N id="HU">SA-lista delta T</N>
+              <N id="NL">SA-lijst Delta T</N>
+              <N id="PL">Lista-SA, Delta T</N>
+            </Item>
+            <Item id="Sondertext.35" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">SA-Liste Volumenstrom m³/h</N>
+              <N id="EN">SA-List volume flow m³/h</N>
+              <N id="HU">SA-lista átfolyási sebesség m³/h</N>
+              <N id="NL">SA-lijst Volumestroom m³/h</N>
+              <N id="PL">Lista-SA, Przepływ m³/h</N>
+            </Item>
+            <Item id="Sondertext.36" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">SA-Liste Delta P Ventil</N>
+              <N id="EN">SA-List Delta P valve</N>
+              <N id="HU">SA-lista Delta P szelep</N>
+              <N id="NL">SA-lijst Delta P-ventiel</N>
+              <N id="PL">Lista-SA, Spadek ciśnienia na zaworze ΔP</N>
+            </Item>
+            <Item id="Sondertext.37" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">SA-Liste Delta P Netz</N>
+              <N id="EN">SA-List Delta P power supply</N>
+              <N id="HU">SA-lista Delta P hálózat</N>
+              <N id="NL">SA-lijst Delta P-netwerk</N>
+              <N id="PL">Lista-SA, Spadek ciśnienia w sieci ΔP</N>
+            </Item>
+            <Item id="Sondertext.38" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">SA-Liste berechneter kvs</N>
+              <N id="EN">SA-List calculated kvs</N>
+              <N id="HU">SA-lista számolt kvs</N>
+              <N id="NL">SA-lijst Berekend KVS</N>
+              <N id="PL">Lista-SA, Przewidywana wartość kvs m³/h</N>
+            </Item>
+            <Item id="Sondertext.39" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">SA-Liste Medium</N>
+              <N id="EN">SA-list medium</N>
+              <N id="HU">SA-lista közeg</N>
+              <N id="NL">SA-lijst Medium</N>
+              <N id="PL">Lista-SA, Medium</N>
+            </Item>
+            <Item id="Sondertext.40" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">SA-Liste Abmessung</N>
+              <N id="EN">SA-list dimension</N>
+              <N id="HU">SA-lista méret</N>
+              <N id="NL">SA-lijst Dimensie</N>
+              <N id="PL">Lista-SA, Wymiar</N>
+            </Item>
+            <Item id="Sondertext.41" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="True">
+              <N id="DE">Unterer Grenzwert 3</N>
+              <N id="EN">Min. Limit 3</N>
+              <N id="HU">Alsó határérték 3</N>
+              <N id="NL">Minimale grens 3</N>
+              <N id="PL">Dolna granica 3</N>
+            </Item>
+            <Item id="Sondertext.42" val="WscadDbField§baaMotorNominalCurrentLevelOne" Electrotechnics="True" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MO/E-Verbraucher-Liste Nennstrom (A)</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.43" val="WscadDbField§baaMotorNominalPowerLevelOne" Electrotechnics="True" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">Motor Nennleistung  (kW) Netzversorgung Normalnetz (ASV)</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.44" val="" Electrotechnics="True" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">Motor  Nennleistung  (kW) Netzversorgung Sicherheitsstromversorgung (SSV)</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.45" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">Motor  Nennleistung  (kW)  Netzversorgung Netzersatz (NEV)</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.46" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">Motor  Nennleistung  (kW) Netzversorgung Unterbrechungsfrei (USV)</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.47" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.48" val="WscadDbField§baaMotorNominalVoltage" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MO/E-Verbraucher-Liste Nennspannung</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.49" val="WscadDbField§baaMotorMaximumFrequency" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MO/E-Verbraucher-Liste Max. Frequenz</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.50" val="WscadDbField§baaMotorTopSpeed" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MO/E-Verbraucher-Liste Nenn- / Maxdrehzahl</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.51" val="WscadDbField§baaMotorCosinePhi" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MO/E-Verbraucher-Liste Leistungsfaktor (cosphi)</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.52" val="WscadDbField§baaMotorExcitationWinding" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MO/E-Verbraucher-Liste Wicklungsart / Beschaltung</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.53" val="WscadDbField§baaMotorProtection" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MO/E-Verbraucher-Liste Motorschutz</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.54" val="WscadDbField§baaMotorActionMonitoring" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MO/E-Verbraucher-Liste Laufüberwachung</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.55" val="WscadDbField§baaMotorRepairSwitch" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">MO/E-Verbraucher-Liste Reparaturschalter</N>
+              <N id="EN">
+              </N>
+              <N id="HU">
+              </N>
+              <N id="NL">
+              </N>
+            </Item>
+            <Item id="Sondertext.56" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.57" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.58" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.59" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.60" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="True" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.61" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.62" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.63" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.64" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.65" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.66" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.67" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.68" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.69" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.70" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.71" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.72" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.73" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.74" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.75" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.76" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.77" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.78" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.79" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.80" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.81" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.82" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.83" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.84" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.85" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.86" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.87" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.88" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.89" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.90" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.91" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.92" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.93" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.94" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.95" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.96" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.97" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.98" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.99" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <Item id="Sondertext.100" val="" Electrotechnics="False" Cabinet="False" Installation="False" HLK="False" Fluid="False" Electrotechnics1Pol="False" PID="False">
+              <N id="DE">
+              </N>
+            </Item>
+            <PlcSonderText>
+              <N id="DE">Kanalsondertext 1</N>
+              <N id="NL">Speciale kanaal tekst 1</N>
+              <N id="EN">Channel special text 1</N>
+              <N id="HU">Csatorna egyedi szövege 1</N>
+              <N id="PL">Specjalny tekst kanału 1</N>
+            </PlcSonderText>
+            <PlcSonderText>
+              <N id="DE">Kanalsondertext 2</N>
+              <N id="NL">Speciale kanaal tekst 2</N>
+              <N id="EN">Channel special text 2</N>
+              <N id="HU">Csatorna egyedi szövege 2</N>
+              <N id="PL">Specjalny tekst kanału 2</N>
+            </PlcSonderText>
+            <PlcSonderText>
+              <N id="DE">Kanalsondertext 3</N>
+              <N id="NL">Speciale kanaal tekst 3</N>
+              <N id="EN">Channel special text 3</N>
+              <N id="HU">Csatorna egyedi szövege 3</N>
+              <N id="PL">Specjalny tekst kanału 3</N>
+            </PlcSonderText>
+            <PlcSonderText>
+              <N id="DE">Kanalsondertext 4</N>
+              <N id="NL">Speciale kanaal tekst 4</N>
+              <N id="EN">Channel special text 4</N>
+              <N id="HU">Csatorna egyedi szövege 4</N>
+              <N id="PL">Specjalny tekst kanału 4</N>
+            </PlcSonderText>
+            <PlcSonderText>
+              <N id="DE">Kanalsondertext 5</N>
+              <N id="NL">Speciale kanaal tekst 5</N>
+              <N id="EN">Channel special text 5</N>
+              <N id="HU">Csatorna egyedi szövege 5</N>
+              <N id="PL">Specjalny tekst kanału 5</N>
+            </PlcSonderText>
+            <PlcSonderText>
+              <N id="DE">Kanalsondertext 6</N>
+              <N id="NL">Speciale kanaal tekst 6</N>
+              <N id="EN">Channel special text 6</N>
+              <N id="HU">Csatorna egyedi szövege 6</N>
+              <N id="PL">Specjalny tekst kanału 6</N>
+            </PlcSonderText>
+            <PlcSonderText>
+              <N id="DE">Kanalsondertext 7</N>
+              <N id="NL">Speciale kanaal tekst 7</N>
+              <N id="EN">Channel special text 7</N>
+              <N id="HU">Csatorna egyedi szövege 7</N>
+              <N id="PL">Specjalny tekst kanału 7</N>
+            </PlcSonderText>
+            <PlcSonderText>
+              <N id="DE">Kanalsondertext 8</N>
+              <N id="NL">Speciale kanaal tekst 8</N>
+              <N id="EN">Channel special text 8</N>
+              <N id="HU">Csatorna egyedi szövege 8</N>
+              <N id="PL">Specjalny tekst kanału 8</N>
+            </PlcSonderText>
+          </P>
+        </Section>
+        <Section name="Template" ver="1.0">
+          <P id="wsCSD" val="BuildingAutomation\BA Deckblatt.wsCSD" />
+          <P id="wsREV" val="A4\Listen_Rahmen 0-8_mit_Logo\Aenderungsliste A4 01.0001.wsREV" />
+          <P id="wsSML" val="BuildingAutomation\BA Inhaltsangabe.wsSML" />
+          <P id="wsELD" val="A4\Rahmen_mit_Logo\Rahmen-1_0-8 A4 mit Logo.0001.wsFRD" />
+          <P id="wsCBD" val="A4\Rahmen_mit_Logo\Rahmen-1_0-8 A4 mit Logo.0001.wsFRD" />
+          <P id="wsFLD" val="A4\Rahmen_mit_Logo\Rahmen-1_0-8 A4 mit Logo.0001.wsFRD" />
+          <P id="wsTEC" val="A4\Listen_Rahmen 0-8_mit_Logo\Klemmenplan A4 01.0001.wsTEC" />
+          <P id="wsPGC" val="A4\Listen_Rahmen 0-8_mit_Logo\Steckerplan A4 01.0001.wsPGC" />
+          <P id="wsCBL" val="A4\Listen_Rahmen 0-8_mit_Logo\Kabelliste A4 01.0001.wsCBL" />
+          <P id="wsCBC" val="A4\Listen_Rahmen 0-8_mit_Logo\Kabelplan A4 01.0001.wsCBC" />
+          <P id="wsCNL" val="A4\Listen_Rahmen 0-8_mit_Logo\Verdrahtungsplan A4 01.0001.wsCNL" />
+          <P id="wsMAL" val="BuildingAutomation\BA Materialliste.wsMAL" />
+          <P id="wsRFL" val="A4\Listen_Rahmen 0-8_mit_Logo\Bezugsliste A4 01.0001.wsRFL" />
+          <P id="wsPLC" val="A4\Listen_Rahmen 0-8_mit_Logo\SPS-Plan A4 01.0001.wsPLC" />
+          <P id="wsGRD" val="A4\Rahmen_mit_Logo\Rahmen-1_0-8 A4 mit Logo.0001.wsFRD" />
+          <P id="wsARD" val="A0\Rahmen_mit_Logo\Rahmen-1_1-30 A0 mit Logo.0001.wsFRD" />
+          <P id="wsCTD" val="BuildingAutomation\BA Rahmen Schemata Standard.wsFRD" />
+          <P id="wsHOL" val="A4\Listen_Rahmen 0-8_mit_Logo\Schlauchliste A4 01.0001.wsHOL" />
+          <P id="wsFNL" val="BuildingAutomation\BA Funktionsliste.wsFNL" />
+          <P id="wsSMD" val="A4\Rahmen_mit_Logo\Rahmen-1_0-8 A4 mit Logo.0001.wsFRD" />
+          <P id="wsRFC" val="A4\Listen_Rahmen 0-8_mit_Logo\Betriebsmittelplan A4 01.0001.wsRFC" />
+          <P id="wsDRL" val="A4\Listen_Rahmen 0-8_mit_Logo\Verteiler Legende.wsDRL" />
+          <P id="wsPID" val="A4\Rahmen_mit_Logo\Rahmen-1_0-8 A4 mit Logo.0001.wsFRD" />
+          <P id="wsPIL" val="A4\Listen_Rahmen 0-8_mit_Logo\Messstellenliste A4 01.0001.wsPIL" />
+        </Section>
+        <Section name="TerminalPinColor" ver="1.0">
+          <P id="TerminalPinColorShow" val="True" />
+          <P id="TerminalPinColors" />
+        </Section>
+        <Section name="Texts" ver="1.0">
+          <Text id="AllgText" fontnameid="Courier New" size="16" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="Standard" fontnameid="Arial Narrow" size="16" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="Prop" fontnameid="Courier New" size="16" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="Spezial" fontnameid="Courier New" size="16" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="Bezugnamen" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="Bemassung" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="DXFImport" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="Hoehenwerte" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="PinNummer" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="Querverweise" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="Symboltexte" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="True" />
+          <Text id="Custom01" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom02" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom03" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom04" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom05" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom06" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom07" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom08" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom09" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom10" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom11" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+          <Text id="Custom12" fontnameid="Courier New" size="6" align="24" winkel="0" style="0" desc="" ein="False" />
+        </Section>
+      </Settings>
+    </Project>
+  </Solution>
+</WS>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WS>
+  <User>
+    <Settings>
+      <Section name="Misc" ver="1.25">
+        <P id="AutoLoadByStart" val="True" />
+        <P id="ColorScheme" val="GrayScale" />
+        <P id="CurrentHelpLanguage" val="DE" />
+        <P id="CurrentLanguage" val="DE" />
+        <P id="CursorAT" val="FangLines" />
+        <P id="ErrorSignal" val="False" />
+        <P id="FangAT" val="True" />
+        <P id="Orthogonal" val="True" />
+        <P id="PreviewTilesMinWidthInPixel" val="100" />
+        <P id="ApprovalFlightRecorder" val="0" />
+        <P id="ApprovalWSTracker" val="0" />
+        <P id="PreviewTilesBackColorFromPalette" val="False" />
+        <P id="Quadrantenzoom" val="False" />
+        <P id="SavePosZoomPerPage" val="False" />
+        <P id="ZoomMouseWheel" val="True" />
+      </Section>
+      <Section name="CabinetColorPalette" ver="1.6">
+        <PaletteColor id="CabinetBohrung" cid="20" pcid="20" />
+        <PaletteColor id="CabinetSperrflaeche" cid="49" pcid="49" />
+        <PaletteColor id="CabinetDraht" cid="30" pcid="30" />
+        <PaletteColor id="CabinetVirtuellKabelkanal" cid="2" pcid="2" />
+        <PaletteColor id="CabinetSymbolAbstandsfleache" cid="24" pcid="1" />
+        <PaletteColor id="CabinetKabelkanal" cid="2" pcid="3" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetMontagePlatte" cid="4" pcid="4" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetSchiene" cid="40" pcid="40" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetSchienenHalter" cid="28" pcid="28" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetSchrank" cid="66" pcid="66" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetStromschiene" cid="40" pcid="40" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetWanne" cid="5" pcid="5" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetAbdeckung" cid="47" pcid="47" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetZubehoer" cid="50" pcid="50" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetBauteil" cid="55" pcid="55" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetKlemmenblock" cid="9" pcid="9" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetSchienenadapter" cid="23" pcid="23" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetSymbolkoerper" cid="1" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="CabinetBMKBackground" cid="28" pcid="28" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+      </Section>
+      <Section name="ColorsPalette" ver="1.7">
+        <PaletteColor id="AllgText" cid="1" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="AOKBox" cid="1" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="Bauteilname" cid="7" pcid="7" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="Bezugname" cid="39" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="BusLinie" cid="61" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="FreeGraphic" cid="9" pcid="9" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="FreeText" cid="7" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="False" />
+        <PaletteColor id="BlocktextColor" cid="1" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="HighlightedColor" cid="24" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="Hilfslinien" cid="1" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="Hintergrund" cid="5" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="Kabel" cid="59" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="Kabelschirm" cid="17" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="ZVPunktdarstellung" cid="21" pcid="21" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="Leitungsname" cid="1" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="PageBorder" cid="1" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="Pins" cid="53" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="VirtualPins" cid="53" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="Querverweise" cid="59" pcid="59" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="PowerPins" cid="61" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="Rahmen" cid="3" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="Raster" cid="1" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="SelectedRectangle" cid="22" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="Symbolkoerper" cid="1" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="Platzhalter" cid="59" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="VerbLinie" cid="1" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="BrueckenLinie" cid="3" pcid="3" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="SignalLinie" cid="13" pcid="13" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="True" />
+        <PaletteColor id="Installation" cid="13" pcid="1" ignoreOrigColorDisplay="True" ignoreOrigColorPrint="False" />
+        <PaletteColor id="InstallationKabel" cid="40" pcid="40" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="InstallationVerlegesystem" cid="13" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="Ladder" cid="1" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+        <PaletteColor id="Potential" cid="1" pcid="1" ignoreOrigColorDisplay="False" ignoreOrigColorPrint="False" />
+      </Section>
+      <Section name="Converter" ver="1.0">
+        <P id="INIPath" val="C:\Program Files (x86)\WSCAD\WSCAD SUITE EDU Ultimate\2017\CFG\WSWIN55AT.INI" />
+        <P id="ConverterHintShowError" val="True" />
+        <P id="ConverterHintShowInfo" val="True" />
+        <P id="ConverterHintShowWarning" val="True" />
+      </Section>
+      <Section name="Directories" ver="3.6">
+        <P id="DirTemp" val="Temp\" />
+        <P id="DirBackups" val="Backups\" />
+      </Section>
+      <Section name="Printer" ver="1.0">
+        <P id="PrinterSet">
+          <PrinterSettings id="" Printer="" LineWidthChecked="False" LineWidth="0" StartFirstChecked="True" StartLastChecked="False" LandscapeChecked="True" PortraitChecked="False" ColorChecked="False" NonColorChecked="True" PaperFormat="" PaperSource="" ScalePercentChecked="True" ScalePercentX="1" ScalePercentY="1" ScalePageChecked="True" BorderTop="2.54" BorderBottom="2.54" BorderLeft="2.54" BorderRight="2.54" />
+        </P>
+      </Section>
+      <Section name="ModulPID" ver="1.0">
+        <P id="SignalLineColorID" val="0" />
+        <P id="SignalLineDashID" val="3" />
+        <P id="SignalLineWidth" val="0" />
+        <P id="SignallinieZeichnen" val="True" />
+      </Section>
+      <Section name="BuildingAutomation" ver="1.0">
+        <P id="ClearFunctionLocationBMKZ" val="False" />
+      </Section>
+    </Settings>
+  </User>
+</WS>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WS>
+  <ProjectDefault>
+    <Section name="ProjectZusatz" ver="1.2">
+      <P id="ProjectZusatzangaben" />
+      <P id="ProjectFolderZusatzangaben">
+        <P id="CustomProjectFolderAttrFix.1" type="FTexte" wsgrp="33" ptype="1">
+          <T id="DE">
+          </T>
+          <N id="DE">Gebäude Liegenschaft  z.B.025101 (Bereich: Zusatzangaben.1)</N>
+          <N id="EN">Building property e.g. 025101</N>
+          <N id="HU">Épület ingatlan  pl.025101</N>
+          <N id="NL">Gebouw vastgoed z.B. 025101</N>
+          <N id="PL">Miejsce budowy np 025101</N>
+        </P>
+        <P id="CustomProjectFolderAttrFix.2" type="FTexte" wsgrp="33" ptype="1">
+          <T id="DE">
+          </T>
+          <N id="DE">Technikzentrale z.B. LZ01 (Bereich: Zusatzangaben.2)</N>
+          <N id="EN">Technical control room e.g. LZ01</N>
+          <N id="HU">Műszaki központ pl. LZ01 (Tartomány: További adatok.2)</N>
+          <N id="NL">Techniekcentrale z.B. LZ01</N>
+          <N id="PL">Sterownia, np LZ01 (zakres: Informacje dodatkowe 2)</N>
+        </P>
+        <P id="CustomProjectFolderAttrFix.3" type="FTexte" wsgrp="33" ptype="1">
+          <T id="DE">
+          </T>
+          <N id="DE">Automationsstationsnummer z.B. 025101A001xxx_</N>
+          <N id="EN">Automation station number e.g. 025101A001xxx_</N>
+          <N id="HU">Automatizálási állomás száma pl.025101A001xxx_</N>
+          <N id="NL">Automationstationsnummer z.B. 025101A001xxx_</N>
+          <N id="PL">Automatyka, numer stacji np 025101A001xxx_</N>
+        </P>
+        <P id="CustomProjectFolderAttrFix.4" type="FTexte" wsgrp="33" ptype="1">
+          <T id="DE">
+          </T>
+          <N id="DE">IP Adresse Unterstation z.B. 10.15.144.1</N>
+          <N id="EN">IP Address substation e.g. 10.15.144.1</N>
+          <N id="HU">Alállomás IP címe pl. 10.15.144.1</N>
+          <N id="NL">IP Adres substation z.B. 10.15.144.1</N>
+          <N id="PL">Adres IP stacji slave np 10.15.144.1</N>
+        </P>
+        <P id="CustomProjectFolderAttrFix.5" type="FTexte" wsgrp="33" ptype="1">
+          <T id="DE">
+          </T>
+          <N id="DE">Subnet z.B. 255.255.240.0</N>
+          <N id="EN">Subnet e.g. 255.255.240.0</N>
+          <N id="HU">Alhálózat pl. 255.255.240.0</N>
+          <N id="NL">Subnet z.B. 255.255.240.0</N>
+          <N id="PL">Podsieć np 255.255.240.0</N>
+        </P>
+      </P>
+      <P id="ProjectDocumentFolderZusatzangaben" />
+      <P id="ProjectPageZusatzangaben">
+        <P id="CustomFileAttrFix.1" type="FTexte" wsgrp="31" ptype="1">
+          <T id="DE">
+          </T>
+        </P>
+        <P id="CustomFileAttrFix.2" type="FTexte" wsgrp="31" ptype="1">
+          <T id="DE">
+          </T>
+        </P>
+        <P id="CustomFileAttrFix.3" type="FTexte" wsgrp="31" ptype="1">
+          <T id="DE">
+          </T>
+        </P>
+        <P id="CustomFileAttrFix.4" type="FTexte" wsgrp="31" ptype="1">
+          <T id="DE">
+          </T>
+        </P>
+        <P id="CustomFileAttrFix.5" type="FTexte" wsgrp="31" ptype="1">
+          <T id="DE">
+          </T>
+        </P>
+        <P id="CustomFileAttrFix.6" type="FTexte" wsgrp="31" ptype="1">
+          <T id="DE">
+          </T>
+        </P>
+      </P>
+    </Section>
+  </ProjectDefault>
+</WS>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WS>
+  <ProjectList>
+    <Section name="ProjectLists" ver="3.8">
+      <P id="ProjectData">
+        <Item id="0" isDefault="True" nr="1" deleteExisting="True" />
+        <Item id="1" isDefault="False" nr="1" deleteExisting="True" />
+      </P>
+      <P id="SummaryList">
+        <Item id="0" isDefault="True" sortingLikeProjectExplorerView="True" generateSiblingsAndChilds="True" showInfotextFromBMKGroup="False" nr="1" deleteExisting="True" solutionItemType="" />
+        <Item id="1" isDefault="False" sortingLikeProjectExplorerView="True" generateSiblingsAndChilds="True" showInfotextFromBMKGroup="False" nr="1" deleteExisting="True" solutionItemType="" />
+      </P>
+      <P id="BMKList">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" sortingOrder="Funktion,Aufstellungsort,Ort,FunktionaleZuordnung" technology="Electrotechnics#Cabinet#Installation#HLK#Fluid#Electrotechnics1Pol#PID" outputPath="" params="" nr="1" NewPagePerAO="True" filter="" WithoutTerminal="True" WithoutPlug="True" selectSymbolInComponentBox="True" deleteExisting="True" addPinnameToNumber="True" />
+        <Item id="1" isDefault="False" outputFormat="WSCADTemplate" sortingOrder="Funktion,Aufstellungsort,Ort,FunktionaleZuordnung" technology="Electrotechnics#Cabinet#Installation#HLK#Fluid#Electrotechnics1Pol#PID" outputPath="" params="" nr="1" NewPagePerAO="True" filter="" WithoutTerminal="True" WithoutPlug="True" selectSymbolInComponentBox="True" deleteExisting="True" addPinnameToNumber="True" />
+      </P>
+      <P id="BMKGraphicPlan">
+        <Item id="0" isDefault="True" sortingOrder="Funktion,Aufstellungsort,Ort,FunktionaleZuordnung" nr="1" pageItemType="" selectLockMaterial="True" selectSymbolInComponentBox="True" filter="" deleteExisting="True" lock="" incl="True" />
+        <Item id="1" isDefault="False" sortingOrder="Funktion,Aufstellungsort,Ort,FunktionaleZuordnung" nr="1" pageItemType="" selectLockMaterial="True" selectSymbolInComponentBox="True" filter="" deleteExisting="True" lock="" incl="True" />
+      </P>
+      <P id="TerminalList">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" sorting="PositionRows" followOrder="False" outputPath="" params="" nr="1" autoBlank="False" autoBlankIgnoreEmptyPages="False" autoBlankWithPinnumber="False" deleteExisting="True" wireJumperAsDestination="False" addPinnameToNumber="True" />
+        <Item id="1" isDefault="False" outputFormat="WSCADTemplate" sorting="PositionRows" followOrder="False" outputPath="" params="" nr="1" autoBlank="False" autoBlankIgnoreEmptyPages="False" autoBlankWithPinnumber="False" deleteExisting="True" wireJumperAsDestination="False" addPinnameToNumber="True" />
+      </P>
+      <P id="PlugList">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" sorting="Alphabetic" outputPath="" params="" nr="1" deleteExisting="True" exportLocked="False" />
+        <Item id="1" isDefault="False" outputFormat="WSCADTemplate" sorting="Alphabetic" outputPath="" params="" nr="1" deleteExisting="True" exportLocked="False" />
+      </P>
+      <P id="CableList">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" sorting="CableName" sortingOrder="" technology="Electrotechnics#HLK" outputPath="" params="" nr="1" deleteExisting="True" />
+        <Item id="1" isDefault="False" outputFormat="WSCADTemplate" sorting="CableName" sortingOrder="" technology="Electrotechnics#HLK" outputPath="" params="" nr="1" deleteExisting="True" />
+      </P>
+      <P id="CablePlan">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" sorting="Alphabetic" outputPath="" params="" nr="1" deleteExisting="True" separateOnPageBreak="True" />
+        <Item id="1" isDefault="False" outputFormat="WSCADTemplate" sorting="Alphabetic" outputPath="" params="" nr="1" deleteExisting="True" separateOnPageBreak="True" />
+      </P>
+      <P id="WiringChart">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" sorting="WireLN" technology="Electrotechnics" outputPath="" params="" nr="1" deleteExisting="True" filter="" AddConWithCable="False" />
+        <Item id="1" isDefault="False" outputFormat="WSCADTemplate" sorting="WireLN" technology="Electrotechnics" outputPath="" params="" nr="1" deleteExisting="True" filter="" AddConWithCable="False" />
+      </P>
+      <P id="MaterialList">
+        <Item id="0" isDefault="True" outputFormat="FormularToDatei" sorting="BMK" technology="Electrotechnics#Cabinet#Installation#HLK#Fluid#Electrotechnics1Pol#PID" outputType="Einzeln" outputPath="" params="" nr="1" useArticleData="False" useZusatzteile="KeineVerwenden" pageItemType="" selectLockMaterial="False" selectSymbolInComponentBox="False" filter="" deleteExisting="True" lock="" incl="True" />
+        <Item id="1" isDefault="False" outputFormat="FormularToDatei" sorting="BMK" technology="Electrotechnics#Cabinet#Installation#HLK#Fluid#Electrotechnics1Pol#PID" outputType="ZusammenBMK" outputPath="" params="" nr="1" useArticleData="False" useZusatzteile="KeineVerwenden" pageItemType="" selectLockMaterial="False" selectSymbolInComponentBox="False" filter="" deleteExisting="True" lock="" incl="True" />
+      </P>
+      <P id="PLCChart">
+        <Item id="0" isDefault="True" nr="1" deleteExisting="True" />
+        <Item id="1" isDefault="False" nr="1" deleteExisting="True" />
+      </P>
+      <P id="SchlauchChart">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" sorting="SchlauchBMK" outputPath="" params="" nr="1" deleteExisting="True" filter="" />
+      </P>
+      <P id="FunktionsList">
+        <Item id="0" isDefault="True" outputFormat="FormularToDatei" sorting="BMK" outputType="Mehrzeilig" outputPath="" params="" deleteExisting="True" nr="1" filter="" lock="" incl="True" />
+      </P>
+      <P id="MessstellenList">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" sorting="PCENummer" outputType="Einzeln" outputPath="" params="" deleteExisting="True" nr="1" useZusatzteile="False" filter="" lock="" incl="True" />
+        <Item id="1" isDefault="False" outputFormat="WSCADTemplate" sorting="PCENummer" outputType="Einzeln" outputPath="" params="" deleteExisting="True" nr="1" useZusatzteile="False" filter="" lock="" incl="True" />
+      </P>
+      <P id="RevisionList">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" outputPath="" params="" nr="1" deleteExisting="True" />
+        <Item id="1" isDefault="False" outputFormat="WSCADTemplate" outputPath="" params="" nr="1" deleteExisting="True" />
+      </P>
+      <P id="DistributionLegend">
+        <Item id="0" isDefault="True" outputFormat="WSCADTemplate" sorting="Verteiler" outputPath="" params="" nr="1" selectLockMaterial="True" deleteExisting="True" />
+      </P>
+    </Section>
+  </ProjectList>
+</WS>

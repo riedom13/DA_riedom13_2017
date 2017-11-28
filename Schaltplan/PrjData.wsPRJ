@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WS>
+  <Version>1.6.1.1</Version>
+  <Solution>
+    <Project>
+    </Project>
+  </Solution>
+  <File>
+    <File Name="Pferdeführanlage_Deck" Type="wsCSD" Key="PFERDEFÜHRANLAGE_DECK">
+      <File Path="Pferdeführanlage_Deck.0001.wsCSD" Key="0001" />
+    </File>
+    <File Name="Pferdeführanlage_Stand" Type="wsREV" Key="PFERDEFÜHRANLAGE_STAND" />
+    <File Name="Pferdeführanlage_I" Type="wsSML" Key="PFERDEFÜHRANLAGE_I" />
+    <File Name="Pferdeführanlage_fG" Type="wsGRD" Key="PFERDEFÜHRANLAGE_FG" />
+    <File Name="Pferdeführanlage_1pol" Type="wsSMD" Key="PFERDEFÜHRANLAGE_1POL">
+    </File>
+    <File Name="Pferdeführanlage_Plan" Type="wsELD" Key="PFERDEFÜHRANLAGE_PLAN">
+      <File Path="Pferdeführanlage_Plan.0001.wsELD" Key="0001" />
+      <File Path="Pferdeführanlage_Plan.0002.wsELD" Key="0002" />
+    </File>
+    <File Name="Pferdeführanlage_Fluid" Type="wsFLD" Key="PFERDEFÜHRANLAGE_FLUID">
+      <File Path="Pferdeführanlage_Fluid.0001.wsFLD" Key="0001" />
+    </File>
+    <File Name="Pferdeführanlage_PID" Type="wsPID" Key="PFERDEFÜHRANLAGE_PID" />
+    <File Name="Pferdeführanlage_CAB" Type="wsCBD" Key="PFERDEFÜHRANLAGE_CAB">
+      <File Path="Pferdeführanlage_CAB.0001.wsCBD" Key="0001" />
+    </File>
+    <File Name="Pferdeführanlage_Inst" Type="wsARD" Key="PFERDEFÜHRANLAGE_INST" />
+    <File Name="Pferdeführanlage_CTD" Type="wsCTD" Key="PFERDEFÜHRANLAGE_CTD" />
+    <File Name="Pferdeführanlage_BML" Type="wsRFL" Key="PFERDEFÜHRANLAGE_BML" />
+    <File Name="Pferdeführanlage_BMP" Type="wsRFC" Key="PFERDEFÜHRANLAGE_BMP" />
+    <File Name="Pferdeführanlage_Mat" Type="wsMAL" Key="PFERDEFÜHRANLAGE_MAT">
+      <File Path="Pferdeführanlage_Mat.0001.wsMAL" Key="0001" />
+    </File>
+    <File Name="Pferdeführanlage_SPS" Type="wsPLC" Key="PFERDEFÜHRANLAGE_SPS" />
+    <File Name="Pferdeführanlage_K" Type="wsTEC" Key="PFERDEFÜHRANLAGE_K" />
+    <File Name="Pferdeführanlage_KaP" Type="wsGTC" Key="PFERDEFÜHRANLAGE_KAP" />
+    <File Name="Pferdeführanlage_ST" Type="wsPGC" Key="PFERDEFÜHRANLAGE_ST" />
+    <File Name="Pferdeführanlage_Klist" Type="wsCBL" Key="PFERDEFÜHRANLAGE_KLIST" />
+    <File Name="Pferdeführanlage_Kabplan" Type="wsCBC" Key="PFERDEFÜHRANLAGE_KABPLAN" />
+    <File Name="Pferdeführanlage_Ver" Type="wsCNL" Key="PFERDEFÜHRANLAGE_VER" />
+    <File Name="Pferdeführanlage_PIL" Type="wsPIL" Key="PFERDEFÜHRANLAGE_PIL" />
+  </File>
+</WS>
