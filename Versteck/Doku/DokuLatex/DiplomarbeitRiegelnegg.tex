@@ -1,0 +1,234 @@
+\documentclass[12pt]{scrartcl}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb,amstext}
+\usepackage{graphicx}
+
+
+\title{Pferdeführanlage \\ }
+\subtitle{HTBLA Kaindorf an der Sulm \\ Grazer Straße 202, A-8430 Kaindorf an der Sulm \\ Ausbildungsschwerpunkt Mechatronik und Automatisierungstechnik}
+\author{Ornik Stefan, Riegelnegg Dominik, \\ Freyler Lukas, Pölzl Fabio}
+\date{Abgabedatum: \today{}}
+
+\begin{document}
+
+\maketitle
+\vfill
+\begin{center} 
+Betreut von:\\Dipl.-Ing Manfred Steiner\\Dipl.-Ing Wolfgang Mader\\Dipl.-Ing Werner Harnisch\\Dipl.-Päd Otto Schuller
+\end{center}
+\newpage
+
+\tableofcontents
+%%%%
+\newpage
+%%%%
+\section{Einleitung}
+\label{sec:einleitung}
+
+\subsection{Zielsetzung}
+\label{sec:zielsetzung}
+
+\subsubsection{Elektronik}
+\label{sec:elektronik}
+
+\subsection{Gesamtziel}
+\label{sec:gesamtziel}
+%%%%
+\newpage
+%%%%
+\section{Elektronik und Sicherheit}
+\label{sec:elektronikUndSicherheit}
+
+\subsection{Abstract}
+\label{sec:abstract}
+
+Because of the electronic part, the horse exerciser should be able to rotate. 
+The actuator of the engine is realised by a frequency converter, which gets the signals from the GPIO-Pins on the Raspberry-Pi.
+How fast the horse exerciser will move, depends on the commands, that he recives over the Ethernet from the webserver.
+The horses will get a refreshment on hot sommer days by the use of the electric water valve.
+Due to the fact that the system will be used to exercise animals, one of the most important points is the safety of the horses.
+
+\subsection{Zusammenfassung}
+\label{sec:zusammenfassung}
+
+Der Elektronikteil soll dazu dienen, die Pferdeführanlage in den gewünschten Geschwindigkeiten zu drehen, welche über die App für die Pferde gewählt wurden. 
+Die Ansteuerung des Motors kann mit einem Frequenzumrichter realisiert werden, 
+welcher die Signale von den GPIO-Pins des Raspberry-Pis bekommt.
+Des weiteren bekommt der Raspberry-Pi über Ethernet die Befehle, wie schnell sich die Anlage drehen darf und wie lange. 
+Mittels eines elektrischen Wasserventils, wird den Pferden an heißen Sommertagen eine Erfrischung ermöglicht. 
+Da mit der Anlage Tiere trainiert werden sollen, ist einer der wichtigsten Punkte die Sicherheit der Pferde.
+
+\subsection{Aufgabenbereich}
+\label{sec:aufgabenbereich}
+
+Mein Aufgabenbereich bei der Diplomarbeit ,,Pferdeführanlage“, ist die Planung für die Elektronik. Wie bereits bei der Hauptaufgabenstellung (1.1.?) erwähnt, 
+soll sich die Anlage mit verschiedenen Geschwindigkeiten und Variationen drehen.  Neben der Steuerung der Anlage, muss man auch auf die Sicherheit der Pferde achten.
+\\
+\\
+Mein Aufgabenbereich bei der Diplomarbeit sind:
+
+\begin{itemize}
+\item Auswahl des Motors
+\item Ansteuerung des Motors
+\item Auswahl der Sensoren
+\item Auswahl eines Ventils
+\item Kommunikation zu Web-Server
+\item Schutz des Pferdes
+\end{itemize}
+%%%%
+\newpage
+%%%%
+\subsection{Vorarbeit}
+\label{sec:vorarbeit}
+
+Um die Suche ein wenig einzugrenzen, wurden persönliche Vorgaben festgelegt.
+Diese Vorgaben konnten durch Erfahrung oder Gespräche erstellt werden.
+
+\subsubsection{Motor}
+\label{sec:motor}
+
+Prinzipiell könnte man die Anlage auch rein mechanisch Ansteuern. Mit der Hilfe von Wind, Wasser oder Öl, diese sind aber wetter- und ortsbedingt, im letzten Fall noch eine zusätzliche Umweltbelastung. Da in Mitteleuropa fast jeder Haushalt eine Stromanbindung hat, wurde der Fokus auf die Elektromotoren gerichtet.
+
+\subsubsection{Ansteuerung Elektromotor}
+\label{sec:ansteuerungElektromotor}
+
+Um einen Motor gezielt und einfach steuern zu können, wird in den meisten Fällen auf einen Frequenzumrichter zurückgegriffen. Alternative dazu wäre ein Motorstarter. Mit diesen lassen sich aber nicht so einfach die Geschwindigkeiten steuern.
+
+\subsubsection{Wasserversorgung Sprühregen}
+\label{sec:wasserversorgungSpruehregen}
+
+Für die Wasserversorgung wird ein 1 Zoll Wasseranschluss benötigt. Dieser ist normaler Weise bei jedem Haus vorhanden. 
+Sollte dies nicht der Fall sein, ist es auch möglich eine Zuleitung mit geringeren Durchmesser nehmen.
+
+\subsubsection{Verarbeitung der Daten}
+\label{sec:verarbeitungDerDaten}
+
+Da sowohl das Senden von elektrischen Signalen, als auch die Kommunikation über ein Netzwerk realisiert werden soll, wird ein Embedded System verwendet werden.
+Dieser ermöglicht sowohl die Funktion eines Computers, als auch technische Funktionen, welche durch zusätzliche Pins am System steuerbar sind.
+
+\subsubsection{Pferde Sicherheit}
+\label{sec:pferdeSicherheit}
+
+Man darf bei der Anlage nicht auf die allgemeine Sicherheit vergessen. Überall können Fehler auftreten. Bei einem Fehler muss man wissen, wie man die Pferde, Menschen und auch die Anlage schützt. Dazu gehören allgemeine Fehler, NOT-AUS und NOT-STOP.
+%%%%
+\newpage
+%%%%
+\subsection{Motorauswahl}
+\label{sec:motorauswahl}
+%%%%
+
+\begin{center}
+	\includegraphics[width=1\textwidth]{TabelleMotor}
+\end{center}
+
+\newpage
+%%%%
+\subsection{Frequenzumrichter}
+\label{sec:frequenzumrichter}
+%%%%
+\newpage
+%%%%
+\subsection{Wasserversorgung}
+\label{sec:wasserversorgung}
+%%%%
+\newpage
+%%%%
+\subsection{Geschwindigkeitsmessung}
+\label{sec:geschwindigkeitsmessung}
+%%%%
+\newpage
+%%%%
+\subsection{Kommunikationsschnittstelle}
+\label{sec:kommunikationsschnittstelle}
+%%%%
+\newpage
+%%%%
+\subsection{Sicherheit der Pferde und Anlage}
+\label{sec:sicherheitDerPferdeUndAnlage}
+
+\subsubsection{Allgemeine Sicherheitsfragen}
+\label{sec:allgemeineSicherheitsfragen}
+
+Um die Anlage bei Tieren aktivieren zu können, muss man auch eine Basissicherheit gewährleisten.
+
+Diesen Bereich darf man nicht vernachlässigen. 
+
+In Folgenden Abschnitt  kann nicht auf Besitzer oder Eigentümer Rücksicht genommen werden , da es beide Fälle in der Praxis geben kann.
+
+Bei unserer Pferdeführanlage können folgende Fehler bewusst auftreten:
+
+\begin{itemize}
+\item{Was passiert, wenn ein Pferd hinfällt?}
+\item{Was passiert wenn ein Pferd stur stehen bleibt?}
+\item{Was passiert wenn das Pferd die Anlage anschieben will (schneller ist)?}
+\item{Was passiert wenn die Anlage nicht arbeitet wie gewünscht?}
+\item{Welche Vorkehrungen gibt es im Bereich Blitzschutz?}
+\end{itemize}
+
+\subsubsection{Tierschutzgesetz und Anlagenschutz}
+\label{sec:tierschutzgesetzUndAnlagenschutz}
+
+Gemäß §5 Abs. 1 Tierschutzgesetz ist es verboten, 
+einem Tier ungerechtfertigt Schmerzen, Leiden oder Schäden zuzufügen oder es in schwere Angst zu versetzten. 
+Unter §5 Abs. 2 Satz 3 lit. b wird nochmals extra darauf hingewiesen, dass keine technischen Geräte verwendet werden, welche das Verhalten eines Tieres durch Härte oder durch Strafreize zu beeinflussen. 
+
+Somit darf man dem Ross mit unserer Anlage, keine kleinen Denkimpulse geben, wenn es stur stehen bleibt. Wenn das Reitvieh stehen bleibt darf ihm und der Anlage selbst nichts passieren. Die einfachste und sicherste Lösung ist, die Anlage zu stoppen. Wenn die Anlage weiter fahren möchte, könnten ungewollte Biegemomente auftreten und somit mechanische Schäden in der Anlage verursachen.
+
+Folgende Vorkehrungen wurden auf der elektrischen Seite zum beidseitigem Schutz getroffen:
+
+Sobald die Auswertung des Sensors merkt, dass die Anlage unfreiwillig stehen bleibt, schaltet die Anlage automatisch ab. Daraufhin muss der jeweilige Eigentümer überprüfen, ob es ein technischer Fehler oder ein Problem beim Pferd vorliegt, bevor er diese wieder in Betrieb nimmt
+Die Gitter, hinter beziehungsweise vor dem Pferd, werden zum Schutz des Tieres, nicht elektrisch verbunden.
+Welcher Zaun gebaut werden möchte, bleibt dem Eigentümer selbst überlassen.
+
+Sollte man einen Elektrozaun beziehungsweise doch Strom durch die Gitter schicken, werden die Pferde in der Anfangsphase leicht gestresst sein. Sobald sie sich daran gewöhnt haben, funktioniert er wie ein normaler Zaun und die Pferde wissen, dass sie diesen nicht berühren sollten.
+Bei den Gittern mit Strom würden die Pferde sogar mehr geschützt werden, wenn sie mit Strom durchflossen werden. Grund dafür ist, dass sich die Pferde an den Stangen Verletzungen zu ziehen könnten, als mit kurzen Stromimpulsen. In Österreich ist dies aber nicht gesetzeskonform.
+
+\subsubsection{Blitzschutz}
+\label{sec:blitzschutz}
+
+Da unsere Pferdeführanlage im Freien steht, darf man auch den Fall eines Blitzeinschlags nicht vernachlässigen. 
+Die Durchschnittsanzahl von Blitzen in Österreich sind zirka 5 Blitze pro 1km² in einem Jahr. 
+Die Anlage darf nicht in Betrieb genommen werden, wenn der Eigentümer bemerkt, 
+dass es in wenigen Minuten ein Gewitter geben könnte.
+ Sollte die Anlage während eines Gewitters in Betrieb genommen werden, 
+gibt es ein erhöhtes Risiko für die Pferde und der Anlage selbst.
+ Die Haftung liegt in diesem Fall bei der Person die die Anlage in dieser Zeit in Betrieb nimmt.
+
+\subsubsection{Winterschutz}
+\label{sec:winterschutz}
+
+Die Zeit wo der Winterschutz unserer Pferdeführanlage in Kraft tritt ist die gleiche wie die Winterreifenpflicht in Österreich. Das heißt vom 1. November bis 15. April die Anlage winterfest gemacht sein. 
+\\
+\\
+In folgenden Bereichen muss ein Winterschutz vorgenommen werden:
+\begin{description}
+\item[Boden:]
+Den Untergrund wo sich die Pferde bewegen muss der Eigentümer selbst wählen. Bei Temperaturen unter 6°C darf der Sprühregen nicht mehr aktiviert werden. Nachdem das Wasser gefroren ist kann das Reitvieh am glatten Boden ausrutschen und gleichzeitig könnte es zu Komplikationen der Pferdeführanlage selbst kommen.
+
+\item[Wasserrohre:]
+
+Um ein langes Leben der Wasserrohre gewährleisten zu können, muss der jeweilige Eigentümer vor den jährlich wiederkommenden Kälteperioden das Wasser aus den Rohren entfernen. Eine der gängigsten Methoden ist es, das Wasser in den Wasserleitungen durch ein kleines Entwässerungsventil zu entleeren. Das elektromagnetische Ventil muss manuel geöffnet werden, damit das Wasser zu rinnen beginnt. Wäre das Ventil geschlossen, könnte das Wasser nicht fließen, da ein Unterdruck in der Leitung erzeugt werden würde. Mittels Druckluft kann auch das restliche Wasser ausgeblasen werden. Somit sind die Wasserrohre für den Winter gerüstet.
+
+\end{description}
+
+\subsubsection{Redundanz}
+\label{sec:redundanz}
+
+Im Bereich Sicherheit von Anlagen kann man häufig den Begriff Redundanz aufschnappen. 
+
+ Redundanz (lat. = Überfluss) ist das Vorhandensein zusätzlicher technischer Komponenten, die für den Betrieb eines Systems oder Gerätes nicht nötig sind, solange keine Störung bzw. kein Ausfall vorliegt. \footnote{http://www.secupedia.info/wiki/Redundanz}
+
+Sollte die Pferdeführanlage vermarktet werden, sollte man die Anlage erweitern. Diese Erweiterung betrifft vor allem die Sicherheit der Pferde.
+
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{Redundanz}
+\end{center}
+
+Das Bild zeigt eine Möglichkeit die Redundanz zu realisieren.
+
+Gedanke dabei ist, wenn ein Drehgeber defekt ist, kann auch noch der zweite Inkrementalgeber ein Signal liefern, um zumindest einen Durchlaufzyklus beenden zu können. 
+
+\end{document}

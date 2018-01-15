@@ -1,0 +1,26 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Einleitung}{3}
+\contentsline {subsection}{\numberline {1.1}Zielsetzung}{3}
+\contentsline {subsubsection}{\numberline {1.1.1}Elektronik}{3}
+\contentsline {subsection}{\numberline {1.2}Gesamtziel}{3}
+\contentsline {section}{\numberline {2}Elektronik und Sicherheit}{4}
+\contentsline {subsection}{\numberline {2.1}Abstract}{4}
+\contentsline {subsection}{\numberline {2.2}Zusammenfassung}{4}
+\contentsline {subsection}{\numberline {2.3}Aufgabenbereich}{4}
+\contentsline {subsection}{\numberline {2.4}Vorarbeit}{5}
+\contentsline {subsubsection}{\numberline {2.4.1}Motor}{5}
+\contentsline {subsubsection}{\numberline {2.4.2}Ansteuerung Elektromotor}{5}
+\contentsline {subsubsection}{\numberline {2.4.3}Wasserversorgung Spr\IeC {\"u}hregen}{5}
+\contentsline {subsubsection}{\numberline {2.4.4}Verarbeitung der Daten}{5}
+\contentsline {subsubsection}{\numberline {2.4.5}Pferde Sicherheit}{5}
+\contentsline {subsection}{\numberline {2.5}Motorauswahl}{6}
+\contentsline {subsection}{\numberline {2.6}Frequenzumrichter}{7}
+\contentsline {subsection}{\numberline {2.7}Wasserversorgung}{8}
+\contentsline {subsection}{\numberline {2.8}Geschwindigkeitsmessung}{9}
+\contentsline {subsection}{\numberline {2.9}Kommunikationsschnittstelle}{10}
+\contentsline {subsection}{\numberline {2.10}Sicherheit der Pferde und Anlage}{11}
+\contentsline {subsubsection}{\numberline {2.10.1}Allgemeine Sicherheitsfragen}{11}
+\contentsline {subsubsection}{\numberline {2.10.2}Tierschutzgesetz und Anlagenschutz}{11}
+\contentsline {subsubsection}{\numberline {2.10.3}Blitzschutz}{12}
+\contentsline {subsubsection}{\numberline {2.10.4}Winterschutz}{12}
+\contentsline {subsubsection}{\numberline {2.10.5}Redundanz}{12}
