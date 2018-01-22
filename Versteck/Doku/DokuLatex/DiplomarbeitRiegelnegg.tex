@@ -1,4 +1,4 @@
-\documentclass[12pt]{scrartcl}
+\documentclass[12pt]{scrbook} %%%http://www.golatex.de/wiki/KOMA-Script%%%
 
 \usepackage{ucs}
 \usepackage[utf8x]{inputenc}
@@ -22,27 +22,32 @@ Betreut von:\\Dipl.-Ing Manfred Steiner\\Dipl.-Ing Wolfgang Mader\\Dipl.-Ing Wer
 \newpage
 
 \tableofcontents
+
+\listoffigures
+
+\listoftables
+
 %%%%
 \newpage
 %%%%
-\section{Einleitung}
+\chapter{Einleitung}
 \label{sec:einleitung}
 
-\subsection{Zielsetzung}
+\section{Zielsetzung}
 \label{sec:zielsetzung}
 
-\subsubsection{Elektronik}
+\subsection{Elektronik}
 \label{sec:elektronik}
 
-\subsection{Gesamtziel}
+\section{Gesamtziel}
 \label{sec:gesamtziel}
 %%%%
 \newpage
 %%%%
-\section{Elektronik und Sicherheit}
+\chapter{Elektronik und Sicherheit}
 \label{sec:elektronikUndSicherheit}
 
-\subsection{Abstract}
+\section{Abstract}
 \label{sec:abstract}
 
 Because of the electronic part, the horse exerciser should be able to rotate. 
@@ -51,7 +56,7 @@ How fast the horse exerciser will move, depends on the commands, that he recives
 The horses will get a refreshment on hot sommer days by the use of the electric water valve.
 Due to the fact that the system will be used to exercise animals, one of the most important points is the safety of the horses.
 
-\subsection{Zusammenfassung}
+\section{Zusammenfassung}
 \label{sec:zusammenfassung}
 
 Der Elektronikteil soll dazu dienen, die Pferdeführanlage in den gewünschten Geschwindigkeiten zu drehen, welche über die App für die Pferde gewählt wurden. 
@@ -61,7 +66,7 @@ Des weiteren bekommt der Raspberry-Pi über Ethernet die Befehle, wie schnell si
 Mittels eines elektrischen Wasserventils, wird den Pferden an heißen Sommertagen eine Erfrischung ermöglicht. 
 Da mit der Anlage Tiere trainiert werden sollen, ist einer der wichtigsten Punkte die Sicherheit der Pferde.
 
-\subsection{Aufgabenbereich}
+\section{Aufgabenbereich}
 \label{sec:aufgabenbereich}
 
 Mein Aufgabenbereich bei der Diplomarbeit ,,Pferdeführanlage“, ist die Planung für die Elektronik. Wie bereits bei der Hauptaufgabenstellung (1.1.?) erwähnt, 
@@ -81,48 +86,153 @@ Mein Aufgabenbereich bei der Diplomarbeit sind:
 %%%%
 \newpage
 %%%%
-\subsection{Vorarbeit}
+\section{Vorarbeit}
 \label{sec:vorarbeit}
 
 Um die Suche ein wenig einzugrenzen, wurden persönliche Vorgaben festgelegt.
 Diese Vorgaben konnten durch Erfahrung oder Gespräche erstellt werden.
 
-\subsubsection{Motor}
+\subsection{Motor}
 \label{sec:motor}
 
 Prinzipiell könnte man die Anlage auch rein mechanisch Ansteuern. Mit der Hilfe von Wind, Wasser oder Öl, diese sind aber wetter- und ortsbedingt, im letzten Fall noch eine zusätzliche Umweltbelastung. Da in Mitteleuropa fast jeder Haushalt eine Stromanbindung hat, wurde der Fokus auf die Elektromotoren gerichtet.
 
-\subsubsection{Ansteuerung Elektromotor}
+\subsection{Ansteuerung Elektromotor}
 \label{sec:ansteuerungElektromotor}
 
 Um einen Motor gezielt und einfach steuern zu können, wird in den meisten Fällen auf einen Frequenzumrichter zurückgegriffen. Alternative dazu wäre ein Motorstarter. Mit diesen lassen sich aber nicht so einfach die Geschwindigkeiten steuern.
 
-\subsubsection{Wasserversorgung Sprühregen}
+\subsection{Wasserversorgung Sprühregen}
 \label{sec:wasserversorgungSpruehregen}
 
 Für die Wasserversorgung wird ein 1 Zoll Wasseranschluss benötigt. Dieser ist normaler Weise bei jedem Haus vorhanden. 
 Sollte dies nicht der Fall sein, ist es auch möglich eine Zuleitung mit geringeren Durchmesser nehmen.
 
-\subsubsection{Verarbeitung der Daten}
+\subsection{Verarbeitung der Daten}
 \label{sec:verarbeitungDerDaten}
 
 Da sowohl das Senden von elektrischen Signalen, als auch die Kommunikation über ein Netzwerk realisiert werden soll, wird ein Embedded System verwendet werden.
 Dieser ermöglicht sowohl die Funktion eines Computers, als auch technische Funktionen, welche durch zusätzliche Pins am System steuerbar sind.
 
-\subsubsection{Pferde Sicherheit}
+\subsection{Pferde Sicherheit}
 \label{sec:pferdeSicherheit}
 
 Man darf bei der Anlage nicht auf die allgemeine Sicherheit vergessen. Überall können Fehler auftreten. Bei einem Fehler muss man wissen, wie man die Pferde, Menschen und auch die Anlage schützt. Dazu gehören allgemeine Fehler, NOT-AUS und NOT-STOP.
 %%%%
 \newpage
 %%%%
+
+\section{Antriebstechnik Grundlagen}
+\label{sec:antriebstechnikGrundlagen}
+
+\subsection{Aufbau}
+\label{sec:aufbau}
+\begin{figure}[!ht]
+\begin{center}
+	\caption{Aufbau Antriebstechnik}
+	\includegraphics[width=1\textwidth]{AntriebstechnikAufbau}
+\end{center}
+\end{figure}
+
+Der Inverter wandelt die vorhandene elektrische Energie in die gewünschte elektrische Ausgangsgröße um. 
+Diese wird so gewählt, dass der Motor direkt damit betrieben werden kann. Dieser kann mittels der Welle den gewünschten mechanischen Prozess betreiben.  Falls man die Drehzahl nicht elektrisch verändern will, benötigt man zusätzlich ein Getriebe. Das Getribe kann aber auch nur als Verbindung dienen und mittels Keilriemen oder ähnlichem realisiert werden.
+
+Daraus ergibt sich folgender Ablauf wie aus der Abbildung oben ersichtlich:
+Versorgungsspannung → Inverter → Motor → (Getriebe) → Mechanischer Prozess
+
+\subsection{Anforderungen}
+\label{sec:anforderungen}
+
+Ein Antriebssystem sollte gewissen Anforderungen entsprechen, um vermarktbar zu sein. Folgende Auflistung zeigt die wichtigsten Punkte:
+
+\begin{itemize}
+\item{Stabile Steuerung der Geschwindigkeit}
+\item{Verbundene Mechanik mit hoher Genauigkeit ansteuern}
+\item{Stabile Kraftanwendung}
+\end{itemize}
+
+\section{Elektromotor}
+\label{sec:elektromotor}
+
+\subsection{Grundprinzip}
+\label{sec:grundprinzip}
+
+Die Kraft, welche den Elektromotor in Bewegung versetzt, nennt sich Lorentzkraft.
+Befindet sich ein stromdurchflossener elektrischer Leiter in einem Magnetfeld, so wirkt auf diesen Leiter eine Kraft.
+Die Wirkungsrichtung hängt von der Stromflussrichtung im Leiter ab. 
+Um sich die Vorstellung zu erleichtern, wird in den meisten Fällen die "Linke-Hand-Regel" verwendet.
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{Linke-Hand-Regel}
+	\includegraphics[width=0.35\textwidth]{LinkehandRegel}
+\end{center}
+\end{figure}
+
+Die Lorentzkraft wird mit folgender Formel festgelegt:
+
+\begin{equation}
+\label{eq:1}
+ F = B * I * l
+\end{equation}
+\begin{center}
+F= Lorentzkraft, B= magnetische Flussdichte, \\ I = Stromstärke, l = Länge des Leiters im Magnetfeld
+\end{center}
+
+Aus der Formel lässt sich entnehmen, dass die Lorentzkraft von der magnetischen Flussdichte, Stromstärke und Länge des Leiters abhängt.
+
+Diese Kraft erzeugt bei einer Lagerung von der Spule, ein Moment, welches das System drehen lässt
+
+\subsection{Motorarten}
+\label{sec:motorarten}
+
+\subsubsection{Gleichstrommotor}
+\label{sec:gleichstrommotor}
+
+
 \subsection{Motorauswahl}
 \label{sec:motorauswahl}
-%%%%
 
+
+\begin{figure}[!ht]
 \begin{center}
+	\caption{Tabelle Übersicht Elektromotor}
 	\includegraphics[width=1\textwidth]{TabelleMotor}
 \end{center}
+\end{figure}
+
+Die Tabelle gibt einen Überblick, in welchen Bereich man seinen gesuchten Motor finden kann. 
+Um weiter den gewünschten Motor auswählen zu können, benötigt man die Daten, was überhaupt bewegt werden soll und wie.
+
+\subsubsection{Motoranforderungen}
+\label{sec:motoranforderungen}
+
+Der Laufradius der Pferdeführanlage wurde mit 10 Metern angenommen, kann man die Pferde nicht galoppieren lassen. 
+Bei Pferden wird ein schneller Trab mit 18 km/h angenommen. %equivetinfo.de/html/eckdaten_pferd.html 5.1.18 16:35%
+Um den Motor ein wenig zu entlassen, wird die gewünschte Höchstgeschwindigkeit der Anlage, mit 20km/h angenommen. 
+Bei unserem Radius, dreht sich die Konstruktion mit nur 5,3 min\textsuperscript{-1}. 
+Durch dem Eigengewicht der Konstruktion kommen auf unserer Pferdeführanlage Trägheitsmomente. 
+Die Beschleunigung der Anlage beträgt 0,27m/s². Aufgrund dessen, muss der Motor eine Leistung von ????.W haben und ein Drehmoment von ????.Nm aufbringen können.
+
+Zusammengefasst muss der Motor folgendes Erfüllen:
+
+\begin{itemize}
+\item{Drehmoment: ???? Nm}
+\item{Leistung: ???? W}
+\item{Drehzahl: max. 5,5min\textsuperscript{-1}}
+\end{itemize}
+
+\subsubsection{Auswahlverfahren}
+\label{sec:auswahlverfahren}
+
+Aufgrund der Anforderungen fiel die Entscheidung auf die Asynchronmotoren. Da die Anlage mit sehr geringer Drehzahl fährt, besteht die Möglichkeit ein externes Getriebe oder direkt auf einen Getriebemotor zurückzugreifen. 
+Am Häufigsten findet man bei uns eine 230V Steckdose. Drehstromsteckdosen sind meist nur an den Orten platziert, wo sie von Anfang an benötigt werden. Um den Besitzer keine Umbauarbeiten aufzulegen liegt das Visier bei einen 230V Getriebemotor.
+
+\subsubsection{Getriebemotor}
+\label{sec:getriebemotor}
+
+Ein Getriebemotor hat besteht aus einem Motor und einem Getriebe, welche direkt in einer gemeinsamen Einheit miteinander verbunden sind. Das Getriebe soll sowohl Drehzahl als auch Drehmoment des Motors verwandeln. Diese Wandlung kann mittels Drehzahlverhältnis ermittelt werden. Bei Getriebemotoren muss man das Drehmoment von Motor und Getriebe beachten. Primär gilt die Last die auf das Getriebe wirkt. 
+Wie auch bei allen anderen Motoren gibt es auch bei den Getriebemotoren viele weitere Modelle. Zum Beispiel Servo-Getriebemotore und Verstellbare-Getriebemotore.
 
 \newpage
 %%%%
@@ -131,25 +241,25 @@ Man darf bei der Anlage nicht auf die allgemeine Sicherheit vergessen. Überall 
 %%%%
 \newpage
 %%%%
-\subsection{Wasserversorgung}
+\section{Wasserversorgung}
 \label{sec:wasserversorgung}
 %%%%
 \newpage
 %%%%
-\subsection{Geschwindigkeitsmessung}
+\section{Geschwindigkeitsmessung}
 \label{sec:geschwindigkeitsmessung}
 %%%%
 \newpage
 %%%%
-\subsection{Kommunikationsschnittstelle}
+\section{Kommunikationsschnittstelle}
 \label{sec:kommunikationsschnittstelle}
 %%%%
 \newpage
 %%%%
-\subsection{Sicherheit der Pferde und Anlage}
+\section{Sicherheit der Pferde und Anlage}
 \label{sec:sicherheitDerPferdeUndAnlage}
 
-\subsubsection{Allgemeine Sicherheitsfragen}
+\subsection{Allgemeine Sicherheitsfragen}
 \label{sec:allgemeineSicherheitsfragen}
 
 Um die Anlage bei Tieren aktivieren zu können, muss man auch eine Basissicherheit gewährleisten.
@@ -168,7 +278,7 @@ Bei unserer Pferdeführanlage können folgende Fehler bewusst auftreten:
 \item{Welche Vorkehrungen gibt es im Bereich Blitzschutz?}
 \end{itemize}
 
-\subsubsection{Tierschutzgesetz und Anlagenschutz}
+\subsection{Tierschutzgesetz und Anlagenschutz}
 \label{sec:tierschutzgesetzUndAnlagenschutz}
 
 Gemäß §5 Abs. 1 Tierschutzgesetz ist es verboten, 
@@ -186,7 +296,7 @@ Welcher Zaun gebaut werden möchte, bleibt dem Eigentümer selbst überlassen.
 Sollte man einen Elektrozaun beziehungsweise doch Strom durch die Gitter schicken, werden die Pferde in der Anfangsphase leicht gestresst sein. Sobald sie sich daran gewöhnt haben, funktioniert er wie ein normaler Zaun und die Pferde wissen, dass sie diesen nicht berühren sollten.
 Bei den Gittern mit Strom würden die Pferde sogar mehr geschützt werden, wenn sie mit Strom durchflossen werden. Grund dafür ist, dass sich die Pferde an den Stangen Verletzungen zu ziehen könnten, als mit kurzen Stromimpulsen. In Österreich ist dies aber nicht gesetzeskonform.
 
-\subsubsection{Blitzschutz}
+\subsection{Blitzschutz}
 \label{sec:blitzschutz}
 
 Da unsere Pferdeführanlage im Freien steht, darf man auch den Fall eines Blitzeinschlags nicht vernachlässigen. 
@@ -197,7 +307,7 @@ dass es in wenigen Minuten ein Gewitter geben könnte.
 gibt es ein erhöhtes Risiko für die Pferde und der Anlage selbst.
  Die Haftung liegt in diesem Fall bei der Person die die Anlage in dieser Zeit in Betrieb nimmt.
 
-\subsubsection{Winterschutz}
+\subsection{Winterschutz}
 \label{sec:winterschutz}
 
 Die Zeit wo der Winterschutz unserer Pferdeführanlage in Kraft tritt ist die gleiche wie die Winterreifenpflicht in Österreich. Das heißt vom 1. November bis 15. April die Anlage winterfest gemacht sein. 
@@ -214,7 +324,7 @@ Um ein langes Leben der Wasserrohre gewährleisten zu können, muss der jeweilig
 
 \end{description}
 
-\subsubsection{Redundanz}
+\subsection{Redundanz}
 \label{sec:redundanz}
 
 Im Bereich Sicherheit von Anlagen kann man häufig den Begriff Redundanz aufschnappen. 
