@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.9)  21 JAN 2018 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.27)  15 FEB 2018 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./DiplomarbeitRiegelnegg.tex
 (./DiplomarbeitRiegelnegg.tex
 LaTeX2e <2017-04-15>
-Babel <3.16> and hyphenation patterns for 84 language(s) loaded.
-(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrbook.cls
-Document Class: scrbook 2017/09/07 v3.24 KOMA-Script document class (book)
+Babel <3.17> and hyphenation patterns for 84 language(s) loaded.
+(c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrreprt.cls
+Document Class: scrreprt 2017/09/07 v3.24 KOMA-Script document class (report)
 (c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
@@ -38,15 +38,15 @@ Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 138.
 Package tocbasic Info: defining new hook before heading of `' on input line 162
-3.
-Package scrbook Info: You've used standard option `12pt'.
-(scrbook)             This is correct!
-(scrbook)             Internally I'm using `fontsize=12pt'.
-(scrbook)             If you'd like to set the option with \KOMAoptions,
-(scrbook)             you'd have to use `fontsize=12pt' there
-(scrbook)             instead of `12pt', too.
-Class scrbook Info: File `scrsize12pt.clo' used to setup font sizes on input li
-ne 2296.
+7.
+Package scrreprt Info: You've used standard option `12pt'.
+(scrreprt)             This is correct!
+(scrreprt)             Internally I'm using `fontsize=12pt'.
+(scrreprt)             If you'd like to set the option with \KOMAoptions,
+(scrreprt)             you'd have to use `fontsize=12pt' there
+(scrreprt)             instead of `12pt', too.
+Class scrreprt Info: File `scrsize12pt.clo' used to setup font sizes on input l
+ine 2293.
 
 (c:/texlive/2017/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
 File: scrsize12pt.clo 2017/09/07 v3.24 KOMA-Script font size class option (12pt
@@ -66,8 +66,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 27.31467pt
-(typearea)              \oddsidemargin  = -22.47766pt
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 635.5pt
 (typearea)              \topmargin      = -41.72441pt
@@ -92,13 +92,13 @@ Package typearea Info: These are the values describing the layout:
 \scr@dte@subsubsection@maxnumwidth=\skip51
 \scr@dte@paragraph@maxnumwidth=\skip52
 \scr@dte@subparagraph@maxnumwidth=\skip53
-LaTeX Info: Redefining \textsubscript on input line 4966.
+LaTeX Info: Redefining \textsubscript on input line 4964.
 \abovecaptionskip=\skip54
 \belowcaptionskip=\skip55
 \c@pti@nb@sid@b@x=\box27
 \c@figure=\count87
 \c@table=\count88
-Class scrbook Info: Redefining `\numberline' on input line 6142.
+Class scrreprt Info: Redefining `\numberline' on input line 6130.
 \bibindent=\dimen102
 )
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/ucs.sty
@@ -121,10 +121,10 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
 (c:/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/01/04 3.16 The Babel package
+Package: babel 2018/01/24 3.17 The Babel package
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/01/04 3.16 Babel switching mechanism
+File: switch.def 2018/01/24 3.17 Babel switching mechanism
 )
 (c:/texlive/2017/texmf-dist/tex/generic/babel-german/ngerman.ldf
 Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
@@ -133,10 +133,10 @@ Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
 Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/01/04 3.16 Babel common definitions
+File: babel.def 2018/01/24 3.17 Babel common definitions
 
 (c:/texlive/2017/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/01/04 3.16 Babel switching mechanism
+File: switch.def 2018/01/24 3.17 Babel switching mechanism
 )
 \babel@savecnt=\count90
 \U@D=\dimen103
@@ -229,7 +229,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (c:/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/01 v1.0k Graphics/color driver for pdftex
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
@@ -237,18 +237,18 @@ File: pdftex.def 2018/01/01 v1.0k Graphics/color driver for pdftex
 (./DiplomarbeitRiegelnegg.aux)
 \openout1 = `DiplomarbeitRiegelnegg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -325,12 +325,12 @@ e
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -346,116 +346,124 @@ beitRiegelnegg.toc)
 
 [3
 
-
-] [4
-
-
 ] (./DiplomarbeitRiegelnegg.lof)
 \tf@lof=\write4
 \openout4 = `DiplomarbeitRiegelnegg.lof'.
 
- [5] [6
-
+ [4
 
 ] (./DiplomarbeitRiegelnegg.lot)
 \tf@lot=\write5
 \openout5 = `DiplomarbeitRiegelnegg.lot'.
 
-
-[7] [8
-
+ [5
 
 ]
 chapter 1.
-[9] [10
-
+[6
 
 ]
 chapter 2.
-(c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-32.def
+[7
+
+] (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 72--77
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 81.
 (c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
- [11] [12] [13]
-<AntriebstechnikAufbau.png, id=49, 1004.553pt x 274.626pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 81.
+ [8] [9]
+<AntriebstechnikAufbau.png, id=35, 1004.553pt x 274.626pt>
 File: AntriebstechnikAufbau.png Graphic file (type png)
 <use AntriebstechnikAufbau.png>
-Package pdftex.def Info: AntriebstechnikAufbau.png  used on input line 133.
+Package pdftex.def Info: AntriebstechnikAufbau.png  used on input line 134.
 (pdftex.def)             Requested size: 448.13095pt x 122.51198pt.
 
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-33.def
 File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-)
-<LinkehandRegel.png, id=51, 158.09062pt x 115.93312pt>
+) [10 <./AntriebstechnikAufbau.png>]
+<LinkehandRegel.png, id=41, 158.09062pt x 115.93312pt>
 File: LinkehandRegel.png Graphic file (type png)
 <use LinkehandRegel.png>
-Package pdftex.def Info: LinkehandRegel.png  used on input line 168.
+Package pdftex.def Info: LinkehandRegel.png  used on input line 173.
 (pdftex.def)             Requested size: 156.84856pt x 115.03064pt.
- [14 <./AntriebstechnikAufbau.png>]
+<Gleichstommaschine.png, id=42, 280.04625pt x 246.1697pt>
+File: Gleichstommaschine.png Graphic file (type png)
+<use Gleichstommaschine.png>
+Package pdftex.def Info: Gleichstommaschine.png  used on input line 203.
+(pdftex.def)             Requested size: 134.44064pt x 118.18263pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+[11 <./LinkehandRegel.png>]
+<Drehstrommotor.png, id=49, 295.85532pt x 199.49532pt>
+File: Drehstrommotor.png Graphic file (type png)
+<use Drehstrommotor.png>
+Package pdftex.def Info: Drehstrommotor.png  used on input line 225.
+(pdftex.def)             Requested size: 224.06548pt x 151.09137pt.
+ [12 <./Gleichstommaschine.png> <./Drehstrommotor.png>]
 <TabelleMotor.png, id=56, 736.25063pt x 433.62pt>
 File: TabelleMotor.png Graphic file (type png)
 <use TabelleMotor.png>
-Package pdftex.def Info: TabelleMotor.png  used on input line 199.
+Package pdftex.def Info: TabelleMotor.png  used on input line 265.
 (pdftex.def)             Requested size: 448.13095pt x 263.9388pt.
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
-Overfull \hbox (12.3956pt too wide) in paragraph at lines 209--215
-\OT1/cmr/m/n/12 nom-men. Um den Mo-tor ein we-nig zu ent-las-sen, wird die gew[
-]unschte H[]ochstgeschwindigkeit
  []
 
-[15 <./LinkehandRegel.png>] [16 <./TabelleMotor.png>] [17] [18] [19] [20]
-[21]
-Overfull \hbox (1.23608pt too wide) in paragraph at lines 291--294
+[14 <./TabelleMotor.png>] [15] [16] [17] [18] [19]
+Overfull \hbox (1.23608pt too wide) in paragraph at lines 421--424
 \OT1/cmr/m/n/12 schal-tet die An-la-ge au-to-ma-tisch ab. Dar-auf-hin muss der 
 je-wei-li-ge Ei-gent[]umer []uberpr[]ufen,
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 312--316
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 442--446
 
  []
 
-[23]
-<Redundanz.png, id=92, 298.716pt x 420.772pt>
+[21]
+<Redundanz.png, id=91, 298.716pt x 420.772pt>
 File: Redundanz.png Graphic file (type png)
 <use Redundanz.png>
-Package pdftex.def Info: Redundanz.png  used on input line 336.
+Package pdftex.def Info: Redundanz.png  used on input line 466.
 (pdftex.def)             Requested size: 224.06548pt x 315.62958pt.
- [24 <./Redundanz.png>] (./DiplomarbeitRiegelnegg.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [22 <./Redundanz.png>] (./DiplomarbeitRiegelnegg.aux) ) 
 Here is how much of TeX's memory you used:
- 6316 strings out of 492980
- 97642 string characters out of 6136208
- 258692 words of memory out of 5000000
- 9775 multiletter control sequences out of 15000+600000
- 13365 words of font info for 52 fonts, out of 8000000 for 9000
+ 6337 strings out of 492980
+ 98095 string characters out of 6136207
+ 260039 words of memory out of 5000000
+ 9792 multiletter control sequences out of 15000+600000
+ 14019 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,8n,66p,8835b,626s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2017/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsl12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.
-pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on DiplomarbeitRiegelnegg.pdf (24 pages, 231444 bytes).
+<c:/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c
+:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2017/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti8.pfb>
+Output written on DiplomarbeitRiegelnegg.pdf (22 pages, 358719 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 140 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
