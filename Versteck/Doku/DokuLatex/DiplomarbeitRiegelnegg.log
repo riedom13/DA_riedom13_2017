@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.27)  15 FEB 2018 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.27)  15 FEB 2018 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -234,7 +234,11 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-(./DiplomarbeitRiegelnegg.aux)
+(./DiplomarbeitRiegelnegg.aux
+
+LaTeX Warning: Label `sec:frequenzumrichter' multiply defined.
+
+)
 \openout1 = `DiplomarbeitRiegelnegg.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -249,8 +253,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
-
-(c:/texlive/2017/texmf-dist/tex/latex/ucs/ucsencs.def
+ (c:/texlive/2017/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -394,76 +397,85 @@ File: LinkehandRegel.png Graphic file (type png)
 <use LinkehandRegel.png>
 Package pdftex.def Info: LinkehandRegel.png  used on input line 173.
 (pdftex.def)             Requested size: 156.84856pt x 115.03064pt.
+
+Overfull \hbox (7.52907pt too wide) in paragraph at lines 194--195
+\OT1/cmr/m/n/12 Es gibt vie-le ver-schie-de-ne Mo-tor-ar-ten und Ty-pen. Um ei-
+ne klei-ne []Ubersicht zu erm[]oglichen
+ []
+
 <Gleichstommaschine.png, id=42, 280.04625pt x 246.1697pt>
 File: Gleichstommaschine.png Graphic file (type png)
 <use Gleichstommaschine.png>
-Package pdftex.def Info: Gleichstommaschine.png  used on input line 203.
+Package pdftex.def Info: Gleichstommaschine.png  used on input line 205.
 (pdftex.def)             Requested size: 134.44064pt x 118.18263pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 [11 <./LinkehandRegel.png>]
-<Drehstrommotor.png, id=49, 295.85532pt x 199.49532pt>
+<Drehstrommotor.png, id=48, 295.85532pt x 199.49532pt>
 File: Drehstrommotor.png Graphic file (type png)
 <use Drehstrommotor.png>
-Package pdftex.def Info: Drehstrommotor.png  used on input line 225.
+Package pdftex.def Info: Drehstrommotor.png  used on input line 227.
 (pdftex.def)             Requested size: 224.06548pt x 151.09137pt.
- [12 <./Gleichstommaschine.png> <./Drehstrommotor.png>]
-<TabelleMotor.png, id=56, 736.25063pt x 433.62pt>
+ [12 <./Gleichstommaschine.png>]
+<TabelleMotor.png, id=55, 736.25063pt x 433.62pt>
 File: TabelleMotor.png Graphic file (type png)
 <use TabelleMotor.png>
-Package pdftex.def Info: TabelleMotor.png  used on input line 265.
+Package pdftex.def Info: TabelleMotor.png  used on input line 268.
 (pdftex.def)             Requested size: 448.13095pt x 263.9388pt.
- [13]
-Underfull \hbox (badness 10000) in paragraph at lines 301--303
+ [13 <./Drehstrommotor.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
 
  []
 
-[14 <./TabelleMotor.png>] [15] [16] [17] [18] [19]
-Overfull \hbox (1.23608pt too wide) in paragraph at lines 421--424
+[14 <./TabelleMotor.png>] [15] [16] [17] [18] [19] [20]
+Overfull \hbox (1.23608pt too wide) in paragraph at lines 434--437
 \OT1/cmr/m/n/12 schal-tet die An-la-ge au-to-ma-tisch ab. Dar-auf-hin muss der 
 je-wei-li-ge Ei-gent[]umer []uberpr[]ufen,
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 442--446
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 455--459
 
  []
 
-[21]
-<Redundanz.png, id=91, 298.716pt x 420.772pt>
+[22]
+<Redundanz.png, id=94, 298.716pt x 420.772pt>
 File: Redundanz.png Graphic file (type png)
 <use Redundanz.png>
-Package pdftex.def Info: Redundanz.png  used on input line 466.
+Package pdftex.def Info: Redundanz.png  used on input line 479.
 (pdftex.def)             Requested size: 224.06548pt x 315.62958pt.
- [22 <./Redundanz.png>] (./DiplomarbeitRiegelnegg.aux) ) 
+ [23 <./Redundanz.png>] (./DiplomarbeitRiegelnegg.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
  6337 strings out of 492980
  98095 string characters out of 6136207
- 260039 words of memory out of 5000000
+ 260078 words of memory out of 5000000
  9792 multiletter control sequences out of 15000+600000
  14019 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,8n,66p,8835b,626s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c
-:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmti8.pfb>
-Output written on DiplomarbeitRiegelnegg.pdf (22 pages, 358719 bytes).
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr17.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti8.pfb>
+Output written on DiplomarbeitRiegelnegg.pdf (23 pages, 360032 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 143 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

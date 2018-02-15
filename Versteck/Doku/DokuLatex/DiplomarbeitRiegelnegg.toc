@@ -21,20 +21,21 @@
 \contentsline {subsection}{\numberline {2.6.2}Motorarten}{11}
 \contentsline {subsubsection}{\nonumberline Gleichstrommotor}{11}
 \contentsline {subsubsection}{\nonumberline Drehstrommotor}{12}
-\contentsline {subsubsection}{\nonumberline Asynchronmotor}{13}
+\contentsline {subsubsection}{\nonumberline Asynchronmotor}{12}
 \contentsline {subsubsection}{\nonumberline Synchronmotor}{13}
 \contentsline {subsection}{\numberline {2.6.3}Motorauswahl}{13}
 \contentsline {subsubsection}{\nonumberline Festlegung des Motors}{13}
 \contentsline {subsubsection}{\nonumberline Motoranforderungen}{14}
 \contentsline {subsubsection}{\nonumberline Auswahlverfahren}{15}
-\contentsline {subsubsection}{\nonumberline Getriebemotor}{15}
-\contentsline {subsection}{\numberline {2.6.4}Frequenzumrichter}{16}
-\contentsline {section}{\numberline {2.7}Wasserversorgung}{17}
-\contentsline {section}{\numberline {2.8}Geschwindigkeitsmessung}{18}
-\contentsline {section}{\numberline {2.9}Kommunikationsschnittstelle}{19}
-\contentsline {section}{\numberline {2.10}Sicherheit der Pferde und Anlage}{20}
-\contentsline {subsection}{\numberline {2.10.1}Allgemeine Sicherheitsfragen}{20}
-\contentsline {subsection}{\numberline {2.10.2}Tierschutzgesetz und Anlagenschutz}{20}
-\contentsline {subsection}{\numberline {2.10.3}Blitzschutz}{21}
-\contentsline {subsection}{\numberline {2.10.4}Winterschutz}{21}
-\contentsline {subsection}{\numberline {2.10.5}Redundanz}{22}
+\contentsline {subsubsection}{\nonumberline Getriebemotor}{16}
+\contentsline {subsection}{\numberline {2.6.4}Frequenzumrichter}{17}
+\contentsline {subsubsection}{\nonumberline Allgemein}{17}
+\contentsline {section}{\numberline {2.7}Wasserversorgung}{18}
+\contentsline {section}{\numberline {2.8}Geschwindigkeitsmessung}{19}
+\contentsline {section}{\numberline {2.9}Kommunikationsschnittstelle}{20}
+\contentsline {section}{\numberline {2.10}Sicherheit der Pferde und Anlage}{21}
+\contentsline {subsection}{\numberline {2.10.1}Allgemeine Sicherheitsfragen}{21}
+\contentsline {subsection}{\numberline {2.10.2}Tierschutzgesetz und Anlagenschutz}{21}
+\contentsline {subsection}{\numberline {2.10.3}Blitzschutz}{22}
+\contentsline {subsection}{\numberline {2.10.4}Winterschutz}{22}
+\contentsline {subsection}{\numberline {2.10.5}Redundanz}{23}
