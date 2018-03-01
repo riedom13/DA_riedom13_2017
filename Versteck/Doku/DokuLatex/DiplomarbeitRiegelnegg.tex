@@ -5,6 +5,8 @@
 \usepackage[ngerman]{babel}
 \usepackage{amsmath,amssymb,amstext}
 \usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{blindtext}
 
 
 \title{Pferdeführanlage \\ }
@@ -26,7 +28,7 @@ Betreut von:\\Dipl.-Ing Manfred Steiner\\Dipl.-Ing Wolfgang Mader\\Dipl.-Ing Wer
 
 \listoffigures
 
-\listoftables
+%\listoftables
 
 %%%%
 \newpage
@@ -346,40 +348,157 @@ Beide Formeln welche oberhalb verwendet wurden, sind grundlegende Formeln in der
 \end{equation} 
 \end{center}
 
-Nun musste ein Asynchronmotor mit einer Leistung von mindestens 1770 Watt gefunden werden.
-
-Bei der Suche nach einen geeigneten Motor kamen folgende 2 in die engere Auswahl:
 
 
-Zusammengefasst muss der Motor folgendes Erfüllen:
-
-\begin{itemize}
-\item{Drehmoment: ???? Nm}
-\item{Leistung: ???? W}
-\item{Drehzahl: max. 5,5min\textsuperscript{-1}}
-\end{itemize}
 
 \subsubsection{Auswahlverfahren}
 \label{sec:auswahlverfahren}
 
 Aufgrund der Anforderungen fiel die Entscheidung auf die Asynchronmotoren. Da die Anlage mit sehr geringer Drehzahl fährt, besteht die Möglichkeit ein externes Getriebe oder direkt auf einen Getriebemotor zurückzugreifen. 
-Am Häufigsten findet man bei uns eine 230V Steckdose. Drehstromsteckdosen sind meist nur an den Orten platziert, wo sie von Anfang an benötigt werden. Um den Besitzer keine Umbauarbeiten aufzulegen liegt das Visier bei einen 230V Getriebemotor.
+Am Häufigsten findet man bei uns eine 230V Steckdose. Drehstromsteckdosen sind meist nur an den Orten platziert, wo sie von Anfang an benötigt werden. Um den Besitzer keine Umbauarbeiten aufzulegen liegt der Fokus bei einen 230V Anschluss. Wenn man den Motor mit Drehstrom betreiben will, ändert sich der Nennstrom des Motors. Ansonsten funktioniert er gleich.
+
+Nun musste ein Asynchronmotor mit einer Leistung von mindestens 1770 Watt gefunden werden.
+
+
+Bei der Suche nach einen geeigneten Motor kamen folgende 2 in die engere Auswahl:
+
+\begin{figure}[!ht]
+\begin{minipage}[t]{0.45\textwidth}
+\framebox[\textwidth]{Motor 1}
+\includegraphics[width=\textwidth]{SEWMotor}
+\caption{SEW-Motor}
+
+\begin{itemize}
+	\item{Motorspannung: 230/400V}
+	\item{Motorstrom: 8,3/4,75A}
+	\item{Motorleistung: 2,2 kW}
+	\item{Drehzahl: 1450 min\textsuperscript{-1}}
+	\item{Flanschdurchmesser: 250mm}
+	\item{Effizienzklasse: IE3}
+	\item{Motorschutzart: IP55}
+	\item{Nettogewicht: 26,9kg}
+\end{itemize}
+
+\end{minipage}
+\hspace{0.1\textwidth}
+\begin{minipage}[t]{0.45\textwidth}
+\framebox[\textwidth]{Motor 2}
+
+\vspace{-\ht\strutbox}\includegraphics[width=\textwidth]{SiemensMotor}
+\caption{Siemens-Motor}
+
+\begin{itemize}
+	\item{Motorspannung: 230/400V}
+	\item{Motorstrom: 6,6/3,75A}
+	\item{Motorleistung: 1,77 kW}
+	\item{Drehzahl: 1465 min\textsuperscript{-1}}
+	\item{Flanschdurchmesser: -}
+	\item{Effizienzklasse: IE3}
+	\item{Motorschutzart: IP56}
+	\item{Nettogewicht: 40kg}
+\end{itemize}
+
+\end{minipage}
+\end{figure}
+
+Für den weiteren Verlauf wurde der Motor von den Unternehmen SEW verwendet.
+
+Da der Motor eine Drehzahl von umgerechnet 24,16s\textsuperscript{-1} hat, muss man die Drehzahl reduzieren. Um dies zu ermöglichen muss man eine Übersetzung ermöglichen. Dafür gibt es mehrere Varianten. Nachfolgend werden zwei Varianten aufgelistet:
+
+\begin{itemize}
+	\item{Motor mit externen Getriebe}
+	\item{Getriebemotor}
+\end{itemize}
+
+Bei einem Getriebemotor wird das Getriebe direkt vom Hersteller auf den Motor ausgelegt. Bei einen externen Getriebe muss man zusätzlich darauf achten, das der Motor mit dem Getriebe verbunden werden kann beziehungsweise darf. Um den zusätzlichen Arbeitsaufwand gering zu halten und bei Komplikationen auf den jeweiligen Hersteller zurückgreifen kann, wird für die Pferdeführanlage ein Getriebemotor verwendet.
 
 \subsubsection{Getriebemotor}
 \label{sec:getriebemotor}
 
-Ein Getriebemotor hat besteht aus einem Motor und einem Getriebe, welche direkt in einer gemeinsamen Einheit miteinander verbunden sind. Das Getriebe soll sowohl Drehzahl als auch Drehmoment des Motors verwandeln. Diese Wandlung kann mittels Drehzahlverhältnis ermittelt werden. Bei Getriebemotoren muss man das Drehmoment von Motor und Getriebe beachten. Primär gilt die Last die auf das Getriebe wirkt. 
+Ein Getriebemotor  besteht aus einem Motor und einem Getriebe, welche direkt in einer gemeinsamen Einheit miteinander verbunden sind. Das Getriebe soll sowohl Drehzahl als auch Drehmoment des Motors wandeln. Diese Wandlung kann mittels Drehzahlverhältnis ermittelt werden. Bei Getriebemotoren muss man das Drehmoment von Motor und Getriebe beachten. Primär gilt die Last die auf das Getriebe wirkt. 
 Wie auch bei allen anderen Motoren gibt es auch bei den Getriebemotoren viele weitere Modelle. Zum Beispiel Servo-Getriebemotore und Verstellbare-Getriebemotore.
 
+Für unsere Anlage wurde folgender Getriebemotor gefunden:
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{SEW-Getriebemotor}
+	\includegraphics[width=0.5\textwidth]{SEWGetriebemotor}
+\end{center}
+\end{figure}
+
+Der Getriebemotor hat folgende Daten:
+
+\begin{itemize}
+	\item{Motorspannung: 230/400V}
+	\item{Motorstrom: 8,3/4,75A}
+	\item{Motorleistung: 2,2 kW}
+	\item{Motordrehzahl: 1450 min\textsuperscript{-1}}
+	\item{Abtriebsdrehzahl: 6,5 min\textsuperscript{-1}}
+	\item{Abtriebsdrehmoment: 2980 Nm}
+	\item{Übersetzung i: 223,00}
+	\item{Effizienzklasse: IE3}
+	\item{Motorschutzart: IP56}
+	\item{Nettogewicht: 341kg}
+\end{itemize}
+
+Wenn man diesen Motor mit den Motoranforderungen vergleicht, werden folgende Anforderungen, durch den Getriebemotor, erfüllt:
+
+\begin{itemize}
+	\item{Mindestens Drehmoment: 2866,9 Nm; Tatsächliches Drehmoment: 2980 Nm}
+	\item{Mindestleistung: 1769,69W; Tatsächliche Leistung: 2200W}
+\end{itemize}
+
+Das einzige was noch nicht ganz passt ist die Abtriebsdrehzahl bei 50 Hz. Um auf die gewünschte Drehzahl zu kommen gibt es zwei Varianten. Entweder man sorgt über Riemenscheiben für die restliche Übersetzung oder man konfiguriert den Frequenzumrichter mit einer maximalen Frequenz, die auf den Motor wirken darf. \\
+
+Da man sowieso die Ausgangswelle mit der Anlage verbinden muss, werden auf Riemenscheiben verwendet.
+
+Um die jeweiligen Durchmesser der Riemenscheibe zu ermitteln, muss man das benötigte Übersetzungsverhältnis ermitteln.
+
+\begin{center}
+\begin{equation}
+  \label{eq:5}
+	i=  \frac{n_{Antrieb}}{n_{Abtrieb}} \rightarrow i = \frac{6,5 min\textsuperscript{-1}}{4,77 min\textsuperscript{-1}} = 1,362
+\end{equation} 
+\end{center}
+
+Um den gewünschten Durchmesser zu finden muss man einen Durchmesser annehmen und den Anderen berechnen:
+
+\begin{center}
+\begin{equation}
+  \label{eq:6}
+	i=  \frac{d_{Abtrieb}}{d_{Antrieb}} \rightarrow d_{Abtrieb} = i * d_{Antrieb} =  1,362 * 15 cm = 20,4cm
+\end{equation} 
+\end{center}
+
+Nun kann der Motor unter voller Netzfrequenz betrieben und seine gesamte Leistung genutzt werden. 
+
+\subsection{Motor für Testaufbauten}
+\label{sec:motorFuerTestaufbauten}
+
+Da das wirkliche Trägheitsmoment zu Beginn der Konstruktion noch nicht feststand, musste schon vorzeitig auf eine Motorart entschieden werden. In der Vorrecherche wurde bei schon bestehenden Anlagen immer ein Asynchronmotor gefunden. Deshalb viel der Fokus auf die Asynchronmotoren.
 \newpage
 %%%%
-\subsection{Frequenzumrichter}
+\section{Frequenzumrichter}
 \label{sec:frequenzumrichter}
 
-\subsubsection{Allgemein}
-\label{sec:frequenzumrichter}
+\subsection{Allgemein}
+\label{sec:allgemeinfrequenzumrichter}
 
-Der Frequenzumrichter dient zur Steuerung des asynchron Motors. 
+Der Frequenzumrichter dient zur Steuerung des Asynchronmotors. Dieser regelt das Verhältnis zwischen Motorspannung und Frequenz. Daher kann die Drehzahl je  nach Last variieren. Der Frequenzumrichter selbst überprüft prinzipiell nicht die Rotorposition. Dies muss meistens mit einem anderen Gerät realisiert werden. Wenn man den Motor ohne Umrichter angeschlossen wird, würde der Motor mit einer einzigen festen Motordrehzahl drehen. 
+
+\subsection{Aufbau Frequenzumrichter}
+\label{sec:aufbauFrequenzumrichter}
+
+Ein Frequenzumrichter besteht vereinfacht aus folgenden Bestandteilen:
+
+\begin{itemize}
+	\item{Brückengleichrichter}
+	\item{Gleichspannungszwischenkreis}
+	\item{Wechselrichter}
+\end{itemize}
+
+Der Gleichrichter wandelt eine Wechselspannung in eine Gleichspannung. Diese Gleichspannung wird im Gleichspannungszwischenkreis gespeichert in Kondensatoren gespeichert. Diese Spannung wird dann vom Wechselrichter weiter verwendet. 
 
 
 %%%%
