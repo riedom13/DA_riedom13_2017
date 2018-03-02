@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.27)  28 FEB 2018 20:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.27)  2 MAR 2018 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -308,38 +308,143 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count129
 \c@blind@pangrammax=\count130
 )
+(c:/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
+
+(c:/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write3
+\integerpart=\count131
+\decimalpart=\count132
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\AC@clearlist=\toks25
+)
+(c:/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
 (./DiplomarbeitRiegelnegg.aux)
 \openout1 = `DiplomarbeitRiegelnegg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
+
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 20.
 
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
+\scratchcounter=\count133
 \scratchdimen=\dimen124
 \scratchbox=\box56
-\nofMPsegments=\count132
-\nofMParguments=\count133
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count134
+\nofMPsegments=\count134
+\nofMParguments=\count135
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count136
 \MPscratchDim=\dimen125
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
+\everyMPtoPDFconversion=\toks27
 ) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -399,12 +504,12 @@ e
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 21.
+LaTeX Font Info:    Try loading font information for U+msa on input line 23.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 21.
+LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -414,15 +519,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./Diplomar
 beitRiegelnegg.toc)
-\tf@toc=\write3
-\openout3 = `DiplomarbeitRiegelnegg.toc'.
+\tf@toc=\write4
+\openout4 = `DiplomarbeitRiegelnegg.toc'.
 
 
 [3
 
 ] (./DiplomarbeitRiegelnegg.lof)
-\tf@lof=\write4
-\openout4 = `DiplomarbeitRiegelnegg.lof'.
+\tf@lof=\write5
+\openout5 = `DiplomarbeitRiegelnegg.lof'.
 
  [4
 
@@ -437,61 +542,54 @@ chapter 2.
 ] (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 78--83
+Underfull \hbox (badness 10000) in paragraph at lines 80--85
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 85.
-(c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
- [7] [8]
+[7] [8]
 <AntriebstechnikAufbau.png, id=32, 1004.553pt x 274.626pt>
 File: AntriebstechnikAufbau.png Graphic file (type png)
 <use AntriebstechnikAufbau.png>
-Package pdftex.def Info: AntriebstechnikAufbau.png  used on input line 138.
+Package pdftex.def Info: AntriebstechnikAufbau.png  used on input line 140.
 (pdftex.def)             Requested size: 448.13095pt x 122.51198pt.
-
-(c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-33.def
+ (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-33.def
 File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
 ) [9 <./AntriebstechnikAufbau.png>]
-<LinkehandRegel.png, id=38, 158.09062pt x 115.93312pt>
+<LinkehandRegel.png, id=39, 158.09062pt x 115.93312pt>
 File: LinkehandRegel.png Graphic file (type png)
 <use LinkehandRegel.png>
-Package pdftex.def Info: LinkehandRegel.png  used on input line 177.
+Package pdftex.def Info: LinkehandRegel.png  used on input line 179.
 (pdftex.def)             Requested size: 156.84856pt x 115.03064pt.
 
-Overfull \hbox (7.52907pt too wide) in paragraph at lines 198--199
+Overfull \hbox (7.52907pt too wide) in paragraph at lines 200--201
 \OT1/cmr/m/n/12 Es gibt vie-le ver-schie-de-ne Mo-tor-ar-ten und Ty-pen. Um ei-
 ne klei-ne []Ubersicht zu erm[]oglichen
  []
 
-<Gleichstommaschine.png, id=39, 280.04625pt x 246.1697pt>
+<Gleichstommaschine.png, id=40, 280.04625pt x 246.1697pt>
 File: Gleichstommaschine.png Graphic file (type png)
 <use Gleichstommaschine.png>
-Package pdftex.def Info: Gleichstommaschine.png  used on input line 209.
+Package pdftex.def Info: Gleichstommaschine.png  used on input line 211.
 (pdftex.def)             Requested size: 134.44064pt x 118.18263pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 [10 <./LinkehandRegel.png>]
-<Drehstrommotor.png, id=45, 295.85532pt x 199.49532pt>
+<Drehstrommotor.png, id=46, 295.85532pt x 199.49532pt>
 File: Drehstrommotor.png Graphic file (type png)
 <use Drehstrommotor.png>
-Package pdftex.def Info: Drehstrommotor.png  used on input line 231.
+Package pdftex.def Info: Drehstrommotor.png  used on input line 233.
 (pdftex.def)             Requested size: 224.06548pt x 151.09137pt.
  [11 <./Gleichstommaschine.png>]
 <TabelleMotor.png, id=52, 736.25063pt x 433.62pt>
 File: TabelleMotor.png Graphic file (type png)
 <use TabelleMotor.png>
-Package pdftex.def Info: TabelleMotor.png  used on input line 272.
+Package pdftex.def Info: TabelleMotor.png  used on input line 274.
 (pdftex.def)             Requested size: 448.13095pt x 263.9388pt.
  [12 <./Drehstrommotor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 308--310
+Underfull \hbox (badness 10000) in paragraph at lines 310--312
 
  []
 
@@ -499,15 +597,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--310
 <SEWMotor.png, id=63, 567.62062pt x 470.50781pt>
 File: SEWMotor.png Graphic file (type png)
 <use SEWMotor.png>
-Package pdftex.def Info: SEWMotor.png  used on input line 368.
+Package pdftex.def Info: SEWMotor.png  used on input line 370.
 (pdftex.def)             Requested size: 201.65755pt x 167.15707pt.
 <SiemensMotor.png, id=64, 478.03593pt x 425.33907pt>
 File: SiemensMotor.png Graphic file (type png)
 <use SiemensMotor.png>
-Package pdftex.def Info: SiemensMotor.png  used on input line 387.
-(pdftex.def)             Requested size: 201.65755pt x 179.42648pt.
+Package pdftex.def Info: SiemensMotor.png  used on input line 390.
+(pdftex.def)             Requested size: 187.54004pt x 166.86157pt.
 
-Overfull \hbox (5.22214pt too wide) in paragraph at lines 366--402
+Overfull \hbox (5.22214pt too wide) in paragraph at lines 368--405
 [][]   [] 
  []
 
@@ -515,65 +613,125 @@ Overfull \hbox (5.22214pt too wide) in paragraph at lines 366--402
 <SEWGetriebemotor.png, id=76, 506.6428pt x 386.94562pt>
 File: SEWGetriebemotor.png Graphic file (type png)
 <use SEWGetriebemotor.png>
-Package pdftex.def Info: SEWGetriebemotor.png  used on input line 426.
+Package pdftex.def Info: SEWGetriebemotor.png  used on input line 429.
 (pdftex.def)             Requested size: 224.06548pt x 171.12453pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--453
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 [16 <./SEWGetriebemotor.png>]
-Overfull \hbox (7.23509pt too wide) in paragraph at lines 456--457
+Overfull \hbox (7.23509pt too wide) in paragraph at lines 459--460
 []\OT1/cmr/m/n/12 Um die je-wei-li-gen Durch-mes-ser der Rie-men-schei-be zu er
 -mit-teln, muss man das ben[]otigte
  []
 
-[17] [18] [19] [20] [21]
-Overfull \hbox (1.23608pt too wide) in paragraph at lines 555--558
+[17]
+<SEWFU.png, id=84, 301.125pt x 385.44pt>
+File: SEWFU.png Graphic file (type png)
+<use SEWFU.png>
+Package pdftex.def Info: SEWFU.png  used on input line 522.
+(pdftex.def)             Requested size: 141.15965pt x 180.6922pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
+[]\OT1/cmr/m/n/12 SEW-MCLTEB0022-
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+cmss on input line 530
+.
+(c:/texlive/2017/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<SiemensV20.png, id=85, 338.76563pt x 444.91219pt>
+File: SiemensV20.png Graphic file (type png)
+<use SiemensV20.png>
+Package pdftex.def Info: SiemensV20.png  used on input line 539.
+(pdftex.def)             Requested size: 137.12564pt x 180.0934pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--540
+[]\OT1/cmr/m/n/12 Siemens-6SL3210-
+ []
+
+
+Overfull \hbox (5.22214pt too wide) in paragraph at lines 520--551
+[][]   [] 
+ []
+
+[18] [19 <./SEWFU.png> <./SiemensV20.png>]
+<VentilGardena.png, id=95, 265.74281pt x 355.3275pt>
+File: VentilGardena.png Graphic file (type png)
+<use VentilGardena.png>
+Package pdftex.def Info: VentilGardena.png  used on input line 579.
+(pdftex.def)             Requested size: 141.15965pt x 188.75099pt.
+<VentilRainbird.png, id=96, 303.38344pt x 454.69875pt>
+File: VentilRainbird.png Graphic file (type png)
+<use VentilRainbird.png>
+Package pdftex.def Info: VentilRainbird.png  used on input line 593.
+(pdftex.def)             Requested size: 127.04523pt x 190.41017pt.
+
+Overfull \hbox (5.22214pt too wide) in paragraph at lines 577--603
+[][]   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
+
+ []
+
+[20] [21 <./VentilGardena.png> <./VentilRainbird.png>] [22]
+Overfull \hbox (1.23608pt too wide) in paragraph at lines 659--662
 \OT1/cmr/m/n/12 schal-tet die An-la-ge au-to-ma-tisch ab. Dar-auf-hin muss der 
 je-wei-li-ge Ei-gent[]umer []uberpr[]ufen,
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 576--580
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 680--684
 
  []
 
-[23]
-<Redundanz.png, id=103, 298.716pt x 420.772pt>
+[24]
+<Redundanz.png, id=114, 298.716pt x 420.772pt>
 File: Redundanz.png Graphic file (type png)
 <use Redundanz.png>
-Package pdftex.def Info: Redundanz.png  used on input line 600.
+Package pdftex.def Info: Redundanz.png  used on input line 704.
 (pdftex.def)             Requested size: 224.06548pt x 315.62958pt.
- [24 <./Redundanz.png>] (./DiplomarbeitRiegelnegg.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ [25 <./Redundanz.png>] (./DiplomarbeitRiegelnegg.aux) ) 
 Here is how much of TeX's memory you used:
- 6657 strings out of 492980
- 103275 string characters out of 6136207
- 279764 words of memory out of 5000000
- 10101 multiletter control sequences out of 15000+600000
- 14019 words of font info for 54 fonts, out of 8000000 for 9000
+ 7645 strings out of 492980
+ 118594 string characters out of 6136207
+ 291858 words of memory out of 5000000
+ 11061 multiletter control sequences out of 15000+600000
+ 14699 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,8n,66p,8835b,626s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/201
-7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmti8.pfb>
-Output written on DiplomarbeitRiegelnegg.pdf (24 pages, 706445 bytes).
+ 51i,8n,66p,8835b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2017/texmf-
+dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2017/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2017/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
+><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb>
+Output written on DiplomarbeitRiegelnegg.pdf (25 pages, 1507387 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 169 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

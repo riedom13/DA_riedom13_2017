@@ -32,12 +32,16 @@
 \contentsline {section}{\numberline {2.7}Frequenzumrichter}{18}
 \contentsline {subsection}{\numberline {2.7.1}Allgemein}{18}
 \contentsline {subsection}{\numberline {2.7.2}Aufbau Frequenzumrichter}{18}
-\contentsline {section}{\numberline {2.8}Wasserversorgung}{19}
-\contentsline {section}{\numberline {2.9}Geschwindigkeitsmessung}{20}
-\contentsline {section}{\numberline {2.10}Kommunikationsschnittstelle}{21}
-\contentsline {section}{\numberline {2.11}Sicherheit der Pferde und Anlage}{22}
-\contentsline {subsection}{\numberline {2.11.1}Allgemeine Sicherheitsfragen}{22}
-\contentsline {subsection}{\numberline {2.11.2}Tierschutzgesetz und Anlagenschutz}{22}
-\contentsline {subsection}{\numberline {2.11.3}Blitzschutz}{23}
-\contentsline {subsection}{\numberline {2.11.4}Winterschutz}{23}
-\contentsline {subsection}{\numberline {2.11.5}Redundanz}{24}
+\contentsline {subsection}{\numberline {2.7.3}Finden eines Frequenzumrichters}{18}
+\contentsline {section}{\numberline {2.8}Wasserversorgung}{20}
+\contentsline {subsection}{\numberline {2.8.1}Ventil}{20}
+\contentsline {subsubsection}{\nonumberline Arbeitsventil}{20}
+\contentsline {subsubsection}{\nonumberline Funktionstestung Ventil}{20}
+\contentsline {section}{\numberline {2.9}Geschwindigkeitsmessung}{21}
+\contentsline {section}{\numberline {2.10}Kommunikationsschnittstelle}{22}
+\contentsline {section}{\numberline {2.11}Sicherheit der Pferde und Anlage}{23}
+\contentsline {subsection}{\numberline {2.11.1}Allgemeine Sicherheitsfragen}{23}
+\contentsline {subsection}{\numberline {2.11.2}Tierschutzgesetz und Anlagenschutz}{23}
+\contentsline {subsection}{\numberline {2.11.3}Blitzschutz}{24}
+\contentsline {subsection}{\numberline {2.11.4}Winterschutz}{24}
+\contentsline {subsection}{\numberline {2.11.5}Redundanz}{25}
