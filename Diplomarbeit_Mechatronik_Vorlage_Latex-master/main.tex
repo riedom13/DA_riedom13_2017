@@ -1,0 +1,67 @@
+\documentclass
+[
+a4paper,															%Papierformat
+11pt,																%Schriftgröße
+twoside=true,														%Zweiseitig
+openright,															%Neues Kapitel immer auf der rechten Seite
+titlepage,															%Titelseite
+headinclude,														%Seitengröße auch bei Kopfzeile
+numbers=noenddot,													%Bei Kapiteln keine abschließenden Punkte
+listof=numbered,													%Listingsverzeichnis
+bibliography=totocnumbered,											%Literaturverzeichnis
+]
+{scrbook}															%Dokumenttyp
+\usepackage[ngerman]{babel}											%Deutsch
+\usepackage[bottom=1in,inner=1in,outer=20mm,top=20mm]{geometry}		%Ganze Seite
+\usepackage{emptypage}												%Leere Seiten ohne Kopf und Fußzeile
+\usepackage[headsepline]{scrlayer-scrpage}							%Kopf und Fußzeile
+\pagestyle{scrheadings}												%Nummerierung in der Kopfzeile
+\clearscrheadfoot													%Kopf und Fußzeile löschen
+\rehead{\headmark}													%Kapitelname auf der geraden Seite innen
+\ohead[\pagemark]{\pagemark}										%Seitennummerierung
+\lohead{}															%Name auf der ungeraden Seite innen
+\renewcommand*{\chapterpagestyle}{scrheadings}						%Kopf und Fußzeile auf Seiten mit Überschriften anders
+\usepackage{graphicx}												%Bilder
+\usepackage{caption}												%Tabellen Listings und Figuren mit beschriftung im Verzeichnissen
+\usepackage[T1]{fontenc}											%Outputencoding
+\usepackage{float}													%Plazierung von Floats (Bilder Tabellen)
+\usepackage[utf8]{inputenc}											%UTF8
+\usepackage{wrapfig}												%Textumfluss von Bildern, die nicht die ganze Seite Brauchen
+\usepackage{setspace}												%Zeilenabstand
+\usepackage{listings}												%Listings (=Code)
+\usepackage{times}													%Schriftart Times Roman
+\usepackage{courier}												%Schriftart Courier
+\usepackage{multirow}												%Bessere Tabellenformatierung
+\usepackage{array}													%Bessere Tabellenformatierung
+\usepackage{xcolor}													%Farben für Codehighlighting oder ähnliches
+\usepackage{appendix}												%Anhang Titelseite
+\usepackage{tabularx}												%Bessere Tabellen
+\usepackage{jurabib}												%Zitierung
+\usepackage[bookmarks]{hyperref}									%Automatische Lesezeichen
+\usepackage{ucs}
+\usepackage{amsmath,amssymb,amstext}
+\usepackage{multicol}
+\usepackage{latexsym}
+\usepackage{textcomp}
+
+
+\setlength{\parindent}{0em}											%Einrücken
+
+\subject{\includegraphics[scale=0.7]{logoMecha.png}}
+\title{Pferdeführanlage}
+\subtitle{HTBLA Kaindorf an der Sulm\\Grazer Straße 202, A-8430 Kaindorf an der Sulm\\Ausbildungsschwerpunkt Mechatronik und Automatisierungstechnik}
+\author{Stefan Christian Ornik \and Dominik Roland Riegelnegg \and Lukas Freyler \and Fabio Pölzl}
+\date{Abgabedatum: \today{}}
+\publishers{Betreut von:\\Dipl.-Ing Wolfgang Mader \\ Dipl.-Päd Otto Schuller \\ Dipl.-Ing. Manfred Steiner \\ Dipl.-Ing. Werner Harnisch}
+\begin{document}													%Dokumentbeginn
+\onehalfspace														%Zeilenabstand
+\maketitle															%Titelseite
+\setcounter{tocdepth}{5}											%Tiefe der Überschriften
+\setcounter{secnumdepth}{5}											%Nummerierungstiefe der Überschriften
+\input{listings}
+\input{opening}														%Datei importieren
+\tableofcontents													%Inhaltsverzeichnis
+\mainmatter															%Seitennummerierung
+\include{inhalt}													%Datei importieren
+\include{appendix}													%Datei importieren
+\end{document}

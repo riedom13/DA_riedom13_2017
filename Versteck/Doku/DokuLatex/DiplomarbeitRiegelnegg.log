@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.27)  2 MAR 2018 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.27)  8 MAR 2018 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -406,45 +406,70 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
+(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count133
+\lst@gtempboxa=\box56
+\lst@token=\toks26
+\lst@length=\count134
+\lst@currlwidth=\dimen124
+\lst@column=\count135
+\lst@pos=\count136
+\lst@lostspace=\dimen125
+\lst@width=\dimen126
+\lst@newlines=\count137
+\lst@lineno=\count138
+\lst@maxwidth=\dimen127
+
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count139
+\lst@skipnumbers=\count140
+\lst@framebox=\box57
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 (./DiplomarbeitRiegelnegg.aux)
 \openout1 = `DiplomarbeitRiegelnegg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
 
 (c:/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    ... okay on input line 21.
 
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
-\scratchdimen=\dimen124
-\scratchbox=\box56
-\nofMPsegments=\count134
-\nofMParguments=\count135
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count136
-\MPscratchDim=\dimen125
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count141
+\scratchdimen=\dimen128
+\scratchbox=\box58
+\nofMPsegments=\count142
+\nofMParguments=\count143
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count144
+\MPscratchDim=\dimen129
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
+\everyMPtoPDFconversion=\toks28
 ) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -501,15 +526,17 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\c@lstlisting=\count147
+
 (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 (c:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -525,157 +552,167 @@ beitRiegelnegg.toc)
 
 [3
 
-] (./DiplomarbeitRiegelnegg.lof)
+] [4] (./DiplomarbeitRiegelnegg.lof)
 \tf@lof=\write5
 \openout5 = `DiplomarbeitRiegelnegg.lof'.
 
- [4
+ [5
 
 ]
 chapter 1.
-[5
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface .
+
+[6
 
 ]
 chapter 2.
-[6
+[7
 
 ] (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 80--85
+Underfull \hbox (badness 10000) in paragraph at lines 81--86
 
  []
 
-[7] [8]
-<AntriebstechnikAufbau.png, id=32, 1004.553pt x 274.626pt>
+[8] [9]
+<AntriebstechnikAufbau.png, id=35, 1004.553pt x 274.626pt>
 File: AntriebstechnikAufbau.png Graphic file (type png)
 <use AntriebstechnikAufbau.png>
-Package pdftex.def Info: AntriebstechnikAufbau.png  used on input line 140.
+Package pdftex.def Info: AntriebstechnikAufbau.png  used on input line 141.
 (pdftex.def)             Requested size: 448.13095pt x 122.51198pt.
  (c:/texlive/2017/texmf-dist/tex/latex/ucs/data/uni-33.def
 File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-) [9 <./AntriebstechnikAufbau.png>]
-<LinkehandRegel.png, id=39, 158.09062pt x 115.93312pt>
+) [10 <./AntriebstechnikAufbau.png>]
+<LinkehandRegel.png, id=42, 158.09062pt x 115.93312pt>
 File: LinkehandRegel.png Graphic file (type png)
 <use LinkehandRegel.png>
-Package pdftex.def Info: LinkehandRegel.png  used on input line 179.
+Package pdftex.def Info: LinkehandRegel.png  used on input line 180.
 (pdftex.def)             Requested size: 156.84856pt x 115.03064pt.
 
-Overfull \hbox (7.52907pt too wide) in paragraph at lines 200--201
+Overfull \hbox (7.52907pt too wide) in paragraph at lines 201--202
 \OT1/cmr/m/n/12 Es gibt vie-le ver-schie-de-ne Mo-tor-ar-ten und Ty-pen. Um ei-
 ne klei-ne []Ubersicht zu erm[]oglichen
  []
 
-<Gleichstommaschine.png, id=40, 280.04625pt x 246.1697pt>
+<Gleichstommaschine.png, id=43, 280.04625pt x 246.1697pt>
 File: Gleichstommaschine.png Graphic file (type png)
 <use Gleichstommaschine.png>
-Package pdftex.def Info: Gleichstommaschine.png  used on input line 211.
+Package pdftex.def Info: Gleichstommaschine.png  used on input line 212.
 (pdftex.def)             Requested size: 134.44064pt x 118.18263pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
-[10 <./LinkehandRegel.png>]
-<Drehstrommotor.png, id=46, 295.85532pt x 199.49532pt>
+[11 <./LinkehandRegel.png>]
+<Drehstrommotor.png, id=49, 295.85532pt x 199.49532pt>
 File: Drehstrommotor.png Graphic file (type png)
 <use Drehstrommotor.png>
-Package pdftex.def Info: Drehstrommotor.png  used on input line 233.
+Package pdftex.def Info: Drehstrommotor.png  used on input line 234.
 (pdftex.def)             Requested size: 224.06548pt x 151.09137pt.
- [11 <./Gleichstommaschine.png>]
-<TabelleMotor.png, id=52, 736.25063pt x 433.62pt>
+ [12 <./Gleichstommaschine.png>]
+<TabelleMotor.png, id=55, 736.25063pt x 433.62pt>
 File: TabelleMotor.png Graphic file (type png)
 <use TabelleMotor.png>
-Package pdftex.def Info: TabelleMotor.png  used on input line 274.
+Package pdftex.def Info: TabelleMotor.png  used on input line 275.
 (pdftex.def)             Requested size: 448.13095pt x 263.9388pt.
- [12 <./Drehstrommotor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 310--312
+ [13 <./Drehstrommotor.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
-[13 <./TabelleMotor.png>]
-<SEWMotor.png, id=63, 567.62062pt x 470.50781pt>
+[14 <./TabelleMotor.png>]
+<SEWMotor.png, id=66, 567.62062pt x 470.50781pt>
 File: SEWMotor.png Graphic file (type png)
 <use SEWMotor.png>
-Package pdftex.def Info: SEWMotor.png  used on input line 370.
+Package pdftex.def Info: SEWMotor.png  used on input line 371.
 (pdftex.def)             Requested size: 201.65755pt x 167.15707pt.
-<SiemensMotor.png, id=64, 478.03593pt x 425.33907pt>
+<SiemensMotor.png, id=67, 478.03593pt x 425.33907pt>
 File: SiemensMotor.png Graphic file (type png)
 <use SiemensMotor.png>
-Package pdftex.def Info: SiemensMotor.png  used on input line 390.
+Package pdftex.def Info: SiemensMotor.png  used on input line 391.
 (pdftex.def)             Requested size: 187.54004pt x 166.86157pt.
 
-Overfull \hbox (5.22214pt too wide) in paragraph at lines 368--405
+Overfull \hbox (5.22214pt too wide) in paragraph at lines 369--406
 [][]   [] 
  []
 
-[14] [15 <./SEWMotor.png> <./SiemensMotor.png>]
-<SEWGetriebemotor.png, id=76, 506.6428pt x 386.94562pt>
+[15] [16 <./SEWMotor.png> <./SiemensMotor.png>]
+<SEWGetriebemotor.png, id=79, 506.6428pt x 386.94562pt>
 File: SEWGetriebemotor.png Graphic file (type png)
 <use SEWGetriebemotor.png>
-Package pdftex.def Info: SEWGetriebemotor.png  used on input line 429.
+Package pdftex.def Info: SEWGetriebemotor.png  used on input line 430.
 (pdftex.def)             Requested size: 224.06548pt x 171.12453pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
 
  []
 
-[16 <./SEWGetriebemotor.png>]
-Overfull \hbox (7.23509pt too wide) in paragraph at lines 459--460
+[17 <./SEWGetriebemotor.png>]
+Overfull \hbox (7.23509pt too wide) in paragraph at lines 460--461
 []\OT1/cmr/m/n/12 Um die je-wei-li-gen Durch-mes-ser der Rie-men-schei-be zu er
 -mit-teln, muss man das ben[]otigte
  []
 
-[17]
-<SEWFU.png, id=84, 301.125pt x 385.44pt>
+[18]
+<SEWFU.png, id=87, 301.125pt x 385.44pt>
 File: SEWFU.png Graphic file (type png)
 <use SEWFU.png>
-Package pdftex.def Info: SEWFU.png  used on input line 522.
+Package pdftex.def Info: SEWFU.png  used on input line 523.
 (pdftex.def)             Requested size: 141.15965pt x 180.6922pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
+Underfull \hbox (badness 10000) in paragraph at lines 524--524
 []\OT1/cmr/m/n/12 SEW-MCLTEB0022-
  []
 
-LaTeX Font Info:    Try loading font information for TS1+cmss on input line 530
+LaTeX Font Info:    Try loading font information for TS1+cmss on input line 531
 .
 (c:/texlive/2017/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<SiemensV20.png, id=85, 338.76563pt x 444.91219pt>
+<SiemensV20.png, id=88, 338.76563pt x 444.91219pt>
 File: SiemensV20.png Graphic file (type png)
 <use SiemensV20.png>
-Package pdftex.def Info: SiemensV20.png  used on input line 539.
+Package pdftex.def Info: SiemensV20.png  used on input line 540.
 (pdftex.def)             Requested size: 137.12564pt x 180.0934pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--540
+Underfull \hbox (badness 10000) in paragraph at lines 541--541
 []\OT1/cmr/m/n/12 Siemens-6SL3210-
  []
 
 
-Overfull \hbox (5.22214pt too wide) in paragraph at lines 520--551
+Overfull \hbox (5.22214pt too wide) in paragraph at lines 521--552
 [][]   [] 
  []
 
-[18] [19 <./SEWFU.png> <./SiemensV20.png>]
-<VentilGardena.png, id=95, 265.74281pt x 355.3275pt>
+[19] [20 <./SEWFU.png> <./SiemensV20.png>]
+<VentilGardena.png, id=98, 265.74281pt x 355.3275pt>
 File: VentilGardena.png Graphic file (type png)
 <use VentilGardena.png>
-Package pdftex.def Info: VentilGardena.png  used on input line 579.
+Package pdftex.def Info: VentilGardena.png  used on input line 580.
 (pdftex.def)             Requested size: 141.15965pt x 188.75099pt.
-<VentilRainbird.png, id=96, 303.38344pt x 454.69875pt>
+<VentilRainbird.png, id=99, 303.38344pt x 454.69875pt>
 File: VentilRainbird.png Graphic file (type png)
 <use VentilRainbird.png>
-Package pdftex.def Info: VentilRainbird.png  used on input line 593.
+Package pdftex.def Info: VentilRainbird.png  used on input line 595.
 (pdftex.def)             Requested size: 127.04523pt x 190.41017pt.
 
-Overfull \hbox (5.22214pt too wide) in paragraph at lines 577--603
+Overfull \hbox (5.22214pt too wide) in paragraph at lines 578--605
 [][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 609--610
-
  []
 
 
@@ -688,32 +725,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 613--614
 
  []
 
-[20] [21 <./VentilGardena.png> <./VentilRainbird.png>] [22]
-Overfull \hbox (1.23608pt too wide) in paragraph at lines 659--662
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+ []
+
+[21]
+<HBruecke.png, id=103, 622.57594pt x 473.51906pt>
+File: HBruecke.png Graphic file (type png)
+<use HBruecke.png>
+Package pdftex.def Info: HBruecke.png  used on input line 627.
+(pdftex.def)             Requested size: 268.8813pt x 204.50516pt.
+<Motortreiber.png, id=104, 219.06844pt x 414.04688pt>
+File: Motortreiber.png Graphic file (type png)
+<use Motortreiber.png>
+Package pdftex.def Info: Motortreiber.png  used on input line 647.
+(pdftex.def)             Requested size: 80.66177pt x 152.45575pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--648
+[]\OT1/cmr/m/n/12 Single-Chip-
+ []
+
+<L298.png, id=105, 378.66469pt x 353.82187pt>
+File: L298.png Graphic file (type png)
+<use L298.png>
+Package pdftex.def Info: L298.png  used on input line 662.
+(pdftex.def)             Requested size: 172.08386pt x 160.79483pt.
+
+Overfull \hbox (72.44589pt too wide) in paragraph at lines 644--672
+[][]   [] 
+ []
+
+[22 <./VentilGardena.png> <./VentilRainbird.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 691.
+
+
+(c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 691.
+ [23 <./HBruecke.png>]
+[24 <./Motortreiber.png> <./L298.png>] [25] [26]
+Overfull \hbox (1.23608pt too wide) in paragraph at lines 756--759
 \OT1/cmr/m/n/12 schal-tet die An-la-ge au-to-ma-tisch ab. Dar-auf-hin muss der 
 je-wei-li-ge Ei-gent[]umer []uberpr[]ufen,
  []
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 680--684
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 777--781
 
  []
 
-[24]
-<Redundanz.png, id=114, 298.716pt x 420.772pt>
+[28]
+<Redundanz.png, id=133, 298.716pt x 420.772pt>
 File: Redundanz.png Graphic file (type png)
 <use Redundanz.png>
-Package pdftex.def Info: Redundanz.png  used on input line 704.
+Package pdftex.def Info: Redundanz.png  used on input line 801.
 (pdftex.def)             Requested size: 224.06548pt x 315.62958pt.
- [25 <./Redundanz.png>] (./DiplomarbeitRiegelnegg.aux) ) 
+ [29 <./Redundanz.png>] (./DiplomarbeitRiegelnegg.aux) ) 
 Here is how much of TeX's memory you used:
- 7645 strings out of 492980
- 118594 string characters out of 6136207
- 291858 words of memory out of 5000000
- 11061 multiletter control sequences out of 15000+600000
+ 9292 strings out of 492980
+ 140430 string characters out of 6136207
+ 315346 words of memory out of 5000000
+ 12690 multiletter control sequences out of 15000+600000
  14699 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,8n,66p,8835b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,8n,66p,8835b,1554s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-
 dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2017/texmf-dist/font
 s/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/p
@@ -728,10 +806,10 @@ public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
 ><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb>
-Output written on DiplomarbeitRiegelnegg.pdf (25 pages, 1507387 bytes).
+Output written on DiplomarbeitRiegelnegg.pdf (29 pages, 2074716 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
+ 187 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
