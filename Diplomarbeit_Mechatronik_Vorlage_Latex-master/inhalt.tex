@@ -505,12 +505,12 @@ Die oben genannten Frequenzumrichter erfüllen beide die Anforderungen, um den M
 %%%%
 \newpage
 %%%%
-\section{Wasserversorgung}
-\label{sec:wasserversorgung}
+\section{Pferderegen}
+\label{sec:pferderegen}
 
 Die Wasserversorgung soll dazu dienen, dem Pferd an heißen Sommertagen eine Erfrischung zu ermöglichen. Dafür wird ein Wasseranschluss benötigt. Es gäbe in erster Linie zwei Möglichkeiten, den Wasserfluss zu ermöglichen: Entweder man öffnet manuell ein Wasserhahn, welcher direkt bis zu den Sprühdüsen verbunden ist oder man baut dazwischen ein Magnetventil ein, welches über die App gesteuert werden kann. \\
-Prinzipiell ist es Geschmackssache wie man dies haben möchte. In beiden Fällen muss man irgendwo ein Wasserhahn beziehungsweise ein Hauptventil haben, um überhaupt Wasser fließen zu lassen. 
-Mit der Steuerung über die App ermöglichen wir es den Benutzer, das Hauptventil dauerhaft geöffnet zu lassen. Nur im Winter sollten dafür Vorkehrungsmaßnahmen getroffen werden. Diese werden im Unterkapitel Winterschutz näher erläutert.  
+Prinzipiell ist es Geschmackssache wie man dies haben möchte. In beiden Fällen muss man irgendwo ein Wasserhahn beziehungsweise ein Hauptventil haben, um überhaupt Wasser fließen lassen zu können. 
+Mit der Steuerung über die App wird es dem Benutzer ermöglicht, das Hauptventil dauerhaft geöffnet zu lassen. Nur im Winter sollten dafür Vorkehrungsmaßnahmen getroffen werden. Diese werden im Unterkapitel Winterschutz näher erläutert.  
 
 \subsection{Ventil}
 \label{sec:ventil}
@@ -520,7 +520,7 @@ Die Aufgabe des Ventiles ist einfach: Startet der Benutzer in der App den Sprüh
 \subsubsection{Arbeitsventil}
 \label{sec:ventilSuche}
 
-Auf der Suche nach einen geeigneten Ventil für die Bewässerung, ergaben die Suchen meist Ergebnisse für Gartenbewässerungssysteme. In diesen Bereich ganz stark vertreten ist das Unternehmen Gardena. Doch es wurde auch folgende Alternative gefunden:
+Auf der Suche nach einen geeigneten Ventil für die Bewässerung, ergaben die Suchen meist Ergebnisse für Gartenbewässerungssysteme. In diesen Bereich ganz stark vertreten ist das Unternehmen Gardena. Doch es wurde auch eine Alternative vom Unternehmen Rainbird gefunden. 
 
 \begin{figure}
 \begin{minipage}[t]{0.45\textwidth}
@@ -551,12 +551,13 @@ Auf der Suche nach einen geeigneten Ventil für die Bewässerung, ergaben die Su
 
 \end{minipage}
 \end{figure} 
-Prinzipiell wollen beide Unternehmen, dass man auch das Steuerwerk vom jeweiligen Unternehmen kauft. Deshalb findet man kaum technische Datenblätter dazu und wenn ja, dann dienen diese meist nur der groben Übersicht. Bezüglich den Preis sind gibt es einen Unterschied von nicht einmal zwei Euro. Bei den Ventil von Pipelife konnte herausgefunden werden, dass es sich um ein 9V-Impulsventil handelt. Wie die Steuerung diesbezüglich aussieht, konnte nicht gefunden werden. Aufgrund dieser Informationen fiel die Entscheidung auf das 9V-Impulsventil vom Unternehmen Pipelife.
+
+Prinzipiell wollen beide Unternehmen, dass man auch das Steuerwerk vom jeweiligen Unternehmen kauft. Deshalb findet man kaum technische Datenblätter dazu und wenn ja, dann dienen diese meist nur der groben Übersicht. Bezüglich den Preis gibt es einen geringen Unterschied von nicht einmal 2 Euro. Bei den Ventil von Pipelife konnte herausgefunden werden, dass es sich um ein 9V-Impulsventil handelt. Wie die Steuerung diesbezüglich aussieht, konnte nicht eruiert werden. Aufgrund dieser Informationen, fiel die Entscheidung auf das 9V-Impulsventil vom Unternehmen Pipelife.
 
 \subsubsection{Funktionstestung Ventil}
 \label{sec:funktionstestungVentil}
 
-Um zu überprüfen wie das Ventil wirklich funktioniert, wurde ein Testaufbau gemacht. Dabei wurde mit einen Netzgerät eine Spannung von 9V erzeugt. Damit das Ventil funktioniert, muss ein gewisser Wasserdruck vorhanden sein. Aus dem Test wurden folgende Erkenntnisse gewonnen: \\
+Um zu überprüfen wie das Ventil wirklich funktioniert, wurde ein Testaufbau gemacht. Dabei wurde mit einen Netzgerät eine Spannung von 9V erzeugt. Damit das Ventil funktioniert, muss ein Wasserdruck vorhanden sein. Aus dem Test wurden folgende Erkenntnisse gewonnen: \\
 
 1.) Das Ventil benötigt zum Betätigen einen Strom von ungefähr 1,72A. \\
 
@@ -567,7 +568,7 @@ Um zu überprüfen wie das Ventil wirklich funktioniert, wurde ein Testaufbau ge
 \subsection{Umpolung}
 \label{sec:umpolung}
 
-Aufgrund der oben erworbenen Erkenntnisse muss bei der Anlage ein Spannungswechsel erfolgen. Dies wird in der Regel mit einer sogenannten H-Brücke realisiert. Die vereinfachte Version lässt sich aus der Abbildung entnehmen. 
+Aufgrund der oben erworbenen Erkenntnisse, muss bei der Anlage ein Spannungswechsel erfolgen. Dies wird in der Regel mit einer sogenannten H-Brücke realisiert. Die vereinfachte Version lässt sich aus der Abbildung entnehmen. 
 
 \begin{figure}
 \begin{center}
@@ -588,7 +589,7 @@ Wenn man das Ventil wieder deaktivieren will, müssen die Transistoren 1 und 4 g
 
 Auf der Suche nach einer Alternative beziehungsweise einer besseren Variante, wurde die Bausteine VNH2SP30 und der L298 gefunden. Dieser ist ein Motortreiber welcher die H-Brücke bereits integriert hat. Nun gibt es zwei Varianten die Ansteuerung zu realisieren:
 
-\begin{figure}
+\begin{figure}[!ht]
 \begin{minipage}[t]{0.45\textwidth}
 \framebox[\textwidth]{Variante 1}
 \begin{center}
@@ -621,7 +622,7 @@ Auf der Suche nach einer Alternative beziehungsweise einer besseren Variante, wu
 
 Aufgrund der fertigen Beschaltung und den niedrigeren Preis, wird für die Steuerung des Ventils, der VNH2SP30 den L298 vorgezogen. 
 
-\subsubsection{Motortreiber Ansteuerung}
+\subsection{Motortreiber Ansteuerung}
 \label{sec:motortreiberAnsteuerung}
 
 Der Motortreiber VNH2SP30 hat folgende Pinbelegung:
@@ -635,28 +636,52 @@ Der Motortreiber VNH2SP30 hat folgende Pinbelegung:
 	\item{PWM for motor / PWM-Signal für Motor / PMW}
 \end{itemize}
 
-\begin{lstlisting}
+Nachfolgend befindet sich ein Beispiel, wie man das Ventil prinzipiell betätigen könnte.
+
+\begin{lstlisting}[language=Arduino]
 void setup() {
-  pinMode(A0, OUTPUT); //enable 1
-  pinMode(7, OUTPUT); //clockwise 1
-  pinMode(8, OUTPUT); //counter clockwise 1
-  pinMode(5, OUTPUT); //100% PWM 1
-  
+  pinMode(A0, OUTPUT); //enable 1 // Festlegen der Pinfunktion
+  pinMode(7, OUTPUT); //clockwise 1 // Festlegen der Pinfunktion
+  pinMode(8, OUTPUT); //counter clockwise 1 // Festlegen der Pinfunktion
+  pinMode(5, OUTPUT); //100% PWM 1 // Festlegen der Pinfunktion
   digitalWrite(A0, HIGH);   // enable
   }
-
 void loop() {
+  // Positiver Impuls
   digitalWrite(7, HIGH);   // clockwise
   digitalWrite(8, LOW);   // counter clockwise 
   digitalWrite(5, HIGH);   // 100% PWM
   delay(5000);              // wait for a second
-  
+  // Negativer Impuls
   digitalWrite(7, LOW);   // clockwise
   digitalWrite(8, HIGH);   // counter clockwise 
+  digitalWrite(5, HIGH);   // 100% PWM 
+  // Flanke fallen lassen
+  digitalWrite(7, LOW);   // clockwise
+  digitalWrite(8, LOW);   // counter clockwise 
   digitalWrite(5, HIGH);   // 100% PWM
   delay(5000);              // wait for a second
 }
 \end{lstlisting}
+
+In diesen Programmablauf würde das Ventil ständig wechseln, zwischen den Zuständen offen und geschlossen. Das PWM-Signal wird mit 100 Prozent, da das Ventil nur geöffnet oder geschlossen sein kann. Halb offen gibt es nicht. \\
+Für die Realisierung in der Anlage gibt es zwei Möglichkeiten: ein Software- beziehungsweise ein Hardwareevent muss eintreten, damit das Ventil sich öffnen oder schließen soll. Da die Anlage über die App gesteuert werden soll, muss die Abfrage über Softwareevent erfolgen. Dies wird mittels Interrupt gelöst. Ein Interrupt ist eine Unterbrechung im Programm. Dieser beendet kurzzeitig das Programm, führt die Interrupt Service Routine aus, und setzt danach an der zuvor unterbrochenen Stelle fort. \\ In der Interrupt Service Routine, bekommt eine globale Variable den jeweiligen gewünschten Zustand, ob die Pferdekühlung aktiviert werden soll oder nicht. Im Hauptprogramm wird die globale in der lokalen Variable geschrieben. Mittels einer Doppelverzweigung wird als erstes entschieden, ob das Ventil geöffnet werden soll. Die nächste Abfrage überprüft, wie lange der Sprühregen aktiviert ist. Sollte er länger  Dort werden im jeweiligen Fall die gewünschten Pins betätigt.
+
+\subsection{Wasserversorgung}
+\label{sec:wasserversorgung}
+
+Um überhaupt die Anlage mit Wasser versorgen zu können, muss ein Wasseranschluss vorhanden sein.
+
+
+
+\subsubsection{Sprühnebel Erzeugung}
+\label{sec:spruehnebel}
+
+%https://www.amazon.de/BQLZR-Kunststoff-Nebeld%C3%BCse-Spr%C3%BChkopf-Bew%C3%A4sserungsszstem/dp/B00QUUGAQC/ref=sr_1_3?ie=UTF8&qid=1520697676&sr=8-3&keywords=nebeld%C3%BCse
+
+
+
+
 
 %%%%
 \newpage
