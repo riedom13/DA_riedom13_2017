@@ -2,7 +2,7 @@
 \label{sec:elektronikUndSicherheit}
 
 \section{Abstract}
-\label{sec:abstract}
+\label{sec:abstractETE}
 
 Because of the electronic part, the horse exerciser should be able to rotate. 
 The actuator of the engine is realised by a frequency converter, which gets the signals from the GPIO-Pins on the Raspberry-Pi.
@@ -85,15 +85,15 @@ Man darf bei der Anlage nicht auf die allgemeine Sicherheit vergessen. Überall 
 \label{sec:aufbau}
 \begin{figure}[!ht]
 \begin{center}
-	\caption{Aufbau Antriebstechnik}
+	\caption{Aufbau Antriebstechnik \label{fig:abbildungAufbau}}
 	\includegraphics[width=1\textwidth]{AntriebstechnikAufbau}
 \end{center}
 \end{figure}
 
-Der Inverter wandelt die vorhandene elektrische Energie in die gewünschte elektrische Ausgangsgröße um. 
-Diese wird so gewählt, dass der Motor direkt damit betrieben werden kann. Dieser kann durch der Welle den gewünschten mechanischen Prozess betreiben.  Falls man die Drehzahl nicht elektrisch verändern will, benötigt man zusätzlich ein Getriebe. Das Getriebe kann aber auch nur als Verbindung dienen und mittels Keilriemen oder ähnlichem realisiert werden.
+Der Inverter wandelt die vorhandene elektrische Energie, in die gewünschte elektrische Ausgangsgröße um. 
+Diese wird so gewählt, dass der Motor direkt damit betrieben werden kann. Dieser kann durch einer Welle den gewünschten mechanischen Prozess betreiben.  Falls man die Drehzahl nicht elektrisch verändern will, benötigt man zusätzlich ein Getriebe. Das Getriebe kann aber auch nur als Verbindung dienen und mittels Keilriemen oder ähnlichem realisiert werden.
 
-Daraus ergibt sich folgender Ablauf wie aus der Abbildung oben ersichtlich:
+Daraus ergibt sich folgender Ablauf wie aus der Abbildung \ref{fig:abbildungAufbau} ersichtlich: \\
 $Versorgungsspannung \rightarrow Inverter \rightarrow Motor \rightarrow (Getriebe) \rightarrow Mechanischer Prozess$
 
 \subsection{Anforderungen}
@@ -139,7 +139,7 @@ Die Lorentzkraft wird mit folgender Formel festgelegt:
 F= Lorentzkraft, B= magnetische Flussdichte, \\ I = Stromstärke, l = Länge des Leiters im Magnetfeld
 \end{center}
 
-Aus der Formel lässt sich entnehmen, dass die Lorentzkraft von der magnetischen Flussdichte, Stromstärke und Länge des Leiters abhängt.
+Aus der Formel \ref{eq:1} lässt sich entnehmen, dass die Lorentzkraft von der magnetischen Flussdichte, Stromstärke und Länge des Leiters abhängt.
 
 Diese Kraft erzeugt bei einer Lagerung von der Spule, ein Moment, welches das gewünschte System drehen lässt.
 
@@ -151,17 +151,16 @@ Es gibt viele verschiedene Motorarten und Typen. Um eine kleine Übersicht zu er
 \subsubsection{Gleichstrommotor}
 \label{sec:gleichstrommotor}
 
-Der Rotor wird gelagert und mehrfach mit Draht umwickelt. Der Rotor bekommt über Kohlebürsten am Kollektor eine Stromübertragung. Daraufhin bekommt der Rotor erneuten Schwung mit.
-Wenn der Motor größer sein muss, kann der Stator in mehrere Pole aufgeteilt werden. Der Stromfluss wird dadurch stabiler.
+Der Rotor wird gelagert und mehrfach mit Draht umwickelt. Der Rotor bekommt über Kohlebürsten am Kollektor eine Stromübertragung. Daraufhin bekommt der Rotor erneuten Schwung mit. Wenn der Motor größer sein muss, kann der Stator in mehrere Pole aufgeteilt werden. Der Stromfluss wird dadurch stabiler. Aufgrund der Kohlebürsten, muss der Gleichstrommotor nach einer gewissen Laufzeit gewartet werden.
 
 \begin{figure}[!ht]
 \begin{center}
-	\caption{Aufbau Gleichstrommaschine}
+	\caption{Aufbau Gleichstrommaschine \label{fig:gleichstrommotor}}
 	\includegraphics[width=0.3\textwidth]{Gleichstommaschine}
 \end{center}
 \end{figure}
 
-Das Foto zeigt den einfachen Aufbau von einer Gleichstrommaschine. Er ist bei einfachen Anwendungen sehr beliebt, da sich die Drehzahl durch Veränderung der Versorgungsspannung ändert.\newline
+Die Abbildung \ref{fig:gleichstrommotor} zeigt den einfachen Aufbau von einer Gleichstrommaschine. Er ist bei einfachen Anwendungen sehr beliebt, da sich die Drehzahl durch Veränderung der Versorgungsspannung ändert.\newline
 
 \textbf{Anwendungsbereiche:}
 
@@ -174,7 +173,7 @@ Das Foto zeigt den einfachen Aufbau von einer Gleichstrommaschine. Er ist bei ei
 \subsubsection{Drehstrommotor}
 \label{sec:drehstrom}
 
-Drehmaschinen arbeiten durch die Variation im Statorfeld. Der Rotor wird auch hier durch einen Magneten realisiert. Der Rotor versucht sich immer bei den entsprechenden Magnetpol zu bleiben. Die Spannungen beim Drehstrom sind um 120 versetzt. Deshalb variieren die magnetischen Pole regelmäßig. Aus diesem Grund beginnt der Rotor zu drehen.
+Drehmaschinen arbeiten durch eine Variation im Statorfeld. Der Rotor wird auch hier durch einen Magneten realisiert. Der Rotor versucht sich immer nach dem entsprechenden Magnetpol zu richten. Die Spannungen beim Drehstrom sind um 120 Grad versetzt, deshalb variieren die magnetischen Pole regelmäßig. Aus diesem Grund beginnt sich der Rotor zu drehen. Drehstrommotoren lassen sich leichter kühlen als Gleichstrommotore. 
 
 \begin{figure}[!ht]
 \begin{center}
@@ -202,7 +201,7 @@ Bei einem Kurzschlussläufer werden die Leiter, wie der Name erraten lässt, im 
 \subsubsection{Synchronmotor}
 \label{sec:synchronmotor}
 
-Bei einer Synchronmaschine ist der Rotor entweder als Permanent- oder Elektromagnet realisiert. Dadurch hat der Rotor bereits ein eigenständiges Magnetfeld. Der Rotor kann sich deshalb selbständig auf das Magnetfeld im Stator ausrichten. Der Rotor kann nun, je nach Änderung des Magnetfeldes im Stator, direkt mitlaufen. 
+Bei einer Synchronmaschine ist der Rotor entweder als Permanent- oder Elektromagnet realisiert. Dadurch hat der Rotor bereits ein eigenständiges Magnetfeld. Der Rotor kann sich deshalb selbständig auf das Magnetfeld im Stator ausrichten. Der Rotor kann nun, je nach Änderung des Magnetfeldes im Stator, direkt mitlaufen. Ein Synchronmotor ist für höchste dynamische Bewegungskriterien geeignet. 
 
 \textbf{Anwendungsbereiche:}
 
@@ -212,25 +211,23 @@ Bei einer Synchronmaschine ist der Rotor entweder als Permanent- oder Elektromag
 	\item{Positionierantriebe}
 \end{itemize}
 
-
-
 \subsection{Motorauswahl}
 \label{sec:motorauswahl}
 
 \begin{figure}[!ht]
 \begin{center}
-	\caption{Tabelle Übersicht Elektromotor}
+	\caption{Tabelle Übersicht Elektromotor \label{fig:ueberschichtElektromotor}}
 	\includegraphics[width=1\textwidth]{TabelleMotor}
 \end{center}
 \end{figure}
 
-Die Tabelle gibt einen Überblick, in welchen Bereich man seinen gesuchten Motor finden kann. 
+Die Tabelle \ref{fig:ueberschichtElektromotor} gibt einen Überblick, in welchen Bereich man seinen gesuchten Motor finden kann. 
 Um weiter den gewünschten Motor auswählen zu können, benötigt man die Daten, was überhaupt bewegt werden soll und wie. 
 
 \subsubsection{Festlegung des Motors}
 \label{sec:festlegungDesMotors}
 
-Aufgrund der oben angeführten Tabelle, ging der Fokus auf den Bereich der Asynchronmotoren. Man kann sie sehr oft am Markt in verschiedensten Ausführungen finden. Dadurch ist auch ein sehr gutes Preis/Leistung-Verhältnis gegeben. 
+Aufgrund der mehreren Vorteile, ging der Fokus auf den Bereich der Asynchronmotoren. Man kann sie sehr oft am Markt in verschiedensten Ausführungen finden. Dadurch ist auch ein sehr gutes Preis/Leistung-Verhältnis gegeben. 
 \\
 Folgende Auflistung zeigt noch einmal die konkreten Vor- und Nachteile von einem Asynchronmotor:
 
@@ -241,18 +238,21 @@ Folgende Auflistung zeigt noch einmal die konkreten Vor- und Nachteile von einem
 	\item{Günstig}
 	\item{Hohe Standardisierung}
 	\item{Robust und Wartungsarm}
+	\item{Einfacher Aufbau}
+	\item{ermöglicht eine stabile Drehzahl}
 \end{itemize}
 
 \textbf{Nachteile:}
 
 \begin{itemize}
-	\item{Etwas schwieriger zu Regeln}
+	\item{schwerer regelbar}
+	\item{Nicht gut positionierbar, im Gegensatz zu Synchronmotoren}
 \end{itemize}
 
 \subsubsection{Motoranforderungen}
 \label{sec:motoranforderungen}
 
-Der Laufradius der Pferdeführanlage beträgt 9,5 Meter. Bei diesem Radius kann man die Pferde nicht galoppieren lassen. 
+Der Laufradius der Pferdeführanlage beträgt ungefähr 9,75 Meter. Bei diesem Radius kann man die Pferde nicht galoppieren lassen. 
 Für eine geeignete Geschwindigkeit wurde ein realistischer Wert gefunden. %equivetinfo.de/html/eckdaten_pferd.html 5.1.18 16:35%
 Unsere Konstruktion dreht sich, wie bereits im Kapitel ?.?.? erwähnt, mit nur 5,3 min\textsuperscript{-1}. 
 
@@ -299,19 +299,15 @@ Beide Formeln welche oberhalb verwendet wurden, sind grundlegende Formeln in der
 \end{equation} 
 \end{center}
 
-
-
-
 \subsubsection{Auswahlverfahren}
 \label{sec:auswahlverfahren}
 
-Aufgrund der Anforderungen fiel die Entscheidung auf die Asynchronmotoren. Da die Anlage mit sehr geringer Drehzahl fährt, besteht die Möglichkeit ein externes Getriebe oder direkt auf einen Getriebemotor zurückzugreifen. 
-Am Häufigsten findet man bei uns eine 230V Steckdose. Drehstromsteckdosen sind meist nur an den Orten platziert, wo sie von Anfang an benötigt werden. Um den Besitzer keine Umbauarbeiten aufzulegen liegt der Fokus bei einen 230V Anschluss. Wenn man den Motor mit Drehstrom betreiben will, ändert sich der Nennstrom des Motors. Ansonsten funktioniert er gleich.
+Aufgrund der Anforderungen fiel die Entscheidung auf die Gruppe der Asynchronmotoren. Da die Anlage mit sehr geringer Drehzahl fährt, besteht die Möglichkeit ein externes Getriebe oder direkt auf einen Getriebemotor zurückzugreifen. 
+Am Häufigsten findet man bei uns eine 230V Steckdose. Drehstromsteckdosen sind meist nur an den Orten platziert, wo sie von Anfang an benötigt werden. Um den Besitzer keine Umbauarbeiten aufzulegen liegt der Fokus bei einen 230V Anschluss. Wenn man den Motor mit Drehstrom betreiben will, ändert sich der Nennstrom des Motors. Ansonsten funktioniert die Ansteuerung gleich.
 
 Nun musste ein Asynchronmotor mit einer Leistung von mindestens 1770 Watt gefunden werden.
 
-
-Bei der Suche nach einen geeigneten Motor kamen folgende 2 in die engere Auswahl:
+Bei der Suche nach einen geeigneten Motor kamen folgende zwei Motoren in die engere Auswahl:
 
 \begin{figure}[!ht]
 \begin{minipage}[t]{0.45\textwidth}
@@ -353,16 +349,17 @@ Bei der Suche nach einen geeigneten Motor kamen folgende 2 in die engere Auswahl
 \end{minipage}
 \end{figure}
 
-Für den weiteren Verlauf wurde der Motor von den Unternehmen SEW verwendet.
+In diesem Vergleich würde der Motor von SEW bevorzugt werden.
 
-Da der Motor eine Drehzahl von umgerechnet 24,16s\textsuperscript{-1} hat, muss man die Drehzahl reduzieren. Um dies zu ermöglichen muss man eine Übersetzung ermöglichen. Dafür gibt es mehrere Varianten. Nachfolgend werden zwei Varianten aufgelistet:
+Da der Motor eine Drehzahl von umgerechnet 24,16s\textsuperscript{-1} hat, muss man die Drehzahl reduzieren. Um dies zu ermöglichen, muss man eine Übersetzung ermöglichen. Dafür gibt es mehrere Varianten. Nachfolgend werden drei Varianten aufgelistet:
 
 \begin{itemize}
 	\item{Motor mit externen Getriebe}
 	\item{Getriebemotor}
+	\item{Riemenscheibe}
 \end{itemize}
 
-Bei einem Getriebemotor wird das Getriebe direkt vom Hersteller auf den Motor ausgelegt. Bei einen externen Getriebe muss man zusätzlich darauf achten, das der Motor mit dem Getriebe verbunden werden kann beziehungsweise darf. Um den zusätzlichen Arbeitsaufwand gering zu halten und bei Komplikationen auf den jeweiligen Hersteller zurückgreifen kann, wird für die Pferdeführanlage ein Getriebemotor verwendet.
+Bei einem Getriebemotor wird das Getriebe direkt vom Hersteller auf den Motor ausgelegt. Bei einen externen Getriebe muss man zusätzlich darauf achten, ob der Motor mit dem Getriebe verbunden werden kann beziehungsweise darf. Um den zusätzlichen Arbeitsaufwand gering zu halten und bei Komplikationen auf den jeweiligen Hersteller zurückgreifen kann, wird für die Pferdeführanlage ein Getriebemotor verwendet.
 
 \subsubsection{Getriebemotor}
 \label{sec:getriebemotor}
@@ -379,7 +376,7 @@ Für unsere Anlage wurde folgender Getriebemotor gefunden:
 \end{center}
 \end{figure}
 
-Der Getriebemotor hat folgende Daten:
+Der Getriebemotor hat folgende Kenndaten:
 
 \begin{itemize}
 	\item{Motorspannung: 230/400V}
@@ -401,9 +398,9 @@ Wenn man diesen Motor mit den Motoranforderungen vergleicht, werden folgende Anf
 	\item{Mindestleistung: 1769,69W; Tatsächliche Leistung: 2200W}
 \end{itemize}
 
-Das einzige was noch nicht ganz passt ist die Abtriebsdrehzahl bei 50 Hz. Um auf die gewünschte Drehzahl zu kommen gibt es zwei Varianten. Entweder man sorgt über Riemenscheiben für die restliche Übersetzung oder man konfiguriert den Frequenzumrichter mit einer maximalen Frequenz, die auf den Motor wirken darf. \\
+Der einzige Punkt der noch offen ist, ist die Abtriebsdrehzahl bei 50 Hertz Netzfrequenz. Um auf die gewünschte Drehzahl zu kommen, gibt es zwei Varianten. Entweder man sorgt über Riemenscheiben für die restliche Übersetzung oder man konfiguriert den Frequenzumrichter mit einer maximalen Frequenz, die auf den Motor wirken darf. \\
 
-Da man sowieso die Ausgangswelle mit der Anlage verbinden muss, werden auf Riemenscheiben verwendet.
+Da man sowieso die Ausgangswelle mit der Anlage verbinden muss, werden Riemenscheiben verwendet.
 
 Um die jeweiligen Durchmesser der Riemenscheibe zu ermitteln, muss man das benötigte Übersetzungsverhältnis ermitteln.
 
@@ -428,7 +425,7 @@ Nun kann der Motor unter voller Netzfrequenz betrieben und seine gesamte Leistun
 \subsection{Motor für Testaufbauten}
 \label{sec:motorFuerTestaufbauten}
 
-Da das wirkliche Trägheitsmoment zu Beginn der Konstruktion noch nicht feststand, musste schon vorzeitig auf eine Motorart entschieden werden. In der Vorrecherche wurde bei schon bestehenden Anlagen immer ein Asynchronmotor gefunden. Deshalb viel der Fokus auf die Asynchronmotoren.
+Da das wirkliche Trägheitsmoment zu Beginn der Konstruktion noch nicht feststand, musste schon vorzeitig auf eine Motorart entschieden werden. In der Vorrecherche wurde bei schon bestehenden Anlagen immer ein Asynchronmotor gefunden. Deshalb fiel der Fokus schon vorab auf die Asynchronmotoren.
 \newpage
 %%%%
 \section{Frequenzumrichter}
@@ -437,7 +434,7 @@ Da das wirkliche Trägheitsmoment zu Beginn der Konstruktion noch nicht feststan
 \subsection{Allgemein}
 \label{sec:allgemeinfrequenzumrichter}
 
-Der Frequenzumrichter dient zur Steuerung des Asynchronmotors. Dieser regelt das Verhältnis zwischen Motorspannung und Frequenz. Daher kann die Drehzahl je  nach Last variieren. Der Frequenzumrichter selbst überprüft prinzipiell nicht die Rotorposition. Dies muss meistens mit einem anderen Gerät realisiert werden. Wenn man den Motor ohne Umrichter angeschlossen wird, würde der Motor mit einer einzigen festen Motordrehzahl drehen. 
+Der Frequenzumrichter dient zur Steuerung des Asynchronmotors. Dieser regelt das Verhältnis zwischen Motorspannung und Frequenz, daher kann die Drehzahl je nach Last variieren. Der Frequenzumrichter selbst überprüft prinzipiell nicht die Position des Rotors. Dies muss meistens mit einem anderen Gerät realisiert werden. Wenn man den Motor ohne Umrichter angeschlossen wird, würde der Motor mit einer einzigen festen Motordrehzahl drehen. 
 
 \subsection{Aufbau Frequenzumrichter}
 \label{sec:aufbauFrequenzumrichter}
@@ -445,17 +442,17 @@ Der Frequenzumrichter dient zur Steuerung des Asynchronmotors. Dieser regelt das
 Ein Frequenzumrichter besteht vereinfacht aus folgenden Bestandteilen:
 
 \begin{itemize}
-	\item{Brückengleichrichter}
+	\item{Brückengleichrichter} %Welligkeit der Gleichspannung B2 gibt den zwischen EIngang und ausgangsfrequenz wieder
 	\item{Gleichspannungszwischenkreis}
 	\item{Wechselrichter}
 \end{itemize}
 
-Der Gleichrichter wandelt eine Wechselspannung in eine Gleichspannung. Diese Gleichspannung wird im Gleichspannungszwischenkreis gespeichert in Kondensatoren gespeichert. Diese Spannung wird dann vom Wechselrichter weiter verwendet.
+Der Gleichrichter wandelt eine Wechselspannung in eine Gleichspannung. Diese Gleichspannung wird im Gleichspannungszwischenkreis in Kondensatoren gespeichert. Diese Spannung wird dann vom Wechselrichter weiter verwendet und wieder in eine Wechselspannung umgewandelt.
 
 \subsection{Finden eines Frequenzumrichters}
 \label{sec:findenEinesFrequenzumrichter}
 
-Wie auch beim Motor, muss der Frequenzumrichter auf das System abgestimmt werden. In diesen Fall auf den Getriebemotor. Frequenzumrichter können durch folgende Daten ausgewählt werden:
+Wie auch beim Motor, muss der Frequenzumrichter auf das System abgestimmt sein. In diesen Fall muss der Frequenzumrichter auf den Getriebemotor angepasst werden. Frequenzumrichter können durch folgende Daten ausgewählt werden:
 
 \begin{itemize}
 	\item{Bemessungsleistung}
@@ -463,7 +460,7 @@ Wie auch beim Motor, muss der Frequenzumrichter auf das System abgestimmt werden
 	\item{Phasenzahl}
 \end{itemize}
 
-Bezüglich Bemessungsleistung und Ausgangsstrom, sollten die Daten vom Getriebemotor übernommen werden. Da der Frequenzumrichter direkt mit dem Getriebemotor verbunden ist, kann man, aufgrund der geringen Verlustleistung, diese vernachlässigen. Aufgrund der Werte aus dem Kapitel Getriebemotor wurden folgende zwei Frequenzumrichter gefunden:
+Bezüglich Bemessungsleistung und Ausgangsstrom, sollten die Daten vom Getriebemotor übernommen werden. Da der Frequenzumrichter direkt mit dem Getriebemotor verbunden ist, kann man diese, aufgrund der geringen Verlustleistung, vernachlässigen. Aufgrund der Werte aus dem Kapitel \ref{sec:getriebemotor} wurden folgende zwei Frequenzumrichter gefunden:
 
 \begin{figure}
 \begin{minipage}[t]{0.45\textwidth}
@@ -499,8 +496,66 @@ Bezüglich Bemessungsleistung und Ausgangsstrom, sollten die Daten vom Getriebem
 \end{minipage}
 \end{figure}
 
-Die oben genannten Frequenzumrichter erfüllen beide die Anforderungen, um den Motor ansteuern zu können. Aufgrund des niedrigeren Preises wird der Frequenzumrichter zwei von Siemens gewählt. 
+Die genannten Frequenzumrichter erfüllen beide die Anforderungen, um den Motor ansteuern zu können. Aufgrund des niedrigeren Preises wird der Frequenzumrichter 2, von der Firma Siemens, gewählt. 
 
+\subsection{Datenblatt Frequenzumrichter}
+\label{sec:datenblattFrequenzumrichter}
+
+Um den Frequenzumrichter korrekt verwenden zu können und etwaige Komplikationen zu vermeiden, sollte man auf die Informationen beziehungsweise Anweisungen im Datenblatt des Herstellers beachten. In diesem lassen sich unter anderem auch folgende Kapitel finden:
+
+\begin{itemize}
+	\item{Sicherheitshinweise}
+	\item{Mechanische Installation}
+	\item{Elektrische Installation}
+	\item{Inbetriebnahme}
+	\item{Parameterliste}
+\end{itemize}
+
+\subsubsection{Datenblatt Inhalt}
+\label{sec:datenblattinhalt}
+
+Sämtliche Informationen lassen sich aus dem Datenblatt entnehmen. Wie schon oben aufgezählt, geht es als erstes darum, sich mit dem Frequenzumrichter vertraut zu machen. Im  Kapitel, Sicherheitshinweise, werden etwaige Risiken und Betriebsinformationen hingewiesen. Im Kapitel, Mechanische Installation, wird festgelegt, wie der Frequenzumrichter montiert werden soll. Das Kapitel, elektrische Installation, dient dazu, den Frequenzumrichter richtig zu verkabeln und bittet eine kurze Übersicht für welche Funktion die jeweilige Klemme am Umrichter dient. Im Abschnitt, Inbetriebnahmen, lassen sich die grundlegenden Bedienungsschritte und die Konfiguration am Frequenzumrichter finden. In der Parameterliste sind alle Parameter, die der Frequenzumrichter kennt, detailliert aufgelistet.
+
+\subsubsection{Relevante Informationen}
+\label{sec:relevanteInformationen}
+
+Der Frequenzumrichter hat die Aufgabe den Motor der Pferdeführanlage zu steuern. In dieser Aufgabe enthalten sind folgende Anforderungen:
+
+\begin{itemize}
+	\item{Motor Ein- beziehungsweise Ausschalten}
+	\item{Drehrichtung ändern}
+	\item{Verschiedene Drehzahlen ermöglichen}
+	\item{Fehlerbestätigung}
+\end{itemize}
+
+Aufgrund dieser Vorgaben wurde ein Verbindungsmakro, im Datenblatt für den V20 von Siemens, gefunden. 
+Ein Verbindungsmakro ist eine von Hersteller vorgegebene Variante, wie man den Frequenzumrichter verwenden könnte. Sollte man kein geeignetes Verbindungsmakro finden oder keines verwenden wollen, muss man sich aus den einzelnen Parametern im Kapitel Parameterliste sein gewünschtes Programm selbst zusammenstoppeln. 
+
+\subsubsection{Verbindungsmakro Cn002 - Regelung über die Klemmen}
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{Beschaltung vom Verbindungsmakro Cn002 \label{fig:verbindungsmakro}}
+	\includegraphics[width=0.5\textwidth]{VerbindungsmakroAufbau}
+\end{center}
+\end{figure}
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{Parameter für Verbindungsmakro Cn002 \label{fig:parameterVerbindungsmakro}}
+	\includegraphics[width=0.75\textwidth]{VerbindungsmakroParameter}
+\end{center}
+\end{figure}
+
+Aus der Abbildung \ref{fig:verbindungsmakro} kann man entnehmen, dass alle gewünschten Anforderungen aus dem Kapitel \ref{sec:relevanteInformationen} erfüllt werden. Des weiteren sieht man darauf, wie die jeweiligen Ein- und Ausgänge verdrahtet werden müssen, um mit dem Frequenzumrichter wie gewünscht arbeiten zu können. Man kann zwei verschiedene Varianten erkennen. Als erstes wird die PNP- und unterhalb die NPN-Variante gezeigt. Wenn man die PNP-Variante wählt wird die Bezugsklemme niedrig und sollte man die NPN-Variante wählen wird die Bezugsklemme hoch. Das heißt, der jeweilige digitale Eingang erkennt, wenn bei der PNP Variante ein 24V-Signal anliegt. In der Abbildung \ref{fig:parameterVerbindungsmakro} werden die jeweiligen Parameter in einer Tabelle angezeigt. Wenn man auf dem Frequenzumrichter ein Verbindungsmakro auswählt, sind diese Parameter bereits fertig vorgegeben. Wenn jemanden langweilig ist, könnte man die Parameter auch suchen und jeden Wert manuell zuordnen. Welche Variante bevorzugt verwendetet werden soll hängt von dem jeweiligen Steuerungsgerät ab. \\
+
+Da nun ein Verbindungsmakro gefunden wurde benötigt man nun folgende Anzahl an Drähten, um mit dem Frequenzumrichter kommunizieren zu können:
+
+\begin{itemize}
+	\item{4x Eingang Digital}
+	\item{2x Eingang Analog}
+	\item{1x Gemeinsame Bezugsmasse}
+\end{itemize}
 
 %%%%
 \newpage
@@ -508,9 +563,10 @@ Die oben genannten Frequenzumrichter erfüllen beide die Anforderungen, um den M
 \section{Pferderegen}
 \label{sec:pferderegen}
 
-Die Wasserversorgung soll dazu dienen, dem Pferd an heißen Sommertagen eine Erfrischung zu ermöglichen. Dafür wird ein Wasseranschluss benötigt. Es gäbe in erster Linie zwei Möglichkeiten, den Wasserfluss zu ermöglichen: Entweder man öffnet manuell ein Wasserhahn, welcher direkt bis zu den Sprühdüsen verbunden ist oder man baut dazwischen ein Magnetventil ein, welches über die App gesteuert werden kann. \\
-Prinzipiell ist es Geschmackssache wie man dies haben möchte. In beiden Fällen muss man irgendwo ein Wasserhahn beziehungsweise ein Hauptventil haben, um überhaupt Wasser fließen lassen zu können. 
-Mit der Steuerung über die App wird es dem Benutzer ermöglicht, das Hauptventil dauerhaft geöffnet zu lassen. Nur im Winter sollten dafür Vorkehrungsmaßnahmen getroffen werden. Diese werden im Unterkapitel Winterschutz näher erläutert.  
+Die Wasserversorgung soll dazu dienen, dem Pferd an heißen Sommertagen eine Erfrischung zu ermöglichen. Dafür wird ein Wasseranschluss benötigt. Es gäbe in erster Linie zwei Möglichkeiten, den Wasserfluss zu ermöglichen: Entweder man öffnet manuell ein Wasserhahn, welcher direkt bis zu den Sprühdüsen verbunden ist oder man setzt dazwischen ein Magnetventil ein, welches über die App gesteuert werden kann. \\
+Prinzipiell ist es Geschmackssache wie man dies realisieren möchte. In beiden Fällen muss man irgendwo ein Wasserhahn beziehungsweise ein Hauptventil haben, um überhaupt Wasser fließen lassen zu können. 
+Mit der Steuerung über die App wird es dem Benutzer ermöglicht, das Hauptventil dauerhaft geöffnet zu lassen. Nur im Winter sollten 
+Vorkehrungsmaßnahmen, siehe \ref{sec:winterschutz} , getroffen werden. 
 
 \subsection{Ventil}
 \label{sec:ventil}
@@ -744,9 +800,40 @@ Um den Schlauch mit dem Ventil zu verbinden, wird ein Übergangsstück benötigt
 
 Da nun der Anschluss des Ventiles ermöglicht wurde, muss nun die Versorgung für die Sprühdüsen erstellt werden. 
 
-Der Innenzaunradius beträgt 8,75 Meter. Daraus ergibt sich ein Umfang von zirka 55 Meter. Es werden 8 Sprühdüsen, mit 45 Grad Abstand, aufgestellt. Nun muss 
+Der Innenzaunradius beträgt 8,75 Meter. Daraus ergibt sich ein Umfang von zirka 55 Meter. Es werden 8 Sprühdüsen, mit 45 Grad Abstand, aufgestellt. 
 
+Um nun aus einem Rohr acht zu machen, benötigt man Verteiler:
 
+\begin{figure}[!ht]
+\begin{minipage}[t]{0.45\textwidth}
+\framebox[\textwidth]{2-Weg Verteiler}
+\includegraphics[width=\textwidth]{Gardena2Weg}
+\caption{2-Weg-Verteiler}
+
+\begin{itemize}
+	\item{Preis: 8,49\textsf{\texteuro}}
+	\item{Einganggewinde: 1 Zoll}
+	\item{Ausgänge: 2x 3/4 Zoll}
+\end{itemize}
+
+\end{minipage}
+\hspace{0.1\textwidth}
+\begin{minipage}[t]{0.45\textwidth}
+\framebox[\textwidth]{4-Weg-Verteiler}
+
+\includegraphics[width=0.93\textwidth]{Gardena4Weg}
+\caption{4-Weg-Verteiler}
+
+\begin{itemize}
+	\item{Preis: 10,50\textsf{\texteuro}}
+	\item{Einganggewinde: 3/4 Zoll}
+	\item{Ausgänge: 4x 1/2 Zoll}
+\end{itemize}
+%https://www.amazon.de/Bradas-ECO-PWB3033-Verteiler-Wasseranschluss-Schwarz/dp/B00CJT7TE0/ref=sr_1_2?s=garden&ie=UTF8&qid=1520789266&sr=1-2&keywords=4+wege+verteiler+1+zoll
+\end{minipage}
+\end{figure}
+
+Für die Realisierung benötigt man einen 2-Weg-Verteiler und zwei 4-Weg-Verteiler. Von dort kann man mit den 1/2-Zoll-Schläuchen bis zu den Sprühdüsen.
 
 \newpage
 
@@ -755,23 +842,173 @@ Der Innenzaunradius beträgt 8,75 Meter. Daraus ergibt sich ein Umfang von zirka
 
 %https://www.amazon.de/BQLZR-Kunststoff-Nebeld%C3%BCse-Spr%C3%BChkopf-Bew%C3%A4sserungsszstem/dp/B00QUUGAQC/ref=sr_1_3?ie=UTF8&qid=1520697676&sr=8-3&keywords=nebeld%C3%BCse ( 11.3.2018)
 
+Nun da das Wasser beim Zaun angekommen ist, muss es durch einen speziellen Sprühkopf zerstäubt werden. Dies kennt man entweder als Zerstäuber oder Nebeldüse. 
 
+\begin{figure}[!ht]
+\begin{center}
+	\caption{Sprühnebeldüse}
+	\includegraphics[width=0.25\textwidth]{Spruehkopf}
+\end{center}
+\end{figure}
 
+Eigenschaften der Sprühnebeldüsen:
 
+\begin{itemize}
+	\item{Preis: 5,22\textsf{\texteuro}}
+	\item{Stück: 10}
+	\item{Betriebsdruck: ungefähr 1 bar}
+	\item{Durchflussmenge: 0,7 m\textsuperscript{3}/h}
+	\item{Gewindeanschluss: 1/2 Zoll}
+\end{itemize}
+
+Um diesen mit dem Schlauch zu verbinden, werden noch zwei weitere Zwischenstücke benötigt.
+
+\begin{figure}[!ht]
+\begin{minipage}[t]{0.45\textwidth}
+\framebox[\textwidth]{1/2-Zoll-Gewindeverbinder}
+\includegraphics[width=0.7\textwidth]{GardenaHahnverbinder}
+\caption{1/2-Zoll-Gewindeverbinder}
+Preis: 2,59 \textsf{\texteuro}
+\end{minipage}
+\hspace{0.1\textwidth}
+\begin{minipage}[t]{0.45\textwidth}
+\framebox[\textwidth]{Schlauchstück}
+\includegraphics[width=0.7\textwidth]{Schlauchstueck}
+\caption{Schlauchstück}
+Preis: 1,65\textsf{\texteuro}
+\end{minipage}
+\end{figure}
+
+Der Gewindeverbinder wird mit der Nebeldüse verbunden und das Schlauchstück mit dem Schlauch. Beide werden anschließend zusammengeführt.
+
+\subsection{Rohrverlegung}
+\label{sec:rohrverlegung}
+
+Damit die Wasserrohre auch korrekt verlegt werden, muss das Verlegeblatt verwendet werden, welches sich unter dem Link \footnote{http://www.pipelife.at/at-de/_media/pdf/verlegeanleitung-infoblatt/wasser/verlege-pe-druck.pdf} finden lässt.
 
 %%%%
 \newpage
 %%%%
 \section{Geschwindigkeitsmessung}
 \label{sec:geschwindigkeitsmessung}
+
+Um die Drehgeschwindigkeit zu überprüfen, müssen die Umdrehungen überprüft werden. Nicht nur ob sich die Anlage überhaupt dreht, sondern auch wie lange. Dazu eignen sich sehr gut die sogenannten Drehgeber.
+
+\subsection{Drehgeber}
+\label{sec:drehgeber}
+
+Die Hauptaufgabe des Drehgebers ist es, die Position und Lage des mechanischen Bereiches zu ermitteln. Aus diesen Informationen lassen sich unter anderem die Geschwindigkeit und Dauer des jeweiligen Vorgangs ermitteln. Wo der Drehgeber positioniert wird hängt davon ab, was man mit welchem Ergebnis ermitteln möchte. Wie auch bei den meisten anderen Technologien, gibt es auch bei den Drehgebern verschiedene Technologiegruppen.
+
+\subsubsection{Inkrementalgeber}
+\label{sec:inkrementalgeber}
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{Aufbau Inkrementalgeber \label{fig:inkrementalgeber}}
+	\includegraphics[width=0.61\textwidth]{Inkrementalgeber}
+\end{center}
+\end{figure}
+
+Der Inkrementalgeber ist ein optisches Messinstrument. Der innere Aufbau des Inkrementalgebers kann aus der Abbildung \ref{fig:inkrementalgeber}  entnommen werden. 
+Mit einem Inkrementalgeber kann man die Drehrichtung, eine Geschwindigkeitsmessung und eine Positionserfassung realisieren. Für die letzteren zwei wird eine zusätzliche Auswertung benötigt. 
+
+\subsubsection{Absolutwertgeber}
+\label{sec:absolutwertgeber}
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{Aufbau Absolutwertgeber \label{fig:absolutwertgeber}}
+	\includegraphics[width=0.45\textwidth]{Absolutwertgeber}
+\end{center}
+\end{figure}
+
+Der Absolutwertgeber ermöglicht, dass man die Position direkt erkennen kann. Die Drehscheibe ist, wie man aus der Abbildung \ref{fig:absolutwertgeber}, in Bit codiert. Je nach Codeauswertung kann man ermitteln, in welcher Position sich das jeweilige System befindet. 
+Bei einen neuen Systemstart, muss kein Referenzpunkt angefahren werden.
+
+\subsubsection{Resolver}
+\label{sec:resolver}
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{Signal Resolver}
+	\includegraphics[width=0.61\textwidth]{Resolver}
+\end{center}
+\end{figure}
+
+\subsubsection{Auswahl Drehgeber}
+\label{sec:auswahlDrehgeber}
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+   & Inkrementalgeber & Resolver & Absolutwertgeber \\ 
+\hline 
+Robustheit & gering & hoch & gering \\ 
+\hline 
+Referenzierung nötig? & Ja & Eventuell & Nein \\ 
+\hline 
+Auswertezeit & gering & hoch & gering - mittel \\ 
+\hline 
+\end{tabular} 
+
+% E4-300-091-D-D-D-B
 %%%%
 \newpage
 %%%%
 \section{Kommunikationsschnittstelle}
 \label{sec:kommunikationsschnittstelle}
+
+
+
 %%%%
 \newpage
 %%%%
+
+\section{Gesamtsteuerung}
+\label{sec:gesamtsteuerung}
+
+\begin{center}
+\includegraphics[scale=0.86]{Blockschaltbild1}
+\end{center}
+
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Bauteil & Stückanzahl & Einzelpreis & Gesamtpreis \\ 
+\hline 
+Getriebemotor & 1 & • & • \\ 
+\hline 
+Frequenzumrichter & 1 & 382,72\textsf{\texteuro} & 382,72\textsf{\texteuro} \\ 
+\hline 
+Drehgeber & 1 & • & • \\ 
+\hline 
+Motortreiber & 1 & 2,31\textsf{\texteuro} & 2,31\textsf{\texteuro} \\ 
+\hline 
+Magnetventil & 1 & 70\textsf{\texteuro} & 70\textsf{\texteuro} \\ 
+\hline 
+Schlauch 3/4-Zoll & 50 Meter & 0,90\textsf{\texteuro} & 45,00\textsf{\texteuro} \\ 
+\hline 
+2-Weg-Verteiler & 1 & 8,49\textsf{\texteuro} & 8,49\textsf{\texteuro} \\ 
+\hline 
+4-Weg-Verteiler & 2 & 10,50\textsf{\texteuro} & 21,00\textsf{\texteuro} \\ 
+\hline 
+Sprühnebeldüse & 8 & 0,53\textsf{\texteuro} & 4,24\textsf{\texteuro} \\ 
+\hline 
+Gardenaübergang & 1 & 4,89\textsf{\texteuro} & 4,89\textsf{\texteuro} \\ 
+\hline 
+Schlauchstück & 16 & 1,65\textsf{\texteuro} & 26,40\textsf{\texteuro} \\ 
+\hline 
+Gewindeverbinder & 8 & 2,59\textsf{\texteuro} & 20,72\textsf{\texteuro} \\ 
+\hline 
+Schlauch 1/2 Zoll & 64 Meter & 0,70\textsf{\texteuro} & 44,80\textsf{\texteuro} \\
+\hline
+Inkrementalgeber & 1 & 24,62\textsf{\texteuro} & 24,62\textsf{\texteuro} \\
+\hline 
+Gesamtstück & 44 Stk & - & - \\ 
+\hline 
+Gesamtpreis & - & - & 630,57\textsf{\texteuro} \\ 
+\hline 
+\end{tabular}
+
 \section{Sicherheit der Pferde und Anlage}
 \label{sec:sicherheitDerPferdeUndAnlage}
 
@@ -819,6 +1056,7 @@ dass es in wenigen Minuten ein Gewitter geben könnte.
 Sollte die Anlage während eines Gewitters in Betrieb genommen werden, 
 gibt es ein erhöhtes Risiko für die Pferde und der Anlage selbst.
 Die Haftung liegt in diesem Fall bei der Person, die die Anlage in dieser Zeit in Betrieb nimmt.
+Des weiteren muss die Anlage geerdet werden. 
 
 \subsection{Winterschutz}
 \label{sec:winterschutz}
@@ -842,7 +1080,7 @@ Um ein langes Leben der Wasserrohre gewährleisten zu können, muss der jeweilig
 
 Im Bereich Sicherheit von Anlagen, kann man häufig den Begriff Redundanz aufschnappen. 
 
- Redundanz (lat. = Überfluss) ist das Vorhandensein zusätzlicher technischer Komponenten, die für den Betrieb eines Systems oder Gerätes nicht nötig sind, solange keine Störung bzw. kein Ausfall vorliegt. \footnote{http://www.secupedia.info/wiki/Redundanz}
+Redundanz (lat. = Überfluss) ist das Vorhandensein zusätzlicher technischer Komponenten, die für den Betrieb eines Systems oder Gerätes nicht nötig sind, solange keine Störung bzw. kein Ausfall vorliegt. \footnote{http://www.secupedia.info/wiki/Redundanz}
 
 Sollte die Pferdeführanlage vermarktet werden, könnte man die Anlage erweitern. Diese Erweiterung betrifft den Bereich für die Sicherheit der Pferde.
 
@@ -850,8 +1088,14 @@ Sollte die Pferdeführanlage vermarktet werden, könnte man die Anlage erweitern
 	\includegraphics[width=0.5\textwidth]{Redundanz}
 \end{center}
 
-Das Bild zeigt eine Möglichkeit die Redundanz zu realisieren.
+Das Bild zeigt eine Möglichkeit eine Redundanz zu realisieren.
 
-Gedanke dabei ist, wenn ein Drehgeber defekt ist, kann auch noch der zweite Inkrementalgeber ein Signal liefern, um zumindest einen Durchlaufzyklus beenden zu können. Die hängt aber davon ab, ob der jeweilige Benutzer überhaupt möchte ob es die Anlage weiterlaufen soll und ob er dafür zusätzlich zahlen möchte. Somit könnte man ein Sicherheitsextra zusätzlich anbieten.
+Der Gedanke dabei ist, wenn ein Drehgeber defekt ist, kann auch noch der zweite Inkrementalgeber ein Signal liefern, um zumindest einen Durchlaufzyklus beenden zu können. Die hängt aber davon ab, ob der jeweilige Benutzer überhaupt möchte ob es die Anlage weiterlaufen soll und ob er dafür zusätzlich zahlen möchte. Somit könnte man ein Sicherheitsextra zusätzlich anbieten.
 
-Natürlich gibt es auch noch andere Varianten, das System redundant zu machen. Doch dies wäre eine zusätzliche 
+Natürlich gibt es auch noch andere Varianten, das System redundant zu machen.
+Bei der Pferdeführanlage wäre die Redundanz nur ein unnötiger Kostenfaktor und würde nicht um einen riesigen Sicherheitsfaktor erhöhen..
+Deswegen wird diese Variante nicht verwendet.
+
+%%%
+\newpage
+%%%
