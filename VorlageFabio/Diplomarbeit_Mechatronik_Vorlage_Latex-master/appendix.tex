@@ -1,0 +1,36 @@
+\renewcommand\appendixname{Anhang}
+\renewcommand\appendixpagename{Anhang}
+\renewcommand\appendixtocname{Anhang}
+
+\lohead{}
+
+% Anhang Seite ohne Kopf- & Fußzeile
+\appendix
+\begingroup
+\makeatletter
+\let\ps@plain\ps@empty
+\appendixpage
+\makeatother
+\endgroup
+
+% Anhänge
+\chapter{Zeitaufzeichnung}
+\chapter{Persönlicher Anhang 1}
+
+\includegraphics[scale=0.86]{fig/Blockschaltbild1}
+
+\markboth{}{}	%end chapter
+
+\bibliography{Literaturverzeichnis}
+\bibliographystyle{unsrt}
+
+\chapter{Abkürzungsverzeichnis}
+\begin{acronym}
+%Abkürzung hinzufügen: \acro{Kürzel}{Ausgeschrieben}
+	\acro{FU}{Frequenzumrichter}
+	\acro{PFA}{Pferdeführanlage}
+\end{acronym}
+
+\listoffigures
+\listoftables
+\lstlistoflistings

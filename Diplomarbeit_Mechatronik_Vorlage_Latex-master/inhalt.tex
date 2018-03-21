@@ -4,7 +4,7 @@
 \section{Abstract}
 \label{sec:abstractETE}
 
-Because of the electronic part, the horse exerciser should be able to rotate. 
+Because of the electronic part, the horse exerciser should be able to rotate. \cite{test-buch}
 The actuator of the engine is realised by a frequency converter, which gets the signals from the GPIO-Pins on the Raspberry-Pi.
 How fast the horse exerciser will move, depends on the commands, that he recives over the Ethernet from the webserver.
 The horses will get a refreshment on hot sommer days by the use of the electric water valve.
@@ -14,7 +14,7 @@ Due to the fact that the system will be used to exercise animals, one of the mos
 \label{sec:zusammenfassung}
 
 Der Elektronikteil soll dazu dienen, die Pferdeführanlage in den gewünschten Geschwindigkeiten zu drehen, welche über die App für die Pferde gewählt wurden. 
-Die Ansteuerung des Motors kann mit einem Frequenzumrichter realisiert werden, 
+Die Ansteuerung des Motors kann mit einem \ac{FU} realisiert werden, 
 welcher die Signale von einem gewünschten Kommunikationssystem bekommt.
 Des weiteren bekommt die Steuereinheit über Ethernet die Befehle, wie schnell sich die Anlage drehen darf und wie lange. 
 Mittels eines elektrischen Wasserventils, wird den Pferden an heißen Sommertagen eine Erfrischung ermöglicht. 
@@ -428,18 +428,18 @@ Nun kann der Motor unter voller Netzfrequenz betrieben und seine gesamte Leistun
 Da das wirkliche Trägheitsmoment zu Beginn der Konstruktion noch nicht feststand, musste schon vorzeitig auf eine Motorart entschieden werden. In der Vorrecherche wurde bei schon bestehenden Anlagen immer ein Asynchronmotor gefunden. Deshalb fiel der Fokus schon vorab auf die Asynchronmotoren.
 \newpage
 %%%%
-\section{Frequenzumrichter}
+\section{\acl{FU}}
 \label{sec:frequenzumrichter}
 
 \subsection{Allgemein}
 \label{sec:allgemeinfrequenzumrichter}
 
-Der Frequenzumrichter dient zur Steuerung des Asynchronmotors. Dieser regelt das Verhältnis zwischen Motorspannung und Frequenz, daher kann die Drehzahl je nach Last variieren. Der Frequenzumrichter selbst überprüft prinzipiell nicht die Position des Rotors. Dies muss meistens mit einem anderen Gerät realisiert werden. Wenn man den Motor ohne Umrichter angeschlossen wird, würde der Motor mit einer einzigen festen Motordrehzahl drehen. 
+Der \ac{FU} dient zur Steuerung des Asynchronmotors. Dieser regelt das Verhältnis zwischen Motorspannung und Frequenz, daher kann die Drehzahl je nach Last variieren. Der \ac{FU} selbst überprüft prinzipiell nicht die Position des Rotors. Dies muss meistens mit einem anderen Gerät realisiert werden. Wenn man den Motor ohne Umrichter angeschlossen wird, würde der Motor mit einer einzigen festen Motordrehzahl drehen. 
 
-\subsection{Aufbau Frequenzumrichter}
+\subsection{Aufbau \ac{FU}}
 \label{sec:aufbauFrequenzumrichter}
 
-Ein Frequenzumrichter besteht vereinfacht aus folgenden Bestandteilen:
+Ein \ac{FU} besteht vereinfacht aus folgenden Bestandteilen:
 
 \begin{itemize}
 	\item{Brückengleichrichter} %Welligkeit der Gleichspannung B2 gibt den zwischen EIngang und ausgangsfrequenz wieder
@@ -452,7 +452,7 @@ Der Gleichrichter wandelt eine Wechselspannung in eine Gleichspannung. Diese Gle
 \subsection{Finden eines Frequenzumrichters}
 \label{sec:findenEinesFrequenzumrichter}
 
-Wie auch beim Motor, muss der Frequenzumrichter auf das System abgestimmt sein. In diesen Fall muss der Frequenzumrichter auf den Getriebemotor angepasst werden. Frequenzumrichter können durch folgende Daten ausgewählt werden:
+Wie auch beim Motor, muss der \ac{FU} auf das System abgestimmt sein. In diesen Fall muss der \ac{FU} auf den Getriebemotor angepasst werden. \ac{FU} können durch folgende Daten ausgewählt werden:
 
 \begin{itemize}
 	\item{Bemessungsleistung}
@@ -460,7 +460,7 @@ Wie auch beim Motor, muss der Frequenzumrichter auf das System abgestimmt sein. 
 	\item{Phasenzahl}
 \end{itemize}
 
-Bezüglich Bemessungsleistung und Ausgangsstrom, sollten die Daten vom Getriebemotor übernommen werden. Da der Frequenzumrichter direkt mit dem Getriebemotor verbunden ist, kann man diese, aufgrund der geringen Verlustleistung, vernachlässigen. Aufgrund der Werte aus dem Kapitel \ref{sec:getriebemotor} wurden folgende zwei Frequenzumrichter gefunden:
+Bezüglich Bemessungsleistung und Ausgangsstrom, sollten die Daten vom Getriebemotor übernommen werden. Da der \ac{FU} direkt mit dem Getriebemotor verbunden ist, kann man diese, aufgrund der geringen Verlustleistung, vernachlässigen. Aufgrund der Werte aus dem Kapitel \ref{sec:getriebemotor} wurden folgende zwei \ac{FU} gefunden:
 
 \begin{figure}
 \begin{minipage}[t]{0.45\textwidth}
@@ -501,7 +501,7 @@ Die genannten Frequenzumrichter erfüllen beide die Anforderungen, um den Motor 
 \subsection{Datenblatt Frequenzumrichter}
 \label{sec:datenblattFrequenzumrichter}
 
-Um den Frequenzumrichter korrekt verwenden zu können und etwaige Komplikationen zu vermeiden, sollte man auf die Informationen beziehungsweise Anweisungen im Datenblatt des Herstellers beachten. In diesem lassen sich unter anderem auch folgende Kapitel finden:
+Um den \ac{FU} korrekt verwenden zu können und etwaige Komplikationen zu vermeiden, sollte man auf die Informationen beziehungsweise Anweisungen im Datenblatt des Herstellers beachten. In diesem lassen sich unter anderem auch folgende Kapitel finden:
 
 \begin{itemize}
 	\item{Sicherheitshinweise}
@@ -514,12 +514,12 @@ Um den Frequenzumrichter korrekt verwenden zu können und etwaige Komplikationen
 \subsubsection{Datenblatt Inhalt}
 \label{sec:datenblattinhalt}
 
-Sämtliche Informationen lassen sich aus dem Datenblatt entnehmen. Wie schon oben aufgezählt, geht es als erstes darum, sich mit dem Frequenzumrichter vertraut zu machen. Im  Kapitel, Sicherheitshinweise, werden etwaige Risiken und Betriebsinformationen hingewiesen. Im Kapitel, Mechanische Installation, wird festgelegt, wie der Frequenzumrichter montiert werden soll. Das Kapitel, elektrische Installation, dient dazu, den Frequenzumrichter richtig zu verkabeln und bittet eine kurze Übersicht für welche Funktion die jeweilige Klemme am Umrichter dient. Im Abschnitt, Inbetriebnahmen, lassen sich die grundlegenden Bedienungsschritte und die Konfiguration am Frequenzumrichter finden. In der Parameterliste sind alle Parameter, die der Frequenzumrichter kennt, detailliert aufgelistet.
+Sämtliche Informationen lassen sich aus dem Datenblatt entnehmen. Wie schon oben aufgezählt, geht es als erstes darum, sich mit dem \ac{FU} vertraut zu machen. Im  Kapitel, Sicherheitshinweise, werden etwaige Risiken und Betriebsinformationen hingewiesen. Im Kapitel, Mechanische Installation, wird festgelegt, wie der \ac{FU} montiert werden soll. Das Kapitel, elektrische Installation, dient dazu, den \ac{FU} richtig zu verkabeln und bittet eine kurze Übersicht für welche Funktion die jeweilige Klemme am Umrichter dient. Im Abschnitt, Inbetriebnahmen, lassen sich die grundlegenden Bedienungsschritte und die Konfiguration am \ac{FU} finden. In der Parameterliste sind alle Parameter, die der \ac{FU} kennt, detailliert aufgelistet.
 
 \subsubsection{Relevante Informationen}
 \label{sec:relevanteInformationen}
 
-Der Frequenzumrichter hat die Aufgabe den Motor der Pferdeführanlage zu steuern. In dieser Aufgabe enthalten sind folgende Anforderungen:
+Der \ac{FU} hat die Aufgabe den Motor der Pferdeführanlage zu steuern. In dieser Aufgabe enthalten sind folgende Anforderungen:
 
 \begin{itemize}
 	\item{Motor Ein- beziehungsweise Ausschalten}
@@ -529,7 +529,8 @@ Der Frequenzumrichter hat die Aufgabe den Motor der Pferdeführanlage zu steuern
 \end{itemize}
 
 Aufgrund dieser Vorgaben wurde ein Verbindungsmakro, im Datenblatt für den V20 von Siemens, gefunden. 
-Ein Verbindungsmakro ist eine von Hersteller vorgegebene Variante, wie man den Frequenzumrichter verwenden könnte. Sollte man kein geeignetes Verbindungsmakro finden oder keines verwenden wollen, muss man sich aus den einzelnen Parametern im Kapitel Parameterliste sein gewünschtes Programm selbst zusammenstoppeln. 
+Ein Verbindungsmakro ist eine von Hersteller vorgegebene Variante, wie man den \ac{FU} verwenden könnte. Sollte man kein geeignetes Verbindungsmakro finden oder keines verwenden wollen, muss man sich aus den einzelnen Parametern im Kapitel Parameterliste sein gewünschtes Programm selbst zusammenstoppeln. \\
+Als erstes sollte man aber den Frequenzumrichter auf den Motor abstimmen. Die jeweiligen Parameter lassen sich aus dem Datenblatt entnehmen. 
 
 \subsubsection{Verbindungsmakro Cn002 - Regelung über die Klemmen}
 
@@ -547,15 +548,19 @@ Ein Verbindungsmakro ist eine von Hersteller vorgegebene Variante, wie man den F
 \end{center}
 \end{figure}
 
-Aus der Abbildung \ref{fig:verbindungsmakro} kann man entnehmen, dass alle gewünschten Anforderungen aus dem Kapitel \ref{sec:relevanteInformationen} erfüllt werden. Des weiteren sieht man darauf, wie die jeweiligen Ein- und Ausgänge verdrahtet werden müssen, um mit dem Frequenzumrichter wie gewünscht arbeiten zu können. Man kann zwei verschiedene Varianten erkennen. Als erstes wird die PNP- und unterhalb die NPN-Variante gezeigt. Wenn man die PNP-Variante wählt wird die Bezugsklemme niedrig und sollte man die NPN-Variante wählen wird die Bezugsklemme hoch. Das heißt, der jeweilige digitale Eingang erkennt, wenn bei der PNP Variante ein 24V-Signal anliegt. In der Abbildung \ref{fig:parameterVerbindungsmakro} werden die jeweiligen Parameter in einer Tabelle angezeigt. Wenn man auf dem Frequenzumrichter ein Verbindungsmakro auswählt, sind diese Parameter bereits fertig vorgegeben. Wenn jemanden langweilig ist, könnte man die Parameter auch suchen und jeden Wert manuell zuordnen. Welche Variante bevorzugt verwendetet werden soll hängt von dem jeweiligen Steuerungsgerät ab. \\
+Aus der Abbildung \ref{fig:verbindungsmakro} kann man entnehmen, dass alle gewünschten Anforderungen aus dem Kapitel \ref{sec:relevanteInformationen} erfüllt werden. Des weiteren sieht man darauf, wie die jeweiligen Ein- und Ausgänge verdrahtet werden müssen, um mit dem \ac{FU} wie gewünscht arbeiten zu können. Man kann zwei verschiedene Varianten erkennen. Als erstes wird die PNP- und unterhalb die NPN-Variante gezeigt. Wenn man die PNP-Variante wählt wird die Bezugsklemme niedrig und sollte man die NPN-Variante wählen wird die Bezugsklemme hoch. Das heißt, der jeweilige digitale Eingang erkennt, wenn bei der PNP Variante ein 24V-Signal anliegt. In der Abbildung \ref{fig:parameterVerbindungsmakro} werden die jeweiligen Parameter in einer Tabelle angezeigt. Wenn man auf dem Frequenzumrichter ein Verbindungsmakro auswählt, sind diese Parameter bereits fertig vorgegeben. Wenn jemanden langweilig ist, könnte man die Parameter auch suchen und jeden Wert manuell zuordnen. Bei der Anlage wird ein 24V-Signal bevorzugt, da bei einem Spannungsverlust die Anlage automatisch stehen bleiben würde. \\
 
-Da nun ein Verbindungsmakro gefunden wurde benötigt man nun folgende Anzahl an Drähten, um mit dem Frequenzumrichter kommunizieren zu können:
+Da nun ein Verbindungsmakro gefunden wurde benötigt man nun folgende Anzahl an Drähten, um mit dem \ac{FU} kommunizieren zu können:
 
 \begin{itemize}
 	\item{4x Eingang Digital}
 	\item{2x Eingang Analog}
 	\item{1x Gemeinsame Bezugsmasse}
 \end{itemize}
+
+Sobald einer der digitalen ein Spannungssignal von 24V bekommt, wird die jeweilige Funktion ausgeführt. 
+
+
 
 %%%%
 \newpage
@@ -909,7 +914,7 @@ Die Hauptaufgabe des Drehgebers ist es, die Position und Lage des mechanischen B
 \end{center}
 \end{figure}
 
-Der Inkrementalgeber ist ein optisches Messinstrument. Der innere Aufbau des Inkrementalgebers kann aus der Abbildung \ref{fig:inkrementalgeber}  entnommen werden. 
+Der Inkrementalgeber ist ein optisches Messinstrument. Der innere Aufbau des Inkrementalgebers kann aus der Abbildung \ref{fig:inkrementalgeber} entnommen werden. 
 Mit einem Inkrementalgeber kann man die Drehrichtung, eine Geschwindigkeitsmessung und eine Positionserfassung realisieren. Für die letzteren zwei wird eine zusätzliche Auswertung benötigt. 
 
 \subsubsection{Absolutwertgeber}
@@ -930,10 +935,12 @@ Bei einen neuen Systemstart, muss kein Referenzpunkt angefahren werden.
 
 \begin{figure}[!ht]
 \begin{center}
-	\caption{Signal Resolver}
+	\caption{Signal Resolver \label{fig:signalResolver}}
 	\includegraphics[width=0.61\textwidth]{Resolver}
 \end{center}
 \end{figure}
+
+Sobald Die Spule 3 des Resolvers bekommt ein Sinussignal mit konstanter Frequenz. Wenn sich der Rotor nun dreht, bekommen die Spule 1 und 2  verschiedene Spannungssignale. Die Diagramme in der Abbildung \ref{fig:signalResolver} geben eine Übersicht, wie der Spannungsverlauf bei den zwei Spulen am Stator aussieht. Je nachdem wie stark das Sinussignal ist, kann eine Auswertelogik die Position ermitteln.
 
 \subsubsection{Auswahl Drehgeber}
 \label{sec:auswahlDrehgeber}
@@ -948,7 +955,44 @@ Referenzierung nötig? & Ja & Eventuell & Nein \\
 \hline 
 Auswertezeit & gering & hoch & gering - mittel \\ 
 \hline 
-\end{tabular} 
+\end{tabular} \\
+
+
+Bei der Pferdeführanlage ist es nicht essentiell, dass sich der Drehgeber merkt, auf welcher Position sich die Anlage befindet. Deswegen scheidet der Absolutwertgeber aus. Als Sieger ging der Inkrementalgeber vom Platz. Im Bereich der Langlebigkeit würde der Resolver gewinnen, da aber eine schneller Erfassung der Position notwendig ist, muss auf den Inkrementalgeber zurückgegriffen werden.
+\\
+Da ein Inkrementalgeber zum Aufbau verfügbar war, wurde mit diesem die Arbeit fortgesetzt.
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{US-Digital E4-300-091-D-D-D-B \label{fig:drehgeberUS}}
+	\includegraphics[width=0.61\textwidth]{drehgeberUS}
+\end{center}
+\end{figure}
+
+\subsubsection{AB-Inkrementalgeber Auswertung}
+\label{sec:auswertungInkrementalgeber}
+
+Bei den in der Abbildung \ref{fig:drehgeberUS} befindlichen Inkrementalgeber, handelt es sich um einen einfachen AB-Inkrementalgeber ohne integrierter Referenzierung. Im Kapitel \ref{sec:inkrementalgeber} wurde bereits ein kurzer Überblick gegeben, wie ein Inkrementalgeber aufgebaut ist. Die drehbare Glasscheibe ist mit einem digitalen Strichcode bedeckt. Durch diese erhalten die optischen Sensoren Lichtstrahlen. Durch das Wechseln des Lichtes erhält man ein Signal, welches anschließend in ein Rechtecksignal umgewandelt wird. 
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{AB-Signal}
+	\includegraphics[width=0.61\textwidth]{ABSignal}
+\end{center}
+\end{figure}
+
+Die Anschlüsse A und B haben die Aufgabe die Drehrichtung zu ermitteln. Je nachdem ob das A- oder B-Signal als erstes Positiv sind, dreht sich der Drehgeber im oder gegen den Uhrzeigersinn. Wenn man beobachtet, wie lang ein Signal auf Hoch ist, kann man daraus die Geschwindigkeit ermitteln. Beides muss mit einer dementsprechenden Auswertelogik passieren. Eine kostengünstige und einfache Variante bietet dabei ein Mikrocontroller. 
+
+\begin{figure}[!ht]
+\begin{center}
+	\caption{Arduino Nano}
+	\includegraphics[width=0.61\textwidth]{nano}
+\end{center}
+\end{figure}
+
+Der Inkrementalgeber wird direkt nach der letzten Riemenscheibe angebracht, da der Drehgeber direkt die Drehzahl der Anlage überprüft. Der Arduino Nano ist ein Mikrocontroller, welcher bereits eine fertige Beschaltung hat. Er ist mit einem Atmega 328p ausgestattet. Der Arduino Nano kann direkt an einen PC angeschlossen werden und anschließend programmiert werden. \\
+Um die Pferde in der Anlage platzieren zu können, muss zu Beginn die Anlage einen Referenzpunkt anfahren. Dieser ist so gewählt, dass das erste Pferd in den ersten Sektor platziert werden kann. Wenn man weitere Pferde in der Pferdeführanlage platzieren möchte, dreht sich die Anlage um eine Vierteldrehung weiter. Dies passiert solange bis sich alle Pferde in der Anlage befinden. Das gleiche passiert auch, wenn man die Pferde wieder von der Anlage entfernen will. \\
+
 
 % E4-300-091-D-D-D-B
 %%%%
@@ -957,8 +1001,52 @@ Auswertezeit & gering & hoch & gering - mittel \\
 \section{Kommunikationsschnittstelle}
 \label{sec:kommunikationsschnittstelle}
 
+Das Herz der Anlage ist die Kommunikationsschnittstelle. Diese sorgt dafür, dass die Informationen vom Raspberry-Pi richtig verarbeitet werden. Die Kommunikationsschnittstelle hat folgende Aufgaben:
+
+\begin{itemize}
+	\item{Datenaustausch mit Raspberry Pi}
+	\item{Auswerten der Daten von Arduino Nano}
+	\item{Steuern des \ac{FU}}
+	\item{Steuern des Ventiles}
+\end{itemize}
+
+Für diese Aufgaben gibt es zwei Systeme die in Frage kommen: 
+
+\begin{figure}[!ht]
+\begin{minipage}[t]{0.45\textwidth}
+\framebox[\textwidth]{SPS}
+\includegraphics[width=\textwidth]{S7}
+\caption{Siemens SIMATIC-S7-1200}
+
+\begin{itemize}
+	\item{Preis: 549,00\textsf{\texteuro}} % https://www.conrad.at/de/sps-steuerungsmodul-siemens-cpu-1214c-acdcrelais-6es7214-1bg31-0xb0-115-vac-230-vac-197451.html
+	\item{Digitale Eingänge: 14}
+	\item{Digitale Ausgänge: 10}
+	\item{Analoge Eingänge: 2}
+	\item{Analoge Ausgänge: 6}
+	\item{Spannungsversorgung: 230V}
+\end{itemize}
+
+\end{minipage}
+\hspace{0.1\textwidth}
+\begin{minipage}[t]{0.45\textwidth}
+\framebox[\textwidth]{Embedded System}
+
+\includegraphics[width=0.93\textwidth]{RPI}
+\caption{Raspberry Pi}
 
 
+\begin{itemize}
+	\item{Preis: 31,99\textsf{\texteuro}}
+	\item{Digitale Eingänge/Ausgänge: 26}
+	\item{Analoge Eingänge/Ausgänge: 0}
+	\item{Spannungsversorgung: 5V}
+\end{itemize}
+%https://www.amazon.de/Raspberry-Pi-Model-ARM-Cortex-A53-Bluetooth/dp/B01CD5VC92/ref=sr_1_3?ie=UTF8&qid=1521492210&sr=8-3&keywords=raspberry+pi+3
+\end{minipage}
+\end{figure}
+
+Wie gesagt sind beide Systeme für die benötigten Aufgaben denkbar. Für welchen man sich entscheidet ist wieder von dem gewünschten Aufbau abhängig. Die kompaktere All-in-one-Variante ist mit einer SPS gegeben. Bei einem Raspberry-Pi müsste man viele zusätzlich Komponenten suchen beziehungsweise entwickeln. Beispielsweise muss man, um die Analoge-Geschwindigkeitsregelung am \ac{FU} vorzunehmen, einen Digital-Analog-Wandler benötigen. Die Vorteile des Raspberry-Pis trotz der vielen Zusatzkomponenten günstiger wäre und auch weniger Leistung benötigten würde, als eine SPS. Die SPS glänzt vor allem durch ihren kompakten Aufbau. Des weiteren würde die SPS von Siemens direkt die digitale Spannung für den \ac{FU} liefern. Für den weiteren Verlauf wird deswegen die SPS verwendet. 
 %%%%
 \newpage
 %%%%
@@ -966,24 +1054,29 @@ Auswertezeit & gering & hoch & gering - mittel \\
 \section{Gesamtsteuerung}
 \label{sec:gesamtsteuerung}
 
+\subsection{Blockschaltbild}
+\label{sec:blockschaltbild}
+
 \begin{center}
 \includegraphics[scale=0.86]{Blockschaltbild1}
 \end{center}
 
+\subsection{Prinzipieller Schaltplan}
+\label{sec:schaltplan}
 
+\subsection{Kostenübersicht}
+\label{sec:kostenuebersicht}
 \begin{tabular}{|c|c|c|c|}
 \hline 
 Bauteil & Stückanzahl & Einzelpreis & Gesamtpreis \\ 
 \hline 
 Getriebemotor & 1 & • & • \\ 
 \hline 
-Frequenzumrichter & 1 & 382,72\textsf{\texteuro} & 382,72\textsf{\texteuro} \\ 
-\hline 
-Drehgeber & 1 & • & • \\ 
+Frequenzumrichter & 1 & 549,00\textsf{\texteuro} & 549,00\textsf{\texteuro} \\ 
 \hline 
 Motortreiber & 1 & 2,31\textsf{\texteuro} & 2,31\textsf{\texteuro} \\ 
 \hline 
-Magnetventil & 1 & 70\textsf{\texteuro} & 70\textsf{\texteuro} \\ 
+Magnetventil & 1 & 70,00\textsf{\texteuro} & 70,00\textsf{\texteuro} \\ 
 \hline 
 Schlauch 3/4-Zoll & 50 Meter & 0,90\textsf{\texteuro} & 45,00\textsf{\texteuro} \\ 
 \hline 
@@ -1005,7 +1098,7 @@ Inkrementalgeber & 1 & 24,62\textsf{\texteuro} & 24,62\textsf{\texteuro} \\
 \hline 
 Gesamtstück & 44 Stk & - & - \\ 
 \hline 
-Gesamtpreis & - & - & 630,57\textsf{\texteuro} \\ 
+Gesamtpreis & - & - & 796,85\textsf{\texteuro} \\ 
 \hline 
 \end{tabular}
 
@@ -1096,6 +1189,10 @@ Natürlich gibt es auch noch andere Varianten, das System redundant zu machen.
 Bei der Pferdeführanlage wäre die Redundanz nur ein unnötiger Kostenfaktor und würde nicht um einen riesigen Sicherheitsfaktor erhöhen..
 Deswegen wird diese Variante nicht verwendet.
 
+\subsection{Not-Stop/ Not-Halt}
+\label{sec:notstop}
+
+Bei einem Not-Stop wird die gesamte Anlage spannungsfrei gemacht. Das heißt, keines der elektrischen Bauteile hat mehr eine Spannung zu Verfügung. Bei einem Not-Halt hingegen wird nur das nötigste bei der Anlage angehalten, damit keine unvorhergesehenen Systemstörungen entstehen. Beides sollte bei der Pferdeführanlage angebracht sein. Egal bei welchen Fall, muss das Programm wieder von neu gestartet werden, damit keine Komplikationen auftreten, zum Beispiel: Die Steuereinheit gibt noch den Befehl, dass die Anlage mit höchsten Tempo fahren soll. 
 %%%
 \newpage
 %%%
