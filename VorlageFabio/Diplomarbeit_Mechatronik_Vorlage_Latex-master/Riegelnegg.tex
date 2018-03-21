@@ -538,6 +538,7 @@ Als erstes sollte man aber den Frequenzumrichter auf den Motor abstimmen. Die je
 \newpage
 
 \subsubsection{Verbindungsmakro Cn002 - Regelung über die Klemmen}
+\label{sec:verbindungsmakro}
 
 \begin{figure}[H]
 \begin{center}
@@ -650,6 +651,7 @@ Solange alle Transistoren nicht durchgeschaltet sind, befindet sich der Motor in
 Um das Ventil zu aktivieren, müssen Transistor 1 und Transistor 2 betätigt werden. Daraufhin bekommt das Magnetventil den benötigten Impuls um zu öffnen.\\
 Wenn man das Ventil wieder deaktivieren will, müssen die Transistoren 1 und 4 geöffnet werden und danach die Transistoren 2 und 3 geschlossen werden. Nach einer kurzen Verzögerung müssen die Transistoren 2 und 3 wieder geöffnet werden, um das Ventil wieder zu schließen.
 
+\newpage
 \subsubsection{Motortreiber Auswahl}
 \label{sec:motortreiberAuswahl}
 
@@ -730,8 +732,8 @@ void loop() {
 }
 \end{lstlisting}
 
-In diesen Programmablauf würde das Ventil ständig wechseln, zwischen den Zuständen offen und geschlossen. Das PWM-Signal wird mit 100 Prozent, da das Ventil nur geöffnet oder geschlossen sein kann. Halb offen gibt es nicht. \\
-Für die Realisierung in der Anlage gibt es zwei Möglichkeiten: ein Software- beziehungsweise ein Hardwareevent muss eintreten, damit das Ventil sich öffnen oder schließen soll. Da die Anlage über die App gesteuert werden soll, muss die Abfrage über Softwareevent erfolgen. Dies wird mittels Interrupt gelöst. Ein Interrupt ist eine Unterbrechung im Programm. Dieser beendet kurzzeitig das Programm, führt die Interrupt Service Routine aus, und setzt danach an der zuvor unterbrochenen Stelle fort. \\ In der Interrupt Service Routine, bekommt eine globale Variable den jeweiligen gewünschten Zustand, ob die Pferdekühlung aktiviert werden soll oder nicht. Im Hauptprogramm wird die globale in der lokalen Variable geschrieben. Mittels einer Doppelverzweigung wird als erstes entschieden, ob das Ventil geöffnet werden soll. Die nächste Abfrage überprüft, wie lange der Sprühregen aktiviert ist. Sollte er länger  Dort werden im jeweiligen Fall die gewünschten Pins betätigt.
+In diesen Programmablauf würde das Ventil ständig wechseln, zwischen den Zuständen offen und geschlossen. Das PWM-Signal wird mit 100 Prozent, da das Ventil nur geöffnet oder geschlossen sein kann. Halb offen gibt es nicht. Die einfachste Variante ist, die Versorgungsspannung des Motortreibers direkt mit dem PWM-Pin zu verbinden.\\
+Für die Realisierung in der Anlage gibt es zwei Möglichkeiten: ein Software- beziehungsweise ein Hardwareevent muss eintreten, damit das Ventil sich öffnen oder schließen soll. Da die Anlage über die App gesteuert werden soll, muss die Abfrage über Softwareevent erfolgen. Dies wird mittels Interrupt gelöst. Ein Interrupt ist eine Unterbrechung im Programm. Dieser beendet kurzzeitig das Programm, führt die \ac{ISR}, und setzt danach an der zuvor unterbrochenen Stelle fort. \\ In der \ac{ISR}, bekommt eine globale Variable den jeweiligen gewünschten Zustand, ob die Pferdekühlung aktiviert werden soll oder nicht. Im Hauptprogramm wird die globale in der lokalen Variable geschrieben. Mittels einer Doppelverzweigung wird als erstes entschieden, ob das Ventil geöffnet werden soll. Die nächste Abfrage überprüft, wie lange der Sprühregen aktiviert ist. Sollte er längere Zeit aktiviert muss dieser automatisch deaktiviert werden, da das Wasser nicht mehr in der Erde versickern könnte.
 
 \subsection{Wasserversorgung}
 \label{sec:wasserversorgung}
@@ -744,7 +746,7 @@ Um überhaupt die Anlage mit Wasser versorgen zu können, muss ein Wasseranschlu
 
 Nach sorgfältiger Recherche wurde folgende PE-Rohre gefunden:\\
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
 	\includegraphics[width=0.3\textwidth]{fig/PEROHR}
 	\caption{PE-Rohr}
@@ -779,7 +781,7 @@ Um den Schlauch mit dem Ventil zu verbinden, wird ein Übergangsstück benötigt
 
 %https://www.amazon.de/GARDENA-Sprinklersystem-Verbinder-Bew%C3%A4sserungsventile-Verbindungstechnik/dp/B000OY2KSW/ref=sr_1_4?ie=UTF8&qid=1520768397&sr=8-4&keywords=1+zoll+verbinder (11.3.2018)
 
-\begin{figure}
+\begin{figure}[H]
 \begin{minipage}[t]{0.45\textwidth}
 \framebox[\textwidth]{Variante 1 (1 Zoll)}
 \includegraphics[width=0.7\textwidth]{fig/GardenaVerbindung}
@@ -981,8 +983,8 @@ Bei den in der Abbildung \ref{fig:drehgeberUS} befindlichen Inkrementalgeber, ha
 
 \begin{figure}[H]
 \begin{center}
+	\includegraphics[width=0.4\textwidth]{fig/ABSignal}
 	\caption{AB-Signal}
-	\includegraphics[width=0.61\textwidth]{fig/ABSignal}
 \end{center}
 \end{figure}
 
@@ -990,16 +992,34 @@ Die Anschlüsse A und B haben die Aufgabe die Drehrichtung zu ermitteln. Je nach
 
 \begin{figure}[H]
 \begin{center}
-	\includegraphics[width=0.61\textwidth]{fig/nano}
+	\includegraphics[width=0.4\textwidth]{fig/nano}
 	\caption{Arduino Nano}
 \end{center}
 \end{figure}
 
 Der Inkrementalgeber wird direkt nach der letzten Riemenscheibe angebracht, da der Drehgeber direkt die Drehzahl der Anlage überprüft. Der Arduino Nano ist ein Mikrocontroller, welcher bereits eine fertige Beschaltung hat. Er ist mit einem Atmega 328p ausgestattet. Der Arduino Nano kann direkt an einen PC angeschlossen werden und anschließend programmiert werden. \\
-Um die Pferde in der Anlage platzieren zu können, muss zu Beginn die Anlage einen Referenzpunkt anfahren. Dieser ist so gewählt, dass das erste Pferd in den ersten Sektor platziert werden kann. Wenn man weitere Pferde in der Pferdeführanlage platzieren möchte, dreht sich die Anlage um eine Vierteldrehung weiter. Dies passiert solange bis sich alle Pferde in der Anlage befinden. Das gleiche passiert auch, wenn man die Pferde wieder von der Anlage entfernen will. \\
+Um die Pferde in der Anlage platzieren zu können, muss zu Beginn die Anlage einen Referenzpunkt anfahren. Dieser ist so gewählt, dass das erste Pferd in den ersten Sektor platziert werden kann. Wenn man weitere Pferde in der Pferdeführanlage platzieren möchte, dreht sich die Anlage um eine Vierteldrehung weiter. Dies passiert solange bis sich alle Pferde in der Anlage befinden. Das gleiche passiert auch, wenn man die Pferde wieder von der Anlage entfernen will. \newline{}
 
+Das Programm am Arduino Nano muss nun die Signale vom Drehgeber einlesen und verarbeiten. Der Drehgeber muss mit seinen vier Anschlüssen mit dem Arduino Nano verbunden werden.
+Mittels Interrupt wartet der Mikrocontroller, bis er ein Signal vom Drehgeber bekommt. Jede Änderung der Flanken muss mit einem Timer überprüft werden und daraufhin mit einen Algorithmus umgewandelt werden. Das Abnahmerad hat einen Durchmesser von 12mm. Die Abfrage erfolgt mit 1440 Pulsen pro Umdrehung. Dadurch lässt sich der Umfang pro Puls berechnen.
 
+\begin{center}
+\begin{equation}
+  \label{eq:7}
+	Umfang = 12mm * \pi = 37,69mm \rightarrow s = \frac{Umfang}{1440} =  0,0262mm  \rightarrow \varphi = \frac{s}{r} = \frac{0,262}{6} = 0,0044rad
+\end{equation} 
+\end{center}
 
+Da man die Strecke hat kann man über die Zeit auf die Geschwindigkeit schließen. Sobald der Mikrocontroller eine Flanke erkennt, startet der Timer zu zählen. Sobald die Flanke fällt stoppt dieser wieder und die Zeit aus dem Timer wird verwendet um die Geschwindigkeit zu berechnen. Das ist aber nur die Geschwindigkeit am Drehgeber. Um die Geschwindigkeit des Pferdes zu ermitteln muss man den Drehwinkel über die Übersetzungen berechnen. Die Übersetzung vom Drehgeber auf die Riemenscheibe beträgt 0,08 und von der Riemenscheibe zum Drehzentrum 0,735. Daraus ergibt sich ein Gesamtübersetzungsverhältnis von 0,0588. Durch erneutes umformen erhält man letztendlich folgende Formel die im Mikrocontroller festgelegt werden muss: 
+
+\begin{center}
+\begin{equation}
+  \label{eq:9}
+	v = \frac{\varphi * i * r_{Laufradius}}{Timerzeit [s]} [\frac{m}{s}]
+\end{equation} 
+\end{center}
+
+Aus diesen Wert kann man nun die gewünschten Werte ermitteln wie zum Beispiel die Gesamtstrecke oder die Beschleunigung der Anlage. Sollte der Mikrocontroller plötzlich keine Geschwindigkeit mehr feststellen 
 
 % E4-300-091-D-D-D-B
 %%%%
@@ -1022,7 +1042,9 @@ Für diese Aufgaben gibt es zwei Systeme die in Frage kommen:
 \begin{figure}[H]
 \begin{minipage}[t]{0.45\textwidth}
 \framebox[\textwidth]{SPS}
-\includegraphics[width=\textwidth]{fig/S7}
+\begin{center}
+\includegraphics[width=0.65\textwidth]{fig/S7}
+\end{center}
 \caption{Siemens SIMATIC-S7-1200}
 
 \begin{itemize}
@@ -1039,7 +1061,7 @@ Für diese Aufgaben gibt es zwei Systeme die in Frage kommen:
 \begin{minipage}[t]{0.45\textwidth}
 \framebox[\textwidth]{Embedded System}
 
-\includegraphics[width=0.93\textwidth]{fig/RPI}
+\includegraphics[width=\textwidth]{fig/RPI}
 \caption{Raspberry Pi}
 
 
@@ -1053,13 +1075,33 @@ Für diese Aufgaben gibt es zwei Systeme die in Frage kommen:
 \end{minipage}
 \end{figure}
 
-Wie gesagt sind beide Systeme für die benötigten Aufgaben denkbar. Für welchen man sich entscheidet ist wieder von dem gewünschten Aufbau abhängig. Die kompaktere All-in-one-Variante ist mit einer SPS gegeben. Bei einem Raspberry-Pi müsste man viele zusätzlich Komponenten suchen beziehungsweise entwickeln. Beispielsweise muss man, um die Analoge-Geschwindigkeitsregelung am \ac{FU} vorzunehmen, einen Digital-Analog-Wandler benötigen. Die Vorteile des Raspberry-Pis trotz der vielen Zusatzkomponenten günstiger wäre und auch weniger Leistung benötigten würde, als eine SPS. Die SPS glänzt vor allem durch ihren kompakten Aufbau. Des weiteren würde die SPS von Siemens direkt die digitale Spannung für den \ac{FU} liefern. Für den weiteren Verlauf wird deswegen die SPS verwendet. 
+Wie bereits erwähnt sind beide Systeme für die benötigten Aufgaben denkbar. Für welchen man sich entscheidet ist wieder von dem gewünschten Aufbau abhängig. Die kompaktere All-in-one-Variante ist mit einer SPS gegeben. Bei einem Raspberry-Pi müsste man viele zusätzlich Komponenten suchen beziehungsweise entwickeln. Beispielsweise muss man, um die Analoge-Geschwindigkeitsregelung am \ac{FU} vorzunehmen, einen Digital-Analog-Wandler benötigen. Die Vorteile des Raspberry-Pis trotz der vielen Zusatzkomponenten günstiger wäre und auch weniger Leistung benötigten würde, als eine SPS. Die SPS glänzt vor allem durch ihren kompakten Aufbau. Des weiteren würde die SPS von Siemens direkt die digitale Spannung für den \ac{FU} liefern. Für den weiteren Verlauf wird deswegen die SPS verwendet. 
+
+\subsubsection{Steuerung des Frequenzumrichters}
+\label{sec:steuerungFU}
+
+Um den \acl{FU} die jeweiligen Spannungsbefehle zu übergeben, welche im Kapitel \ref{sec:verbindungsmakro} zu finden sind, müssen die jeweiligen Anschlüsse miteinander verbunden werden. An der SPS werden diese im Programm ausgewählt. Am \ac{FU} 
 
 \subsubsection{Kommunikation zu Raspberry}
 \label{sec:kommunikationZuRaspberry}
 
 %TODO
 
+Um mit dem Raspberry Pi zu kommunizieren wird eine Ethernet-Verbindung gewählt. Die Kommunikation erfolgt über das Protokoll welches unter Kapitel (?.?.?) deklariert ist. Das Kommunikationsgerät bekommt dadurch die Informationen, ob der Sprühregen aktiviert werden soll oder nicht, wie lange sich die Pferdeführanlage drehen soll und wie oft sie die Drehrichtung ändern soll.
+
+\subsection{Arbeitsdurchführung}
+\label{sec:arbeitsdurchführung}
+
+\begin{description}
+\item[Wasser ein/aus:]
+Sobald der Befehl "Wasser ein" kommt, muss die SPS die im Kapitel \ref{sec:motortreiberAnsteuerung} angesprochenen Pins ansteuern. 
+%TODO
+
+\item[Trainingszeit und Drehrichtungsänderungen:]
+
+%TODO
+
+\end{description}
 
 %%%%
 \newpage
@@ -1068,17 +1110,23 @@ Wie gesagt sind beide Systeme für die benötigten Aufgaben denkbar. Für welche
 \section{Gesamtsteuerung}
 \label{sec:gesamtsteuerung}
 
-Das Blockschaltbild und der Schaltplan befinden sich im Anhang C.
+Das Blockschaltbild und der Schaltplan befinden sich im Anhang \ref{cha:anhang}.
+Der elektrische Arbeitsteil muss nahe dem Zentrum der Anlage platziert werden. Für diesen ist ein Schacht vorgesehen. Dieser ist als versenkbarer Schaltschrank zu realisieren, welcher Witterungsfest ist. Folgende Bauteile werden auf Hutschienen im Schacht platziert: \ac{FU}, Kommunikationsgerät, Arduino Nano, Motortreiber.
 
 \subsection{Kostenübersicht}
 \label{sec:kostenuebersicht}
+
+In der Kostenübersicht fehlen: Kabel für sämtliche Verbindungen.\\
+
 \begin{tabular}{|c|c|c|c|}
 \hline 
 Bauteil & Stückanzahl & Einzelpreis & Gesamtpreis \\ 
 \hline 
-Getriebemotor & 1 & • & • \\ 
+Getriebemotor & 1 & 3300\textsf{\texteuro} & 3300\textsf{\texteuro} \\ 
+\hline
+\ac{FU} & 1 & 300\textsf{\texteuro} & \textsf{\texteuro} \\
 \hline 
-Frequenzumrichter & 1 & 549,00\textsf{\texteuro} & 549,00\textsf{\texteuro} \\ 
+SIMATICS S7 & 1 & 549,00\textsf{\texteuro} & 549,00\textsf{\texteuro} \\ 
 \hline 
 Motortreiber & 1 & 2,31\textsf{\texteuro} & 2,31\textsf{\texteuro} \\ 
 \hline 
@@ -1104,10 +1152,11 @@ Inkrementalgeber & 1 & 24,62\textsf{\texteuro} & 24,62\textsf{\texteuro} \\
 \hline 
 Gesamtstück & 44 Stk & - & - \\ 
 \hline 
-Gesamtpreis & - & - & 796,85\textsf{\texteuro} \\ 
+Gesamtpreis & - & - & 4096,85\textsf{\texteuro} \\ 
 \hline 
 \end{tabular}
 
+\newpage
 \section{Sicherheit der Pferde und Anlage}
 \label{sec:sicherheitDerPferdeUndAnlage}
 
@@ -1157,6 +1206,7 @@ gibt es ein erhöhtes Risiko für die Pferde und der Anlage selbst.
 Die Haftung liegt in diesem Fall bei der Person, die die Anlage in dieser Zeit in Betrieb nimmt.
 Des weiteren muss die Anlage geerdet werden. 
 
+
 \subsection{Winterschutz}
 \label{sec:winterschutz}
 
@@ -1174,36 +1224,43 @@ Um ein langes Leben der Wasserrohre gewährleisten zu können, muss der jeweilig
 
 \end{description}
 
-\subsection{Redundanz}
-\label{sec:redundanz}
-
-Im Bereich Sicherheit von Anlagen, kann man häufig den Begriff Redundanz aufschnappen. 
-
-Redundanz (lat. = Überfluss) ist das Vorhandensein zusätzlicher technischer Komponenten, die für den Betrieb eines Systems oder Gerätes nicht nötig sind, solange keine Störung bzw. kein Ausfall vorliegt. \footnote{http://www.secupedia.info/wiki/Redundanz}
-
-Sollte die Pferdeführanlage vermarktet werden, könnte man die Anlage erweitern. Diese Erweiterung betrifft den Bereich für die Sicherheit der Pferde.
-
-\begin{center}
-	\includegraphics[width=0.5\textwidth]{fig/Redundanz}
-\end{center}
-
-Das Bild zeigt eine Möglichkeit eine Redundanz zu realisieren.
-
-Der Gedanke dabei ist, wenn ein Drehgeber defekt ist, kann auch noch der zweite Inkrementalgeber ein Signal liefern, um zumindest einen Durchlaufzyklus beenden zu können. Die hängt aber davon ab, ob der jeweilige Benutzer überhaupt möchte ob es die Anlage weiterlaufen soll und ob er dafür zusätzlich zahlen möchte. Somit könnte man ein Sicherheitsextra zusätzlich anbieten.
-
-Natürlich gibt es auch noch andere Varianten, das System redundant zu machen.
-Bei der Pferdeführanlage wäre die Redundanz nur ein unnötiger Kostenfaktor und würde nicht um einen riesigen Sicherheitsfaktor erhöhen..
-Deswegen wird diese Variante nicht verwendet.
-
 \subsection{Not-Stop/ Not-Halt}
 \label{sec:notstop}
 
 Bei einem Not-Stop wird die gesamte Anlage spannungsfrei gemacht. Das heißt, keines der elektrischen Bauteile hat mehr eine Spannung zu Verfügung. Bei einem Not-Halt hingegen wird nur das nötigste bei der Anlage angehalten, damit keine unvorhergesehenen Systemstörungen entstehen. Beides sollte bei der Pferdeführanlage angebracht sein. Egal bei welchen Fall, muss das Programm wieder von neu gestartet werden, damit keine Komplikationen auftreten, zum Beispiel: Die Steuereinheit gibt noch den Befehl, dass die Anlage mit höchsten Tempo fahren soll. 
+
+\subsection{Pferdesicherheit}
+\label{sec:pferdesicherheit}
+
+Prinzipiell ist es schwer möglich zu ermitteln, ob ein Pferd stehen geblieben oder gestürzt ist. Das Grundgerüst der Anlage sieht ein klappbares Tor vor. Sobald dieses aufklappt könnte ein Sensor auslösen, daraufhin die Anlage sofort zum Stillstand bringt. Eine Schwierigkeit dabei ist, dass die Spannungsversorgung des Sensors auf einen drehbaren Gestell ist. Dies wäre prinzipiell möglich, bringt aber mehrere Verschleißteile mit sich. Diese sind meistens nicht sehr preiswert. Sobald der Schleifkontakt in der Deswegen musste eine andere Variante gefunden werden. \\
+Der folgende Grundgedanke kam erst sehr spät und konnte deswegen nicht mehr in der Konstruktion berücksichtigt werden. Dieser müsste in weiteren Verlauf bei der Konstruktion neu bearbeitet werden:\newline{}
+
+Jedes der Treibgitter bekommt einen Sicherheitsbolzen. Dieser reißt ab, sobald eine die Gegenkraft vom Pferd auf das Gitter einwirkt. Des weiteren muss der Keilriemen so dimensioniert werden, dass keine Drehübertragung auf die Anlage mehr möglich ist. Anders gesagt: Er rutsch durch. Der Drehgeber müsste in diesen Fall bei der Riemenscheibe befestigt werden, welche mit der Anlage verbunden ist. Die Auswertung des Inkrementalgebers müsste dementsprechend angepasst werden. Da die Anzahl der Pulse im Inkrementalgeber sehr hoch ist, würde dieser eine sofortige Geschwindigkeitsänderung bemerken. Sobald dieser Fall festgestellt wurde, gibt dieser das Signal, die Anlage sofort zu stoppen. \newline{}
+
+Welche Variante auf Dauer kostengünstiger wäre, müsste durch Risikoabschätzungen und Lebensdauerrechnungen analysiert werden. 
+
 %%%
 \newpage
 %%%
 
-\section{Verbesserungsvorschläge}
+\section{Diskussion}
+\label{sec:diskussion}
+
+\subsection{Verbesserungsvorschläge}
 \label{sec:verbesserungsvorschläge}
 
+\subsubsection{Motor}
+\label{sec:verbesserungMotor}
+
+Als ersten Hauptpunkt wäre eine andere Antriebsart zu wählen. Ein Getriebemotor dieser Dimension  ist unüblich und daher unbrauchbar. Sogar die Kosten von 3000 Euro sind nicht Sinn und Sache der Arbeit.  In diesen Bereich muss weiter nach Alternativen gesucht werden. 
+
+\subsubsection{Raspberry Pi für Kommunikation}
+\label{sec:raspberryPiKommunikation}
+
+Der zweite Punkt ist die Kommunikationsschnittstelle. Wie schon im Kapitel \ref{sec:kommunikationsschnittstelle} erwähnt ist der günstigere Weg für die Kommunikation, die Verwendung von einem Raspberry Pi. Mit zusätzlichen Komponenten könnten die benötigten Spannung und analog Signale erzeugt werden. Nicht nur den Anschaffungspreis ist günstiger, sondern auch die Betriebskosten. 
+
+\subsection{Persönliche Rückschlüsse}
+\label{sec:persönlicheRückschlüsse}
+
+Mit wenig Erfahrung und Leichtsinnigkeit wurde die Arbeit gestartet. Im Laufe der Zeit drehten sich die Ansichten und man kam zu dem Entschluss, dass man die Diplomarbeit ein wenig unterschätzt hat. Die Hauptpunkte sind prinzipiell schnell und einfach abgearbeitet. Doch hinter diesen Punkten häufen sich die kleinen Arbeiten und Herausforderungen. Step-by-Step wurden diese angenommen, doch letztendlich ist die wirkliche Realisierung des Projektes noch ein schönes Stück entfernt. Dennoch konnte der Wissenstand in den Bereich der Antriebstechnik und deren Komponenten erhöht werden. Letztendlich bleibt nur noch zu sagen, dass man erfahreneren Leute doch den nötigen Glauben schenken sollte um etwaige Komplikationen zu vermeiden. 
 
