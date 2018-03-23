@@ -1,7 +1,7 @@
 \chapter{Elektronik und Sicherheit}
 \label{sec:elektronikUndSicherheit}
 
-\section{Abstract}
+\section{Abstract Electronic}
 \label{sec:abstractETE}
 
 Because of the electronic part, the horse exerciser should be able to rotate. \cite{test-buch}
@@ -10,8 +10,8 @@ How fast the horse exerciser will move, depends on the commands, that he recives
 The horses will get a refreshment on hot sommer days by the use of the electric water valve.
 Due to the fact that the system will be used to exercise animals, one of the most important points is the safety of the horses.
 
-\section{Zusammenfassung}
-\label{sec:zusammenfassung}
+\section{Zusammenfassung Elektronik}
+\label{sec:zusammenfassungElektronik}
 
 Der Elektronikteil soll dazu dienen, die Pferdeführanlage in den gewünschten Geschwindigkeiten zu drehen, welche über die App für die Pferde gewählt wurden. 
 Die Ansteuerung des Motors kann mit einem \ac{FU} realisiert werden, 
@@ -78,7 +78,7 @@ Man darf bei der Anlage nicht auf die allgemeine Sicherheit vergessen. Überall 
 \newpage
 %%%%
 
-\section{Antriebstechnik Grundlagen}
+\section{Antriebstechnik Grundlagen\cite{antriebstechnik}}
 \label{sec:antriebstechnikGrundlagen}
 
 \subsection{Aufbau}
@@ -254,9 +254,10 @@ Folgende Auflistung zeigt noch einmal die konkreten Vor- und Nachteile von einem
 \subsubsection{Motoranforderungen}
 \label{sec:motoranforderungen}
 
+Die folgende Werte können in den Kapiteln ?.?.?, ?.?.? ujnd ?.?.? gefunden werden. 
 Der Laufradius der Pferdeführanlage beträgt ungefähr 9,75 Meter. Bei diesem Radius kann man die Pferde nicht galoppieren lassen. 
 Für eine geeignete Geschwindigkeit wurde ein realistischer Wert gefunden. %equivetinfo.de/html/eckdaten_pferd.html 5.1.18 16:35%
-Unsere Konstruktion dreht sich, wie bereits im Kapitel ?.?.? erwähnt, mit nur 5,3 min\textsuperscript{-1}. 
+Unsere Konstruktion dreht sich, mit maximal 5,3 min\textsuperscript{-1}. 
 
 Vom Konstrukteur der Anlage bekomme ich zusätzlich folgende Angaben, die der Antrieb erfüllen soll:
 \\
@@ -564,9 +565,9 @@ Da nun ein Verbindungsmakro gefunden wurde benötigt man nun folgende Anzahl an 
 	\item{1x Gemeinsame Bezugsmasse}
 \end{itemize}
 
-Sobald einer der digitalen ein Spannungssignal von 24V bekommt, wird die jeweilige Funktion ausgeführt. 
+Sobald einer der digitalen ein Spannungssignal von 24V bekommt, wird die jeweilige Funktion ausgeführt. \newline{}
 
-
+Der Frequenzumrichter kann letztendlich nur konfiguriert werden. Die Steuerung und die Programmlogik wird von einem externen Gerät durchgeführt. 
 
 %%%%
 \newpage
@@ -909,7 +910,7 @@ Um die Drehgeschwindigkeit zu überprüfen, müssen die Umdrehungen überprüft 
 \subsection{Drehgeber}
 \label{sec:drehgeber}
 
-Die Hauptaufgabe des Drehgebers ist es, die Position und Lage des mechanischen Bereiches zu ermitteln. Aus diesen Informationen lassen sich unter anderem die Geschwindigkeit und Dauer des jeweiligen Vorgangs ermitteln. Wo der Drehgeber positioniert wird hängt davon ab, was man mit welchem Ergebnis ermitteln möchte. Wie auch bei den meisten anderen Technologien, gibt es auch bei den Drehgebern verschiedene Technologiegruppen.
+Die Hauptaufgabe des Drehgebers bei unserer Anlage ist es, die Position und Lage des mechanischen Bereiches zu ermitteln. Aus diesen Informationen kann man sich unter anderem die Geschwindigkeit in Abhängigkeit der Drehzeit ermitteln. Wo der Drehgeber positioniert wird hängt davon ab, was man mit welchem Ergebnis ermitteln möchte. Wie auch bei den meisten anderen Technologien, gibt es auch bei den Drehgebern verschiedene Technologiegruppen.
 
 \subsubsection{Inkrementalgeber}
 \label{sec:inkrementalgeber}
@@ -1019,7 +1020,7 @@ Da man die Strecke hat kann man über die Zeit auf die Geschwindigkeit schließe
 \end{equation} 
 \end{center}
 
-Aus diesen Wert kann man nun die gewünschten Werte ermitteln wie zum Beispiel die Gesamtstrecke oder die Beschleunigung der Anlage. Sollte der Mikrocontroller plötzlich keine Geschwindigkeit mehr feststellen 
+Aus diesen Wert kann man nun die gewünschten Werte ermitteln wie zum Beispiel die Gesamtstrecke oder die Beschleunigung der Anlage. Sollte der Mikrocontroller plötzlich keine Geschwindigkeit mehr feststellen, sendet dieser einen Fehler an die SPS.
 
 % E4-300-091-D-D-D-B
 %%%%
@@ -1087,19 +1088,31 @@ Um den \acl{FU} die jeweiligen Spannungsbefehle zu übergeben, welche im Kapitel
 
 %TODO
 
-Um mit dem Raspberry Pi zu kommunizieren wird eine Ethernet-Verbindung gewählt. Die Kommunikation erfolgt über das Protokoll welches unter Kapitel (?.?.?) deklariert ist. Das Kommunikationsgerät bekommt dadurch die Informationen, ob der Sprühregen aktiviert werden soll oder nicht, wie lange sich die Pferdeführanlage drehen soll und wie oft sie die Drehrichtung ändern soll.
+Um mit dem Raspberry Pi zu kommunizieren wird eine Ethernet-Verbindung gewählt. Die Kommunikation erfolgt über das Protokoll welches unter Kapitel (?.?.?) deklariert ist. Das Kommunikationsgerät bekommt dadurch die Informationen, ob der Sprühregen aktiviert werden soll oder nicht, wie hoch die maximale Drehgeschwindigkeit der Anlage ist, wie lange sich die Pferdeführanlage drehen soll, wie oft sie die Drehrichtung ändern soll und ob das Programm unterbrochen werden soll.
+
+\subsubsection{Kommunikation zu Arduino Nano}
+\label{sec:kommunikationnZuArduinoNano}
+
+Die Kommunikation mit dem Arduino Nano erfolgt über \ac{UART}. Dadurch ist ein einfacher Kommunikationsaustausch möglich.\\
+In der Kommunikation werden vom Arduino Nano übertragen: Drehgeschwindigkeit, Umdrehungen, Fehler.\\
+Von der SPS wird geschickt, ob und in welche Richtung die Pferdeführanlage beschleunigt und ob sich die Anlage drehen soll.
 
 \subsection{Arbeitsdurchführung}
 \label{sec:arbeitsdurchführung}
 
+Das Herzstück der Anlage ist die Steuerung für den \acl{FU}. Nachfolgend wird kurz der Ablauf des Programmes erklärt, um eine ungefähre Übersicht über die Steuerung zu bekommen. \newline{}
+Zu Beginn wird überprüft, ob ein Fehler vom \ac{FU} oder vom Arduino Nano aktiv ist. Erst wenn keine Fehler aktiv sind, wird eine Anfrage vom Server erlaubt. Nun wird eine Anfrage an den Server geschickt und überprüft, ob überhaupt eine Verbindung zum Raspberry Pi besteht. Solange keine Antwort vom Server geschickt wird beziehungsweise sobald keine Antwort mehr vom Server kommt, muss die Anlage sofort gestoppt werden. Wie im Kapitel \ref{sec:kommunikationZuRaspberry} angesprochen, bekommt die Einheit Befehle die abgearbeitet werden müssen. Sollte in dieser Zeit ein Fehler auftreten, wird  ein ERROR an den Server geschickt, damit dieser weiß, dass ein Fehler vorliegt. \newline{}
+Abarbeitung:
+
 \begin{description}
 \item[Wasser ein/aus:]
-Sobald der Befehl "Wasser ein" kommt, muss die SPS die im Kapitel \ref{sec:motortreiberAnsteuerung} angesprochenen Pins ansteuern. 
-%TODO
+Sobald der Befehl "Wasser ein" kommt, muss die SPS die im Kapitel \ref{sec:motortreiberAnsteuerung} angesprochenen Pins, vom Motortreiber ansteuern.
 
-\item[Trainingszeit und Drehrichtungsänderungen:]
+\item[Trainingszeit, Drehrichtungsänderungen und Drehgeschwindigkeit:]
+Die erste Aktion ist, das ein Timer für die Trainingszeit gestartet wird. Sobald diese erreicht ist, wird die Anlage zum Stillstand gebracht. Die Zeit für die Drehrichtungsänderungen wird je nach Anzahl aufgeteilt. Zum Beispiel bei zehn Minuten Drehzeit, soll die Anlage 1 mal die Richtung wechseln. Dadurch wird nach 5 Minuten die Richtung geändert. Die Drehgeschwindigkeit wird auf dem entsprechenden Analogwert zugewiesen. Auf diesen soll die Anlage beschleunigen und den Wert halten. Die Überwachung erfolgt durch den Inkrementalgeber. 
 
-%TODO
+\item[Halt oder Stopp:]
+Es ist dem Benutzer jederzeit möglich ein Halt beziehungsweise ein Stopp der Anlage durchführen zu lassen. Stopp heißt, dass der aktuelle Programmzyklus beendet wird. Bei Halt wird das Programm an der aktuellen Position angehalten und sobald der Benutzer die Anlage wieder starten möchte, macht die Anlage bei dort weiter wo sie aufgehört hat. 
 
 \end{description}
 
@@ -1111,7 +1124,7 @@ Sobald der Befehl "Wasser ein" kommt, muss die SPS die im Kapitel \ref{sec:motor
 \label{sec:gesamtsteuerung}
 
 Das Blockschaltbild und der Schaltplan befinden sich im Anhang \ref{cha:anhang}.
-Der elektrische Arbeitsteil muss nahe dem Zentrum der Anlage platziert werden. Für diesen ist ein Schacht vorgesehen. Dieser ist als versenkbarer Schaltschrank zu realisieren, welcher Witterungsfest ist. Folgende Bauteile werden auf Hutschienen im Schacht platziert: \ac{FU}, Kommunikationsgerät, Arduino Nano, Motortreiber.
+Der elektrische Arbeitsteil muss nahe dem Zentrum der Anlage platziert werden. Für diesen ist ein Schacht vorgesehen. Dieser ist als versenkbarer Schaltschrank zu realisieren, welcher Witterungsfest ist. Folgende Bauteile werden auf Hutschienen im Schacht platziert: \ac{FU}, Kommunikationsgerät, Arduino Nano, Motortreiber.\ref{sec:kostenuebersicht}
 
 \subsection{Kostenübersicht}
 \label{sec:kostenuebersicht}
@@ -1124,7 +1137,7 @@ Bauteil & Stückanzahl & Einzelpreis & Gesamtpreis \\
 \hline 
 Getriebemotor & 1 & 3300\textsf{\texteuro} & 3300\textsf{\texteuro} \\ 
 \hline
-\ac{FU} & 1 & 300\textsf{\texteuro} & \textsf{\texteuro} \\
+\ac{FU} & 1 & 382,72\textsf{\texteuro} & 382,72\textsf{\texteuro} \\
 \hline 
 SIMATICS S7 & 1 & 549,00\textsf{\texteuro} & 549,00\textsf{\texteuro} \\ 
 \hline 
@@ -1179,9 +1192,9 @@ Bei unserer Pferdeführanlage können folgende Fehler bewusst auftreten:
 \subsection{Tierschutzgesetz und Anlagenschutz}
 \label{sec:tierschutzgesetzUndAnlagenschutz}
 
-Gemäß §5 Abs. 1 Tierschutzgesetz ist es verboten, 
+\emph{Gemäß §5 Abs. 1 Tierschutzgesetz ist es verboten, 
 einem Tier ungerechtfertigt Schmerzen, Leiden oder Schäden zuzufügen oder es in schwere Angst zu versetzten. 
-Unter §5 Abs. 2 Satz 3 lit. b wird nochmals extra darauf hingewiesen, dass keine technischen Geräte verwendet werden, welche das Verhalten eines Tieres durch Härte oder durch Strafreize zu beeinflussen. 
+Unter §5 Abs. 2 Satz 3 lit. b wird nochmals extra darauf hingewiesen, dass keine technischen Geräte verwendet werden, welche das Verhalten eines Tieres durch Härte oder durch Strafreize zu beeinflussen.} 
 
 Somit darf man dem Ross mit unserer Anlage, keine kleinen Denkimpulse geben, wenn es stur stehen bleibt. Wenn das Reitvieh stehen bleibt, darf ihm und der Anlage selbst nichts passieren. Die einfachste und sicherste Lösung ist, die Anlage zu stoppen. Wenn die Anlage weiter fahren möchte, könnten ungewollte Momente auftreten und somit mechanische Schäden in der Anlage verursachen.
 
@@ -1252,15 +1265,14 @@ Welche Variante auf Dauer kostengünstiger wäre, müsste durch Risikoabschätzu
 \subsubsection{Motor}
 \label{sec:verbesserungMotor}
 
-Als ersten Hauptpunkt wäre eine andere Antriebsart zu wählen. Ein Getriebemotor dieser Dimension  ist unüblich und daher unbrauchbar. Sogar die Kosten von 3000 Euro sind nicht Sinn und Sache der Arbeit.  In diesen Bereich muss weiter nach Alternativen gesucht werden. 
+Als ersten Hauptpunkt wäre eine andere Antriebsart zu wählen. Ein Getriebemotor dieser Dimension  ist unüblich und daher unbrauchbar. Sogar die Kosten von 3300 Euro sind nicht Sinn und Sache der Arbeit.  In diesen Bereich muss weiter nach Alternativen gesucht werden. 
 
 \subsubsection{Raspberry Pi für Kommunikation}
 \label{sec:raspberryPiKommunikation}
 
-Der zweite Punkt ist die Kommunikationsschnittstelle. Wie schon im Kapitel \ref{sec:kommunikationsschnittstelle} erwähnt ist der günstigere Weg für die Kommunikation, die Verwendung von einem Raspberry Pi. Mit zusätzlichen Komponenten könnten die benötigten Spannung und analog Signale erzeugt werden. Nicht nur den Anschaffungspreis ist günstiger, sondern auch die Betriebskosten. 
+Der zweite Punkt ist die Kommunikationsschnittstelle. Wie schon im Kapitel \ref{sec:kommunikationsschnittstelle} erwähnt ist der günstigere Weg für die Kommunikation, die Verwendung von einem Raspberry Pi. Mit zusätzlichen Komponenten könnten die benötigten Spannung und analog Signale erzeugt werden. Nicht nur den Anschaffungspreis ist günstiger, sondern auch die Betriebskosten. Zusätzliche würden nur die Kosten für die Zusatzelektronik aufkommen. 
 
 \subsection{Persönliche Rückschlüsse}
 \label{sec:persönlicheRückschlüsse}
 
-Mit wenig Erfahrung und Leichtsinnigkeit wurde die Arbeit gestartet. Im Laufe der Zeit drehten sich die Ansichten und man kam zu dem Entschluss, dass man die Diplomarbeit ein wenig unterschätzt hat. Die Hauptpunkte sind prinzipiell schnell und einfach abgearbeitet. Doch hinter diesen Punkten häufen sich die kleinen Arbeiten und Herausforderungen. Step-by-Step wurden diese angenommen, doch letztendlich ist die wirkliche Realisierung des Projektes noch ein schönes Stück entfernt. Dennoch konnte der Wissenstand in den Bereich der Antriebstechnik und deren Komponenten erhöht werden. Letztendlich bleibt nur noch zu sagen, dass man erfahreneren Leute doch den nötigen Glauben schenken sollte um etwaige Komplikationen zu vermeiden. 
-
+Mit wenig Erfahrung und Leichtsinnigkeit wurde die Arbeit gestartet. Im Laufe der Zeit drehten sich die Ansichten und man kam zu der Erkenntnis, dass die Diplomarbeit doch nicht aus leichter Hand durchführen lässt. Die Hauptpunkte sind prinzipiell schnell und einfach abgearbeitet und angesprochen. Doch hinter diesen Punkten häufen sich die kleinen Arbeiten und Herausforderungen. Step-by-Step wurden diese angenommen, doch letztendlich ist die wirkliche Realisierung des Projektes noch ein schönes Stück entfernt. Dennoch konnte der Wissenstand in den Bereich der Antriebstechnik und deren Komponenten erhöht werden. Letztendlich bleibt nur noch zu sagen, dass man erfahreneren Leute doch den nötigen Glauben schenken sollte um etwaige Komplikationen zu vermeiden. 
