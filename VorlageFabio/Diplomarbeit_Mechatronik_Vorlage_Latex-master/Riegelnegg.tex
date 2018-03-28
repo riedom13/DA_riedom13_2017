@@ -16,9 +16,9 @@ Due to the fact that the system will be used to exercise animals, one of the mos
 Der Elektronikteil soll dazu dienen, die Pferdeführanlage in den gewünschten Geschwindigkeiten zu drehen, welche über die App für die Pferde gewählt wurden. 
 Die Ansteuerung des Motors kann mit einem \ac{FU} realisiert werden, 
 welcher die Signale von einem gewünschten Kommunikationssystem bekommt.
-Des weiteren bekommt die Steuereinheit über Ethernet die Befehle, wie schnell sich die Anlage drehen darf und wie lange. 
+Des Weiteren bekommt die Steuereinheit über Ethernet die Befehle, wie lange und wie schnell sich die Anlage drehen darf.
 Mittels eines elektrischen Wasserventils, wird den Pferden an heißen Sommertagen eine Erfrischung ermöglicht. 
-Da mit der Anlage Tiere trainiert werden sollen, ist der wichtigste Nebenpunkt die Sicherheit der Pferde und natürlich von der Anlage selbst.
+Da mit der Anlage Tiere trainiert werden sollen, ist der wichtigste Nebenpunkt die Sicherheit der Pferde und der Anlage.
 %%%
 \newpage
 %%%
@@ -28,9 +28,9 @@ Da mit der Anlage Tiere trainiert werden sollen, ist der wichtigste Nebenpunkt d
 
 Mein Aufgabenbereich bei der Diplomarbeit ,,Pferdeführanlage“, ist die Planung für die Elektronik. Wie bereits bei der Hauptaufgabenstellung (1.1.?) erwähnt, 
 soll sich die Anlage mit verschiedenen Geschwindigkeiten und Variationen drehen.  Neben der Steuerung der Anlage, muss man auch auf die Sicherheit der Pferde achten.
-\\
-\\
-Mein Aufgabenbereich bei der Diplomarbeit sind:
+\newline{}
+
+In den Aufgabenbereich "{}Elektronik und Sicherheit"{} bei der Diplomarbeit fallen folgende Punkte:
 
 \begin{itemize}
 \item Auswahl des Motors
@@ -52,18 +52,18 @@ Diese Vorgaben konnten durch Erfahrung oder Gespräche erstellt werden.
 \subsection{Motor}
 \label{sec:motor}
 
-Prinzipiell könnte man die Anlage auch rein mechanisch Ansteuern. Mit der Hilfe von Wind, Wasser oder Öl, diese sind aber wetter- und ortsbedingt, im letzten Fall noch eine zusätzliche Umweltbelastung. Da in Mitteleuropa fast jeder Haushalt eine Stromanbindung hat, wurde der Fokus auf die Elektromotoren gerichtet.
+Prinzipiell könnte man die Anlage auch rein mechanisch Ansteuern. Mit der Hilfe von Wind, Wasser oder Öl, diese sind aber wetter- und ortsbedingt, im letzten Fall noch eine zusätzliche Umweltbelastung. Da in Mitteleuropa fast jeder Haushalt eine Stromanbindung hat, wurde der Fokus auf Elektromotoren gerichtet.
 
 \subsection{Ansteuerung Elektromotor}
 \label{sec:ansteuerungElektromotor}
 
-Um einen Motor gezielt und einfach steuern zu können, wird in den meisten Fällen auf einen Frequenzumrichter zurückgegriffen. Alternative dazu wäre ein Motorstarter. Mit diesen lassen sich aber nicht so einfach die Geschwindigkeiten steuern.
+Um einen Motor gezielt und einfach steuern zu können, wird in den meisten Fällen auf einen Frequenzumrichter zurückgegriffen. Eine alternative Variante dazu wäre ein Motorstarter. Mit diesen kann die Geschwindigkeit aber nicht so leicht geregelt werden. 
 
 \subsection{Wasserversorgung Sprühregen}
 \label{sec:wasserversorgungSpruehregen}
 
-Für die Wasserversorgung wird ein 1 Zoll Wasseranschluss benötigt. Dieser ist normaler Weise bei jedem Haus vorhanden. 
-Sollte dies nicht der Fall sein, ist es auch möglich eine Zuleitung mit geringeren Durchmesser nehmen.
+Für die Wasserversorgung wird ein 3/4"{} beziehungsweise ein 1"{}-Wasseranschluss benötigt. Dieser ist normaler Weise bei jedem Haus vorhanden. 
+Sollte dies nicht der Fall sein, ist es auch denkbar eine Zuleitung mit geringerem Durchmesser zu ermöglichen. Hierfür müssten aber die örtlichen Gegebenheiten beachtet werden.
 
 \subsection{Verarbeitung der Daten}
 \label{sec:verarbeitungDerDaten}
@@ -91,7 +91,7 @@ Man darf bei der Anlage nicht auf die allgemeine Sicherheit vergessen. Überall 
 \end{figure}
 
 Der Inverter wandelt die vorhandene elektrische Energie, in die gewünschte elektrische Ausgangsgröße um. 
-Diese wird so gewählt, dass der Motor direkt damit betrieben werden kann. Dieser kann durch einer Welle den gewünschten mechanischen Prozess betreiben.  Falls man die Drehzahl nicht elektrisch verändern will, benötigt man zusätzlich ein Getriebe. Das Getriebe kann aber auch nur als Verbindung dienen und mittels Keilriemen oder ähnlichem realisiert werden.
+Diese wird so gewählt, dass der Motor direkt damit betrieben werden kann. Dieser kann durch eine Welle den gewünschten mechanischen Prozess betreiben.  Falls man die Drehzahl nicht elektrisch verändern will, benötigt man zusätzlich ein Getriebe. Das Getriebe kann aber auch nur als Verbindungselement dienen und mittels Keilriemen oder ähnlichem realisiert werden.
 
 Daraus ergibt sich folgender Ablauf wie aus der Abbildung \ref{fig:abbildungAufbau} ersichtlich: \\
 $Versorgungsspannung \rightarrow Inverter \rightarrow Motor \rightarrow (Getriebe) \rightarrow Mechanischer Prozess$
@@ -120,7 +120,7 @@ Ein Antriebssystem sollte gewissen Anforderungen entsprechen, um vermarktbar zu 
 Die Kraft, welche den Elektromotor in Bewegung versetzt, nennt sich Lorentzkraft.
 Befindet sich ein stromdurchflossener elektrischer Leiter in einem Magnetfeld, so wirkt auf diesen Leiter eine Kraft.
 Die Wirkungsrichtung hängt von der Stromflussrichtung im Leiter ab. 
-Um sich die Vorstellung zu erleichtern, wird in den meisten Fällen die "Linke-Hand-Regel" verwendet.
+Um sich die Vorstellung zu erleichtern, wird in den meisten Fällen die "{}Linke-Hand-Regel"{} verwendet.
 
 \begin{figure}[H]
 \begin{center}
@@ -146,12 +146,12 @@ Die Lorentzkraft erzeugt bei einer gelagerten Spule ein Drehmoment, welches das 
 \subsection{Motorarten}
 \label{sec:motorarten}
 
-Es gibt viele verschiedene Arten und Typen von Elektromotoren. Um eine kleine Übersicht zu ermöglichen werden nachfolgend die wichtigsten Grundmotore aufgelistet und ein wenig näher beschrieben.
+Es gibt viele verschiedene Arten und Typen von Elektromotoren. Um eine kleine Übersicht zu ermöglichen werden nachfolgend die wichtigsten Grundmotoren aufgelistet und ein wenig näher beschrieben.
 
 \subsubsection{Gleichstrommotor}
 \label{sec:gleichstrommotor}
 
-Der Rotor wird gelagert und mehrfach mit Draht umwickelt. Der Rotor bekommt über Kohlebürsten am Kollektor eine Stromübertragung. Daraufhin bekommt der Rotor erneuten Schwung mit. Wenn der Motor größer sein muss, kann der Stator in mehrere Pole aufgeteilt werden. Der Stromfluss wird dadurch stabiler. Aufgrund der Kohlebürsten, muss der Gleichstrommotor nach einer gewissen Laufzeit gewartet werden.
+Der Rotor wird gelagert und mehrfach mit Draht umwickelt. Der Rotor bekommt über Kohlebürsten am Kollektor eine Stromübertragung. Daraufhin bekommt der Rotor einen erneuten Energiestoß. Wenn der Motor größer sein muss, kann der Stator in mehrere Pole aufgeteilt werden. Der Stromfluss wird dadurch stabiler. Aufgrund der Kohlebürsten, muss der Gleichstrommotor nach einer gewissen Laufzeit gewartet werden.
 
 \begin{figure}[H]
 \begin{center}
@@ -170,10 +170,10 @@ Die Abbildung \ref{fig:gleichstrommotor} zeigt den einfachen Aufbau von einer Gl
 	\item{Handstaubsauger}
 \end{itemize}
 
-\subsubsection{Drehstrommotor}
+\subsubsection{Drehstrommotor/Drehfeldmaschine}
 \label{sec:drehstrom}
 
-Drehmaschinen arbeiten durch eine Variation im Statorfeld. Der Rotor wird auch hier durch einen Magneten realisiert. Der Rotor versucht sich immer nach dem entsprechenden Magnetpol zu richten. Die Spannungen beim Drehstrom sind um 120 Grad versetzt, deshalb variieren die magnetischen Pole regelmäßig. Aus diesem Grund beginnt sich der Rotor zu drehen. Drehstrommotoren lassen sich leichter kühlen als Gleichstrommotore. 
+Drehmaschinen arbeiten durch eine Variation im Statorfeld. Der Rotor wird auch hier durch einen Magneten realisiert. Der Rotor versucht sich immer nach dem entsprechenden Magnetpol zu richten. Die Spannungen beim Drehstrom sind um 120 Grad versetzt, deshalb variieren die magnetischen Pole regelmäßig. Aus diesem Grund beginnt sich der Rotor zu drehen. Drehstrommotoren lassen sich leichter kühlen als Gleichstrommotoren. 
 
 \begin{figure}[H]
 \begin{center}
@@ -184,7 +184,7 @@ Drehmaschinen arbeiten durch eine Variation im Statorfeld. Der Rotor wird auch h
 
 Bei den Drehfeldmaschinen gibt es zwei verschiedene Aufbauarten: Asynchron- und Synchronmaschine.
 
-\subsubsection{Asynchronmotor}
+\paragraph{Asynchronmotor}
 \label{sec:asynchronmotor}
 
 Ein Asynchronmotor hat einen Kurzschlussläufer.
@@ -198,10 +198,10 @@ Bei einem Kurzschlussläufer werden die Leiter, wie der Name erraten lässt, im 
 	\item{Ventilatoren}
 \end{itemize}
 
-\subsubsection{Synchronmotor}
+\paragraph{Synchronmotor}
 \label{sec:synchronmotor}
 
-Bei einer Synchronmaschine ist der Rotor entweder als Permanent- oder Elektromagnet realisiert. Dadurch hat der Rotor bereits ein eigenständiges Magnetfeld. Der Rotor kann sich deshalb selbständig auf das Magnetfeld im Stator ausrichten. Der Rotor kann nun, je nach Änderung des Magnetfeldes im Stator, direkt mitlaufen. Ein Synchronmotor ist für höchste dynamische Bewegungskriterien geeignet. 
+Bei einer Synchronmaschine ist der Rotor entweder als Permanent- oder Elektromagnet realisiert. Dadurch hat der Rotor bereits ein eigenständiges Magnetfeld. Der Rotor kann sich deshalb selbstständig auf das Magnetfeld im Stator ausrichten. Der Rotor kann nun, je nach Änderung des Magnetfeldes im Stator, direkt mitlaufen. Ein Synchronmotor ist für höchste dynamische Bewegungskriterien geeignet. 
 
 \textbf{Anwendungsbereiche:}
 
@@ -223,16 +223,16 @@ Bei einer Synchronmaschine ist der Rotor entweder als Permanent- oder Elektromag
 \end{center}
 \end{figure}
 
-Die Tabelle \ref{fig:ueberschichtElektromotor} gibt einen Überblick, in welchen Bereich man seinen gesuchten Motor finden kann. 
-Um weiter den gewünschten Motor auswählen zu können, benötigt man die Daten, was überhaupt bewegt werden soll und wie. 
+Die Tabelle \ref{fig:ueberschichtElektromotor} gibt einen Überblick, in welchem Bereich man seinen gesuchten Motor finden kann. 
+Um den gewünschten Motor schlussendlich auswählen zu können, ist es erforderlich zu wissen, was auf welche Art bewegt werden soll.
 
 \subsubsection{Festlegung des Motors}
 \label{sec:festlegungDesMotors}
 
-Der Fokus fiel auf den Bereich der Asynchronmotoren. Man kann sie sehr oft am Markt in verschiedensten Ausführungen finden. Dadurch ist auch ein sehr gutes Preis/Leistung-Verhältnis gegeben. 
+Der Fokus fiel auf den Bereich der Asynchronmotoren. Man kann sie sehr oft am Markt in verschiedensten Ausführungen finden. Dadurch ist auch ein sehr gutes Preis-Leistungs-Verhältnis gegeben. 
 \\
 Folgende Auflistung zeigt noch einmal die konkreten Vor- und Nachteile von einem Asynchronmotor:
-
+\newpage
 
 \textbf{Vorteile:}
 
@@ -259,11 +259,11 @@ Der Laufradius der Pferdeführanlage beträgt ungefähr 9,75 Meter. Bei diesem R
 Für eine geeignete Geschwindigkeit wurde ein realistischer Wert gefunden. %equivetinfo.de/html/eckdaten_pferd.html 5.1.18 16:35%
 Unsere Konstruktion dreht sich, mit maximal 5,3 min\textsuperscript{-1}. 
 
-Vom Konstrukteur der Anlage bekomme ich zusätzlich folgende Angaben, die der Antrieb erfüllen soll:
+Vom Konstrukteur der Anlage liefert zusätzlich folgende Angaben, die der Antrieb erfüllen soll:
 \\
 
 \begin{itemize}
-	\item{Trägheitmoment I = 30273,53 kgm\textsuperscript{2}}
+	\item{Trägheitsmoment I = 30273,53 kgm\textsuperscript{2}}
 	\item{Beschleunigung $\alpha$ = 0,0947 1/s\textsuperscript{2}}
 	\item{Geschwindigkeit $\omega$= 0,5 1/s}
 \end{itemize}
@@ -275,6 +275,8 @@ Durch diese Angaben lässt sich ein geeigneter Motor unter folgender Berechnung 
 \textit{M\textsubscript{M} = Drehmoment des Motors} \newline
 \textit{P\textsubscript{M} = Leistung des Motors} \newline
 \textit{$\eta$\textsubscript{GM} = Wirkungsgrad von Motor und Übersetzung = 0,81}
+
+\newpage
 
 
 \begin{center}
@@ -293,7 +295,7 @@ Durch diese Angaben lässt sich ein geeigneter Motor unter folgender Berechnung 
 \end{equation} 
 \end{center}
 
-Beide Formeln welche oberhalb verwendet wurden, sind grundlegende Formeln in der Mechanik. Daraus konnte das benötigte Drehmoment und die benötigte Leistung der Anlage berechnet werden. Systeme haben in der Realität aber Verluste. Diese werden mit dem Wirkungsgrad festgelegt. Wenn man diesen vernachlässigt, könnte der gesuchte Antrieb überfordert sein und dadurch die Anlage nicht bewegen. Dadurch muss man folgende Rechnung durchführen:
+Beide Formeln welche oberhalb verwendet wurden, sind grundlegende Formeln in der Mechanik. Daraus konnten das benötigte Drehmoment und die benötigte Leistung der Anlage berechnet werden. Systeme haben in der Realität aber Verluste. Diese werden mit dem Wirkungsgrad festgelegt. Wenn man diesen vernachlässigt, könnte der gesuchte Antrieb überfordert sein und dadurch die Anlage nicht bewegen. Deshalb muss man folgende Rechnung durchführen:
 
 \begin{center}
 \begin{equation}
@@ -305,12 +307,14 @@ Beide Formeln welche oberhalb verwendet wurden, sind grundlegende Formeln in der
 \subsubsection{Auswahlverfahren}
 \label{sec:auswahlverfahren}
 
-Aufgrund der Anforderungen fiel die Entscheidung auf die Gruppe der Asynchronmotoren. Da die Anlage mit sehr geringer Drehzahl fährt, besteht die Möglichkeit ein externes Getriebe oder direkt auf einen Getriebemotor zurückzugreifen. 
-Am Häufigsten findet man bei uns eine 230V Steckdose. Drehstromsteckdosen sind meist nur an den Orten platziert, wo sie von Anfang an benötigt werden. Um den Besitzer keine Umbauarbeiten aufzulegen liegt der Fokus bei einen 230V Anschluss. Wenn man den Motor mit Drehstrom betreiben will, ändert sich der Nennstrom des Motors. Ansonsten funktioniert die Ansteuerung gleich.
+Aufgrund der Anforderungen fiel die Entscheidung auf die Gruppe der Asynchronmotoren. Da die Anlage mit sehr geringer Drehzahl fährt, besteht die Möglichkeit, ein externes Getriebe oder direkt auf einen Getriebemotor zurückzugreifen. 
+Am Häufigsten findet man bei uns eine 230V Steckdose. Drehstromsteckdosen sind meist nur an den Orten platziert, wo sie von Anfang an benötigt werden. Um dem Besitzer keine Umbauarbeiten aufzulegen liegt der Fokus bei einem 230V Anschluss. Wenn man den Motor mit Drehstrom betreiben will, ändert sich der Nennstrom des Motors. Ansonsten funktioniert die Ansteuerung gleich.
 
 Nun musste ein Asynchronmotor mit einer Leistung von mindestens 1770 Watt gefunden werden.
 
-Bei der Suche nach einen geeigneten Motor kamen folgende zwei Motoren in die engere Auswahl:
+Bei der Suche nach einem geeigneten Motor kamen folgende zwei Motoren in die engere Auswahl:
+
+\newpage
 
 \begin{figure}[H]
 \begin{minipage}[t]{0.45\textwidth}
@@ -352,9 +356,7 @@ Bei der Suche nach einen geeigneten Motor kamen folgende zwei Motoren in die eng
 \end{minipage}
 \end{figure}
 
-\newpage
-
-In diesem Vergleich würde der Motor von SEW bevorzugt werden.
+In diesem Vergleich wird der Motor von SEW bevorzugt.
 
 Da der Motor eine Drehzahl von umgerechnet 24,16s\textsuperscript{-1} hat, muss man die Drehzahl reduzieren. Um dies zu ermöglichen, muss man eine Übersetzung ermöglichen. Dafür gibt es mehrere Varianten. Nachfolgend werden drei Varianten aufgelistet:
 
@@ -364,13 +366,16 @@ Da der Motor eine Drehzahl von umgerechnet 24,16s\textsuperscript{-1} hat, muss 
 	\item{Riemenscheibe}
 \end{itemize}
 
-Bei einem Getriebemotor wird das Getriebe direkt vom Hersteller dimensioniert und mit dem Motor verbunden. Bei einem externen Getriebe muss man zusätzlich darauf achten, ob der Motor mit dem Getriebe verbunden werden kann, beziehungsweise darf. Um den zusätzlichen Arbeitsaufwand gering zu halten und bei Komplikationen auf den jeweiligen Hersteller zurückgreifen kann, wird für die Pferdeführanlage ein Getriebemotor verwendet.
+
+Bei einem Getriebemotor wird das Getriebe direkt vom Hersteller dimensioniert und mit dem Motor verbunden. Bei einem externen Getriebe muss man zusätzlich darauf achten, ob der Motor mit dem Getriebe verbunden werden kann, beziehungsweise darf. Um den zusätzlichen Arbeitsaufwand gering zu halten und bei Komplikationen auf den jeweiligen Hersteller zurückgreifen zu können, wird für die Pferdeführanlage ein Getriebemotor verwendet.
+
+\newpage
 
 \subsubsection{Getriebemotor}
 \label{sec:getriebemotor}
 
-Ein Getriebemotor  besteht aus einem Motor und einem Getriebe, welche direkt in einer gemeinsamen Einheit miteinander verbunden sind. Das Getriebe soll sowohl Drehzahl als auch Drehmoment des Motors wandeln. Diese Wandlung kann mittels Drehzahlverhältnis ermittelt werden. Bei Getriebemotoren muss man das Drehmoment von Motor und Getriebe beachten. Primär gilt die Last die auf das Getriebe wirkt. 
-Wie auch bei allen anderen Motoren gibt es auch bei den Getriebemotoren viele weitere Modelle. Zum Beispiel Servo-Getriebemotore und verstellbare Getriebemotore.
+Ein Getriebemotor  besteht aus einem Motor und einem Getriebe, welche direkt in einer gemeinsamen Einheit miteinander verbunden sind. Das Getriebe soll sowohl Drehzahl als auch Drehmoment des Motors wandeln. Diese Wandlung kann mittels Drehzahlverhältnis ermittelt werden. Bei Getriebemotoren muss man das Drehmoment von Motor und Getriebe beachten. Primär gilt die Last, die auf das Getriebe wirkt. 
+Wie auch bei allen anderen Motoren gibt es auch bei den Getriebemotoren viele weitere Modelle. Zum Beispiel Servo-Getriebemotoren und verstellbare Getriebemotore.
 
 Für unsere Anlage wurde folgender Getriebemotor gefunden:
 
@@ -399,7 +404,7 @@ Der Getriebemotor hat folgende Kenndaten:
 Wenn man diesen Motor mit den Motoranforderungen vergleicht, werden folgende Anforderungen, durch den Getriebemotor, erfüllt:
 
 \begin{itemize}
-	\item{Mindestens Drehmoment: 2866,9 Nm; Tatsächliches Drehmoment: 2980 Nm}
+	\item{Mindestdrehmoment: 2866,9 Nm; Tatsächliches Drehmoment: 2980 Nm}
 	\item{Mindestleistung: 1769,69W; Tatsächliche Leistung: 2200W}
 \end{itemize}
 
@@ -407,7 +412,7 @@ Der einzige Punkt der noch offen ist, ist die Abtriebsdrehzahl bei 50 Hertz Netz
 
 Da man sowieso die Ausgangswelle mit der Anlage verbinden muss, werden Riemenscheiben verwendet.
 
-Um die jeweiligen Durchmesser der Riemenscheibe zu ermitteln, muss man das benötigte Übersetzungsverhältnis ermitteln.
+Um den jeweiligen Durchmesser der Riemenscheiben zu ermitteln, muss man das benötigte Übersetzungsverhältnis ermitteln.
 
 \begin{center}
 \begin{equation}
@@ -416,7 +421,7 @@ Um die jeweiligen Durchmesser der Riemenscheibe zu ermitteln, muss man das benö
 \end{equation} 
 \end{center}
 
-Um den gewünschten Durchmesser zu finden muss man einen Durchmesser annehmen und den Anderen berechnen:
+Um den gewünschten Durchmesser zu finden, muss man einen Durchmesser annehmen und den Anderen berechnen:
 
 \begin{center}
 \begin{equation}
@@ -430,7 +435,7 @@ Nun kann der Motor unter voller Netzfrequenz betrieben und seine gesamte Leistun
 \subsection{Motor für Testaufbauten}
 \label{sec:motorFuerTestaufbauten}
 
-Da das wirkliche Trägheitsmoment zu Beginn der Konstruktion noch nicht feststand, musste schon vorzeitig auf eine Motorart entschieden werden. In der Vorrecherche wurde bei schon bestehenden Anlagen immer ein Asynchronmotor gefunden. Deshalb fiel der Fokus schon vorab auf die Asynchronmotoren.
+Da das wirkliche Trägheitsmoment zu Beginn der Konstruktion noch nicht feststand, wurde schon im Vorhinein eine Motorart gewählt. In der Vorrecherche wurde bei schon bestehenden Anlagen immer ein Asynchronmotor gefunden. Deshalb fiel der Fokus schon vorab auf die Asynchronmotoren.
 \newpage
 %%%%
 \section{\acl{FU}}
@@ -439,7 +444,7 @@ Da das wirkliche Trägheitsmoment zu Beginn der Konstruktion noch nicht feststan
 \subsection{Allgemein}
 \label{sec:allgemeinfrequenzumrichter}
 
-Der \ac{FU} dient zur Steuerung des Asynchronmotors. Dieser regelt das Verhältnis zwischen Motorspannung und Frequenz, daher kann die Drehzahl je nach Last variieren. Der \ac{FU} selbst überprüft prinzipiell nicht die Position des Rotors. Dies muss meistens mit einem anderen Gerät realisiert werden. Wenn man den Motor ohne Umrichter angeschlossen wird, würde der Motor mit einer einzigen festen Motordrehzahl drehen. 
+Der \ac{FU} dient zur Steuerung des Asynchronmotors. Dieser regelt das Verhältnis zwischen Motorspannung und Frequenz, daher kann die Drehzahl je nach Last variieren. Der \ac{FU} selbst überprüft prinzipiell nicht die Position des Rotors. Dies muss meistens mit einem anderen Gerät realisiert werden. Wenn man den Motor ohne Umrichter anschließt, würde der Motor mit einer festen Motordrehzahl drehen. 
 
 \subsection{Aufbau \acl{FU}}
 \label{sec:aufbauFrequenzumrichter}
@@ -452,7 +457,7 @@ Ein \ac{FU} besteht vereinfacht aus folgenden Bestandteilen:
 	\item{Wechselrichter}
 \end{itemize}
 
-Der Gleichrichter wandelt eine Wechselspannung in eine Gleichspannung. Diese Gleichspannung wird im Gleichspannungszwischenkreis in Kondensatoren gespeichert. Diese Spannung wird dann vom Wechselrichter weiter verwendet und wieder in eine Wechselspannung umgewandelt.
+Der Gleichrichter wandelt eine Wechselspannung in eine Gleichspannung. Diese Gleichspannung wird im Gleichspannungszwischenkreis in Kondensatoren gespeichert. Die Spannung wird dann vom Wechselrichter verwendet und wieder in eine Wechselspannung umgewandelt.
 
 \subsection{Finden eines Frequenzumrichters}
 \label{sec:findenEinesFrequenzumrichter}
@@ -508,7 +513,7 @@ Die genannten Frequenzumrichter erfüllen beide die Anforderungen, um den Motor 
 \subsection{Datenblatt Frequenzumrichter}
 \label{sec:datenblattFrequenzumrichter}
 
-Um den \ac{FU} korrekt verwenden zu können und etwaige Komplikationen zu vermeiden, sollte man auf die Informationen beziehungsweise Anweisungen im Datenblatt des Herstellers beachten. In diesem lassen sich unter anderem auch folgende Kapitel finden:
+Um den \ac{FU} korrekt verwenden zu können und etwaige Komplikationen zu vermeiden, sollte man die Informationen beziehungsweise Anweisungen im Datenblatt des Herstellers beachten. In diesem lassen sich unter anderem auch folgende Kapitel finden:
 
 \begin{itemize}
 	\item{Sicherheitshinweise}
@@ -521,7 +526,7 @@ Um den \ac{FU} korrekt verwenden zu können und etwaige Komplikationen zu vermei
 \subsubsection{Datenblatt Inhalt}
 \label{sec:datenblattinhalt}
 
-Sämtliche Informationen lassen sich aus dem Datenblatt entnehmen. Wie schon oben aufgezählt, geht es als erstes darum, sich mit dem \ac{FU} vertraut zu machen. Im  Kapitel, Sicherheitshinweise, werden etwaige Risiken und Betriebsinformationen hingewiesen. Im Kapitel, Mechanische Installation, wird festgelegt, wie der \ac{FU} montiert werden soll. Das Kapitel, elektrische Installation, dient dazu, den \ac{FU} richtig zu verkabeln und bittet eine kurze Übersicht für welche Funktion die jeweilige Klemme am Umrichter dient. Im Abschnitt, Inbetriebnahmen, lassen sich die grundlegenden Bedienungsschritte und die Konfiguration am \ac{FU} finden. In der Parameterliste sind alle Parameter, die der \ac{FU} kennt, detailliert aufgelistet.
+Sämtliche Informationen lassen sich aus dem Datenblatt entnehmen. Wie schon oben aufgezählt, geht es als erstes darum, sich mit dem \ac{FU} vertraut zu machen. Im  Kapitel ,,Sicherheitshinweise" werden auf etwaige Risiken und Betriebsinformationen hingewiesen. Im Kapitel ,,Mechanische Installation", wird festgelegt, wie der \ac{FU} montiert werden soll. Das Kapitel ,,elektrische Installation", dient dazu, den \ac{FU} richtig zu verkabeln und bietet eine kurze Übersicht für welche Funktion die jeweilige Klemme am Umrichter dient. Im Abschnitt ,,Inbetriebnahmen", lassen sich die grundlegenden Bedienungsschritte und die Konfiguration des \ac{FU} finden. In der Parameterliste sind alle Parameter, die der \ac{FU} kennt, detailliert aufgelistet.
 
 \subsubsection{Relevante Informationen}
 \label{sec:relevanteInformationen}
@@ -529,14 +534,14 @@ Sämtliche Informationen lassen sich aus dem Datenblatt entnehmen. Wie schon obe
 Der \ac{FU} hat die Aufgabe den Motor der Pferdeführanlage zu steuern. In dieser Aufgabe enthalten sind folgende Anforderungen:
 
 \begin{itemize}
-	\item{Motor Ein- beziehungsweise Ausschalten}
+	\item{Motor ein- beziehungsweise ausschalten}
 	\item{Drehrichtung ändern}
 	\item{Verschiedene Drehzahlen ermöglichen}
 	\item{Fehlerbestätigung}
 \end{itemize}
 
-Aufgrund dieser Vorgaben wurde ein Verbindungsmakro, im Datenblatt für den V20 von Siemens, gefunden. 
-Ein Verbindungsmakro ist eine von Hersteller vorgegebene Variante, wie man den \ac{FU} verwenden könnte. Sollte man kein geeignetes Verbindungsmakro finden oder keines verwenden wollen, muss man sich aus den einzelnen Parametern im Kapitel Parameterliste sein gewünschtes Programm selbst entwickeln. \\
+Aufgrund dieser Vorgaben wurde ein Verbindungsmakro im Datenblatt, für den V20 von Siemens, gefunden. 
+Ein Verbindungsmakro ist eine vom Hersteller vorgegebene Variante, wie man den \ac{FU} verwenden könnte. Sollte man kein geeignetes Verbindungsmakro finden oder keines verwenden wollen, muss man sich aus den einzelnen Parametern, im Kapitel Parameterliste, sein gewünschtes Programm selbst entwickeln. \\
 Als erstes sollte man aber den Frequenzumrichter auf den Motor abstimmen. Die jeweiligen Parameter lassen sich aus dem Datenblatt entnehmen. 
 
 \newpage
@@ -558,7 +563,9 @@ Als erstes sollte man aber den Frequenzumrichter auf den Motor abstimmen. Die je
 \end{center}
 \end{figure}
 
-Aus der Abbildung \ref{fig:verbindungsmakro} kann man entnehmen, dass alle gewünschten Anforderungen aus dem Kapitel \ref{sec:relevanteInformationen} erfüllt werden. Des Weiteren sieht man darauf, wie die jeweiligen Ein- und Ausgänge verdrahtet werden müssen, um mit dem \ac{FU} wie gewünscht arbeiten zu können. Man kann zwei verschiedene Varianten erkennen. Als Erstes wird die PNP- und unterhalb die NPN-Variante gezeigt. Wenn man die PNP-Variante wählt, wird die Bezugsklemme niedrig und sollte man die NPN-Variante wählen, wird die Bezugsklemme hoch. Das heißt, der jeweilige digitale Eingang erkennt, wenn bei der PNP Variante ein 24V-Signal anliegt. In der Abbildung \ref{fig:parameterVerbindungsmakro} werden die jeweiligen Parameter in einer Tabelle angezeigt. Wenn man auf dem Frequenzumrichter ein Verbindungsmakro auswählt, sind diese Parameter bereits fertig vorgegeben. Man könnte die Parameter auch suchen und jeden Wert manuell zuordnen. Bei unserer Anlage wird ein 24 Volt Signal bevorzugt, da bei einem Spannungsabfall der Frequenzumrichter sofort die Anlage stoppen würde.\\
+Aus der Abbildung \ref{fig:verbindungsmakro} kann man entnehmen, dass alle gewünschten Anforderungen aus dem Kapitel \ref{sec:relevanteInformationen} erfüllt werden. Des Weiteren sieht man darauf, wie die jeweiligen Ein- und Ausgänge verdrahtet werden müssen, um mit dem \ac{FU} wie gewünscht arbeiten zu können. Man kann zwei verschiedene Varianten erkennen. Als Erstes wird die PNP- und danach die NPN-Variante gezeigt. Wenn man die PNP-Variante wählt, wird die Bezugsklemme niedrig und sollte man die NPN-Variante wählen, wird die Bezugsklemme hoch. Das heißt, der jeweilige digitale Eingang erkennt, wenn bei der PNP Variante ein 24V-Signal anliegt. In der Abbildung \ref{fig:parameterVerbindungsmakro} werden die jeweiligen Parameter in einer Tabelle angezeigt. Wenn man auf dem Frequenzumrichter ein Verbindungsmakro auswählt, sind diese Parameter bereits fertig vorgegeben. Man könnte die Parameter auch suchen und jeden Wert manuell zuordnen. \newpage 
+
+Bei unserer Anlage wird ein 24 Volt Signal bevorzugt, da bei einem Spannungsabfall der Frequenzumrichter sofort die Anlage stoppen würde.\\
 
 Da nun ein Verbindungsmakro gefunden wurde, benötigt man nun folgende Verbindungen, um mit dem \ac{FU} kommunizieren zu können:
 
@@ -570,7 +577,7 @@ Da nun ein Verbindungsmakro gefunden wurde, benötigt man nun folgende Verbindun
 
 Sobald einer der digitalen Eingänge ein Spannungssignal von 24V bekommt, wird die jeweilige Funktion ausgeführt. \newline{}
 
-Der Frequenzumrichter kann letztendlich nur konfiguriert werden. Die Steuerung und die Programmlogik wird von einem externen Gerät durchgeführt. 
+Der Frequenzumrichter kann letztendlich nur konfiguriert werden. Die Steuerung und die Programmlogik werden von einem externen Gerät durchgeführt. 
 
 %%%%
 \newpage
@@ -578,10 +585,10 @@ Der Frequenzumrichter kann letztendlich nur konfiguriert werden. Die Steuerung u
 \section{Pferderegen}
 \label{sec:pferderegen}
 
-Die Wasserversorgung soll dazu dienen, dem Pferd an heißen Sommertagen eine respektive Abkühlung zu geben zu ermöglichen. Dafür wird ein Wasseranschluss benötigt. Es gäbe in erster Linie zwei Möglichkeiten, den Wasserfluss zu ermöglichen: Entweder man öffnet manuell ein Wasserhahn, an welchen die Sprühdüsen angeschlossen sind, oder man setzt in die Rohrleitung ein Magnetventil ein, welches über die projektierte mobile Applikation gesteuert werden kann. \\
-Prinzipiell ist es Geschmackssache wie man dies realisieren möchte. In beiden Fällen muss man irgendwo ein Wasserhahn beziehungsweise ein Hauptventil haben, um überhaupt Wasser fließen lassen zu können. 
+Die Wasserversorgung soll dazu dienen, dem Pferd an heißen Sommertagen eine respektive Abkühlung zu ermöglichen. Dafür wird ein Wasseranschluss benötigt. Es gäbe in erster Linie zwei Varianten, den Wasserfluss zu ermöglichen: Entweder man öffnet manuell einen Wasserhahn, an welchen die Sprühdüsen angeschlossen sind oder man setzt in die Rohrleitung ein Magnetventil ein, welches über die projektierte mobile Applikation gesteuert werden kann. \\
+Prinzipiell ist es Geschmackssache, wie man dies realisieren möchte. In beiden Fällen muss man irgendwo einen Wasserhahn beziehungsweise ein Hauptventil haben, um überhaupt Wasser fließen lassen zu können. 
 Mit der Steuerung über die App wird es dem Benutzer ermöglicht, das Hauptventil dauerhaft geöffnet zu lassen, ohne eine Überschwemmung hervorzurufen. Nur im Winter sollten 
-Vorkehrungsmaßnahmen, siehe \ref{sec:winterschutz} , getroffen werden, damit die Wasserleitung nicht einfriert und somit die Rohrleitung beschädigt werden kann., . 
+Vorkehrungsmaßnahmen, siehe \ref{sec:winterschutz} , getroffen werden, damit die Wasserleitung nicht einfriert und somit die Rohrleitung beschädigt werden kann. 
 
 \subsection{Ventil}
 \label{sec:ventil}
@@ -591,7 +598,7 @@ Die Aufgabe des Ventiles ist einfach: Startet der Benutzer in der App den Sprüh
 \subsubsection{Arbeitsventil}
 \label{sec:ventilSuche}
 
-Auf der Suche nach einen geeigneten Ventil für die Bewässerung, ergaben die Suchen meist Ergebnisse für Gartenbewässerungssysteme. In diesen Bereich ganz stark vertreten ist das Unternehmen Gardena. Doch es wurde auch eine Alternative vom Unternehmen Rainbird gefunden. 
+Auf der Suche nach einem geeigneten Ventil für die Bewässerung, ergaben die Suchen meist Ergebnisse für Gartenbewässerungssysteme. In diesen Bereich ganz stark vertreten ist das Unternehmen Gardena. Doch es wurde auch eine Alternative vom Unternehmen Pipelife gefunden. 
 \newpage
 
 \begin{figure}[H]
@@ -616,7 +623,7 @@ Auf der Suche nach einen geeigneten Ventil für die Bewässerung, ergaben die Su
 \caption{BW-MV1-9V}
 
 \begin{itemize}
-	\item{Spannung: 9V}
+	\item{Betriebsspannung: 9V}
 	\item{Art: Impulsventil}
 	\item{Preis: 83,00\textsf{\texteuro} \cite{preisVentil}}
 \end{itemize}
@@ -624,7 +631,7 @@ Auf der Suche nach einen geeigneten Ventil für die Bewässerung, ergaben die Su
 \end{minipage}
 \end{figure} 
 
-Prinzipiell wollen beide Unternehmen, dass man auch das Steuerwerk vom jeweiligen Unternehmen kauft. Deshalb findet man kaum technische Datenblätter dazu und wenn ja, dann dienen diese meist nur der groben Übersicht. Bezüglich des Preises gibt es einen Unterschied von ungefähr 10 Euro. Bei den Ventil von Pipelife konnte herausgefunden werden, dass es sich um ein 9V-Impulsventil handelt. Wie die Steuerung diesbezüglich aussieht, konnte nicht eruiert werden. Aufgrund dieser Informationen, fiel die Entscheidung auf das 9V-Impulsventil des Herstellers Pipelife.
+Prinzipiell wollen beide Unternehmen, dass man auch das Steuerwerk vom jeweiligen Unternehmen kauft. Deshalb findet man kaum technische Datenblätter dazu und wenn ja, dann dienen diese meist nur der groben Übersicht. Bezüglich des Preises gibt es einen Unterschied von ungefähr 10 Euro. Bei dem Ventil von Pipelife konnte herausgefunden werden, dass es sich um ein 9V-Impulsventil handelt. Wie die Steuerung diesbezüglich aussieht, konnte nicht eruiert werden. Aufgrund dieser Informationen, fiel die Entscheidung auf das 9V-Impulsventil des Herstellers Pipelife.
 
 \subsubsection{Analyse der Funktion vom Ventil}
 \label{sec:funktionstestungVentil}
@@ -640,12 +647,12 @@ Um zu überprüfen wie das Ventil wirklich funktioniert, wurde ein Testaufbau ge
 \subsection{Umpolung}
 \label{sec:umpolung}
 
-Aufgrund der oben erlangten Erkenntnisse, muss bei der Anlage ein Spannungswechsel erfolgen. Dies wird in der Regel mit einer sogenannten H-Brücke realisiert. Die vereinfachte Version lässt sich aus der Abbildung \ref{fiq:hbrucke} entnehmen. 
+Aufgrund der oben erlangten Erkenntnisse, muss bei der Anlage ein Spannungswechsel erfolgen. Dies wird in der Regel mit einer sogenannten H-Brücke realisiert. Die vereinfachte Version lässt sich aus der Abbildung \ref{fig:hbruecke} entnehmen. 
 
 \begin{figure}[H]
 \begin{center}
 	\includegraphics[width=0.6\textwidth]{fig/HBruecke}
-	\caption{Vereinfachte H-Brücke \label{fig:hbrucke}}
+	\caption{Vereinfachte H-Brücke \label{fig:hbruecke}}
 \end{center}
 \end{figure}
 
@@ -660,7 +667,7 @@ Wenn man das Ventil wieder deaktivieren will, müssen die Transistoren 1 und 4 g
 \subsubsection{Motortreiber Auswahl}
 \label{sec:motortreiberAuswahl}
 
-Auf der Suche nach einer Alternative beziehungsweise einer besseren Variante, wurde die Bausteine VNH2SP30 und der L298 gefunden. Dieser ist ein Motortreiber welcher die H-Brücke bereits integriert hat. Nun gibt es zwei Varianten die Ansteuerung zu realisieren:
+Auf der Suche nach einer Alternative beziehungsweise einer besseren Variante, wurden die Bausteine VNH2SP30 und der L298 gefunden. Dieser ist ein Motortreiber, welcher die H-Brücke bereits integriert hat. Nun gibt es zwei Varianten die Ansteuerung zu realisieren:
 
 \begin{figure}[H]
 \begin{minipage}[t]{0.45\textwidth}
@@ -677,7 +684,7 @@ Auf der Suche nach einer Alternative beziehungsweise einer besseren Variante, wu
 
 \end{minipage}
 \hspace{0.1\textwidth}
-\begin{minipage}[t]{0.6\textwidth}
+\begin{minipage}[t]{0.45\textwidth}
 \framebox[\textwidth]{Variante 2}
 
 \begin{center}
@@ -693,7 +700,7 @@ Auf der Suche nach einer Alternative beziehungsweise einer besseren Variante, wu
 \end{minipage}
 \end{figure} 
 
-Aufgrund der fertigen Beschaltung und den niedrigeren Preis, wird für die Steuerung des Ventils, der VNH2SP30 dem L298 vorgezogen. 
+Aufgrund der fertigen Beschaltung und dem niedrigeren Preis, wird für die Steuerung des Ventils, der VNH2SP30 dem L298 vorgezogen. 
 
 \subsection{Motortreiber Ansteuerung}
 \label{sec:motortreiberAnsteuerung}
@@ -709,7 +716,7 @@ Der Motortreiber VNH2SP30 hat folgende Pinbelegung:
 	\item{PWM for motor / PWM-Signal für Motor / PMW}
 \end{itemize}
 
-Nachfolgend befindet sich ein Beispiel, um den Motortreiber über ein Mikroprozessor-Board, der Type "Arduino" anzusteuern:
+Nachfolgend befindet sich ein Beispiel, um den Motortreiber über ein Mikroprozessor-Board, der Type "{}Arduino"{} anzusteuern:
 
 \begin{lstlisting}[language=Arduino, caption={Arduino Motortreibersteuerung}]
 void setup() {
@@ -737,19 +744,21 @@ void loop() {
 }
 \end{lstlisting}
 
-In diesen Programmablauf würde das Ventil ständig wechseln, zwischen den Zuständen offen und geschlossen. Das PWM-Signal wird mit 100 Prozent, da das Ventil nur geöffnet oder geschlossen sein kann. Halb offen gibt es nicht. Die einfachste Variante ist, die Versorgungsspannung des Motortreibers direkt mit dem PWM-Pin zu verbinden.\\
-Für die Realisierung in der Anlage gibt es zwei Möglichkeiten: ein Software- beziehungsweise ein Hardwareevent muss eintreten, damit das Ventil sich öffnen oder schließen kann. Da die Anlage über die App gesteuert werden soll, muss die Abfrage über einen Softwareevent erfolgen. Dies wird mittels Interrupt gelöst. Ein Interrupt ist eine Unterbrechung im Programm. Dieser beendet kurzzeitig das Programm, führt die \ac{ISR}, und setzt danach an der zuvor unterbrochenen Stelle fort. \\ In der \ac{ISR}, bekommt eine globale Variable den jeweiligen gewünschten Zustand, ob die Pferdekühlung aktiviert werden soll, oder nicht. Im Hauptprogramm wird die globale in der lokalen Variable geschrieben. Mittels einer Doppelverzweigung wird zuerst entschieden, ob das Ventil geöffnet werden soll. Die nächste Abfrage überprüft, wie lange der Sprühregen aktiviert ist. Sollte das Ventil zu lange geöffnet bleiben, sprich der Wasserfluss unkontrolliert fortgesetzt werden, muss dieses automatisch deaktiviert/zurückgesetzt werden. Ansonsten bestünde die Gefahr, dass das Wasser nicht mehr versickern könnte, oder sich die primäre Wasserquelle entleeren könnte. Bei Verwendung eines öffentliches Wasserversorgungsnetzes, wäre so ein Fehlverhalten mit unnötigen Kosten verbunden.
+In diesen Programmablauf würde das Ventil ständig wechseln, zwischen den Zuständen offen und geschlossen. Das PWM-Signal hat einen Duty-Cycle von 100 Prozent, da das Ventil nur geöffnet oder geschlossen sein kann. Halb offen gibt es nicht. Die einfachste Variante ist, die Versorgungsspannung des Motortreibers direkt mit dem PWM-Pin zu verbinden.\\
+Für die Realisierung in der Anlage gibt es zwei Möglichkeiten: ein Software- oder ein Hardwareevent muss eintreten, damit das Ventil sich öffnen oder schließen kann. Da die Anlage über die App gesteuert werden soll, muss die Abfrage über einen Softwareevent erfolgen. Dies wird mittels Interrupt gelöst. Ein Interrupt ist eine Unterbrechung im Programm. Dieser beendet kurzzeitig das Programm, führt die \ac{ISR} aus, und setzt danach an der zuvor unterbrochenen Stelle fort. \\ In der \ac{ISR}, bekommt eine globale Variable den jeweiligen gewünschten Zustand, ob die Pferdekühlung aktiviert werden soll, oder nicht. Im Hauptprogramm wird die globale in die lokale Variable geschrieben. Mittels einer Doppelverzweigung wird zuerst entschieden, ob das Ventil geöffnet werden soll. \newpage 
+
+Die nächste Abfrage überprüft, wie lange der Sprühregen aktiviert ist. Sollte das Ventil zu lange geöffnet bleiben, sprich der Wasserfluss unkontrolliert fortgesetzt werden, muss dieses automatisch deaktiviert/zurückgesetzt werden. Ansonsten bestünde die Gefahr, dass das Wasser nicht mehr versickern könnte, oder sich die primäre Wasserquelle entleeren könnte. Bei Verwendung eines öffentliches Wasserversorgungsnetzes, wäre so ein Fehlverhalten mit unnötigen Kosten verbunden.
 
 \subsection{Wasserversorgung}
 \label{sec:wasserversorgung}
 
-Um überhaupt die Anlage mit Wasser versorgen zu können, muss ein Wasseranschluss vorhanden sein. Von dort muss das Wasser zum Ventil zugeführt werden und anschließend aufgeteilt werden. Welchen Durchmesser der Wasseranschluss hat, ist von Haus zu Haus unterschiedlich. Diese sind im Normalfall in Zoll angeben und haben entweder 1/2, 3/4 oder 1 Zoll. Um keinen zu hohen Druckverlust zu bekommen, wird ein Rohrsystem mit einem Durchmesser von 3/4 Zoll festgelegt. Das heißt, sollte das System keine 3/4 Zoll haben, muss mit Verbindungssystemen umgewandelt werden. Es sollten so wenig Querschnittsanpassungen wie möglich verwendet werden, um unnötige Druckverluste zu vermeiden. Der idealste Fall wäre in diesen Fall ein 1 Zoll Anschluss. Welche Variante die bessere ist muss je nach Standort unterschiedlich entschieden werden. Zum Beispiel, wenn der Anschluss einige Meter über der Pferdeführanlage befindet, wäre der Druck höher und man würde weniger Verluste bekommen und dadurch auch größere Durchmesser verwenden. \\ 
+Um überhaupt die Anlage mit Wasser versorgen zu können, muss ein Wasseranschluss vorhanden sein. Von dort muss das Wasser dem Ventil zugeführt und anschließend aufgeteilt werden. Welchen Durchmesser der Wasseranschluss hat, ist von Haus zu Haus unterschiedlich. Diese sind im Normalfall in Zoll angeben und haben entweder 1/2, 3/4 oder 1 Zoll. Um keinen zu hohen Druckverlust zu bekommen, wird ein Rohrsystem mit einem Durchmesser von 3/4 Zoll festgelegt. Das heißt, sollte das System keine 3/4 Zoll haben, muss mit Verbindungssystemen umgewandelt werden. Es sollten so wenig Querschnittanpassungen wie möglich verwendet werden, um unnötige Druckverluste zu vermeiden. Der idealste Fall wäre in diesen Fall ein 1 Zoll Anschluss. Welche Variante die bessere ist muss je nach Standort unterschiedlich entschieden werden. Zum Beispiel, wenn sich der Anschluss einige Meter über der Pferdeführanlage befindet, wäre der Druck höher und man würde weniger Verluste bekommen und dadurch könnten auch größere Durchmesser verwendet werden. \\ 
 
 
 \subsubsection{PE-Rohr}
 \label{sec:peRohr}
 
-Nach sorgfältiger Recherche wurde folgende PE-Rohre gefunden:\\
+Nach sorgfältiger Recherche wurden folgende PE-Rohre gefunden:\\
 
 \begin{figure}[H]
 \begin{center}
@@ -769,7 +778,7 @@ Diesen Schlauch gibt es von diesem Unternehmen in folgenden 3 Varianten: \cite{p
 Diese erfüllen folgende Eigenschaften:
 
 \begin{itemize}
-	\item{Maximal Betriebsdruck: 12,5 bar}
+	\item{Maximaler Betriebsdruck: 12,5 bar}
 	\item{Durchmesser: 1 Zoll}
 	\item{Für Trinkwassergebrauch zugelassen}
 	\item{Flexibel bei Verlegung}
@@ -815,11 +824,10 @@ Um den Schlauch mit dem Ventil zu verbinden, wird ein Übergangsstück benötigt
 
 Da nun der Anschluss des Ventiles ermöglicht wurde, muss nun die Versorgung für die Sprühdüsen erstellt werden. 
 
-Der Innenzaunradius beträgt 8,75 Meter. Daraus ergibt sich ein Umfang von zirka 55 Meter. Es werden 8 Sprühdüsen, mit 45 Grad Abstand, aufgestellt. 
-
-Um nun aus einem Rohr acht zu machen, benötigt man Verteiler:
+Der Innenzaunradius beträgt 8,75 Meter. Daraus ergibt sich ein Umfang von zirka 55 Meter. Es werden 8 Sprühdüsen im Abstand von 45 Grad aufgestellt. 
 
 \newpage
+Um nun aus einem Rohr acht zu machen, benötigt man Verteiler:
 
 \begin{figure}[H]
 \begin{minipage}[t]{0.45\textwidth}
@@ -849,14 +857,14 @@ Um nun aus einem Rohr acht zu machen, benötigt man Verteiler:
 \end{minipage}
 \end{figure}
 
-Für die Realisierung benötigt man einen 2-Weg-Verteiler und zwei 4-Weg-Verteiler. Von dort kann man dann mittels 1/2"-Schläuche die Anbindung der einzelnen Düsen realisieren.
+Für die Realisierung benötigt man einen 2-Weg-Verteiler und zwei 4-Weg-Verteiler. Von dort kann man dann mittels 1/2"{}-Schläuche die Anbindung der einzelnen Düsen realisieren.
 
 \subsubsection{Sprühnebel Erzeugung}
 \label{sec:spruehnebel}
 
 
 
-Nun da das Wasser beim Zaun angekommen ist, muss es durch einen speziellen Sprühkopf zerstäubt werden. Dies kennt man entweder als Zerstäuber oder Nebeldüse. 
+Nun da das Wasser beim Zaun angekommen ist, muss es durch einen speziellen Sprühkopf zerstäubt werden. Dies kennt man entweder als Zerstäuber oder als Nebeldüse. 
 
 \begin{figure}[H]
 \begin{center}
@@ -864,6 +872,8 @@ Nun da das Wasser beim Zaun angekommen ist, muss es durch einen speziellen Sprü
 	\includegraphics[width=0.25\textwidth]{fig/Spruehkopf}
 \end{center}
 \end{figure}
+
+\newpage
 
 Eigenschaften der Sprühnebeldüsen:
 
@@ -898,7 +908,7 @@ Der Gewindeverbinder wird mit der Nebeldüse verbunden und das Schlauchstück mi
 \subsection{Rohrverlegung}
 \label{sec:rohrverlegung}
 
-Damit die Wasserrohre auch korrekt verlegt werden, muss das Verlegeblatt verwendet werden, welches sich unter dem Link \footnote{http://www.pipelife.at/at-de/_media/pdf/verlegeanleitung-infoblatt/wasser/verlege-pe-druck.pdf} finden lässt.
+Damit die Wasserrohre auch korrekt verlegt werden, muss das Verlegeblatt verwendet werden, welches sich unter dem Link \\ \url{http://www.pipelife.at/at-de/_media/pdf/verlegeanleitung-infoblatt/wasser/verlege-pe-druck.pdf} \\finden lässt.
 
 %%%%
 \newpage
@@ -906,12 +916,12 @@ Damit die Wasserrohre auch korrekt verlegt werden, muss das Verlegeblatt verwend
 \section{Geschwindigkeitsmessung}
 \label{sec:geschwindigkeitsmessung}
 
-Um die Drehgeschwindigkeit zu überprüfen, müssen die Umdrehungen überprüft werden. Nicht nur ob sich die Anlage überhaupt dreht, sondern auch wie lange. Dazu eignen sich sogenannte Drehgeber sehr gut.
+Um die Drehgeschwindigkeit zu überprüfen, müssen die Umdrehungen überprüft werden. Nicht nur, ob sich die Anlage überhaupt dreht, sondern auch wie lange. Dazu eignen sich sogenannte Drehgeber sehr gut.
 
 \subsection{Drehgeber}
 \label{sec:drehgeber}
 
-Die Hauptaufgabe des Drehgebers bei dieser Anlage ist es, die Position und Lage des mechanischen Bereiches zu ermitteln. Aus diesen Informationen kann man sich unter anderem die Geschwindigkeit, in Abhängigkeit der Drehzeit ermitteln. Wo der Drehgeber positioniert wird, hängt davon ab, was man mit welchem Ergebnis ermitteln möchte. Wie auch bei den meisten anderen Technologien, gibt es auch bei den Drehgebern verschiedene Technologiegruppen.
+Die Hauptaufgabe des Drehgebers bei dieser Anlage ist es, die Position und Lage des mechanischen Bereiches zu ermitteln. Aus diesen Informationen kann man unter anderem die Geschwindigkeit, in Abhängigkeit der Drehzeit, ermitteln. Wo der Drehgeber positioniert wird, hängt davon ab, was man mit welchem Ergebnis ermitteln möchte. Wie auch bei den meisten anderen Technologien, lassen sich bei den Drehgebern ebenfalls verschiedene Technologiegruppen finden.
 
 \subsubsection{Inkrementalgeber}
 \label{sec:inkrementalgeber}
@@ -926,6 +936,8 @@ Die Hauptaufgabe des Drehgebers bei dieser Anlage ist es, die Position und Lage 
 Der Inkrementalgeber ist ein optisches Messinstrument. Der innere Aufbau des Inkrementalgebers kann aus der Abbildung \ref{fig:inkrementalgeber} entnommen werden. 
 Mit einem Inkrementalgeber kann man die Drehrichtung, eine Geschwindigkeitsmessung und eine Positionserfassung realisieren. Für die letzteren zwei wird eine zusätzliche Auswertung benötigt. 
 
+\newpage
+
 \subsubsection{Absolutwertgeber}
 \label{sec:absolutwertgeber}
 
@@ -936,7 +948,7 @@ Mit einem Inkrementalgeber kann man die Drehrichtung, eine Geschwindigkeitsmessu
 \end{center}
 \end{figure}
 
-Der Absolutwertgeber ermöglicht, dass man die Position direkt erkennen kann. Die Drehscheibe ist, wie man aus der Abbildung \ref{fig:absolutwertgeber}, in Bits codiert. Je nach Codeauswertung kann man ermitteln, in welcher Position sich das jeweilige System befindet. 
+Der Absolutwertgeber ermöglicht es, dass man die Position direkt ermitteln kann. Die Drehscheibe ist, wie man aus der Abbildung \ref{fig:absolutwertgeber} erkennen kann, in Bits codiert. Je nach Codeauswertung kann man ermitteln, in welcher Position sich das jeweilige System befindet. 
 Bei einem neuen Systemstart muss kein Referenzpunkt angefahren werden.
 
 \subsubsection{Resolver}
@@ -967,7 +979,7 @@ Auswertezeit & gering & hoch & gering - mittel \\
 \end{tabular} \\
 
 
-Bei der Pferdeführanlage ist es nicht essentiell, dass sich der Drehgeber merkt, auf welcher Position sich die Anlage befindet. Deswegen scheidet der Absolutwertgeber aus und gab dem  Inkrementalgeber den Vorzug. Im Bereich der Langlebigkeit würde der Resolver gewinnen, da aber eine schneller Erfassung der Position notwendig ist, muss auf den Inkrementalgeber zurückgegriffen werden.
+Bei der Pferdeführanlage ist es nicht essentiell, dass sich der Drehgeber merkt, auf welcher Position sich die Anlage befindet. Deswegen scheidet der Absolutwertgeber aus. Im Bereich der Langlebigkeit würde der Resolver gewinnen, da aber eine schnellere Erfassung der Position notwendig ist, muss auf den Inkrementalgeber zurückgegriffen werden.
 \\
 Da ein Inkrementalgeber zum Aufbau verfügbar war, wurde mit diesem die Arbeit fortgesetzt.
 
@@ -990,7 +1002,7 @@ Bei dem in der Abbildung \ref{fig:drehgeberUS} befindlichen Inkrementalgeber, ha
 \end{center}
 \end{figure}
 
-Die Anschlüsse A und B haben die Aufgabe die Drehrichtung zu ermitteln. Je nachdem ob das A- oder B-Signal als erstes positiv sind, dreht sich der Drehgeber mit oder gegen den Uhrzeigersinn. Wenn man beobachtet, wie lang ein Signal auf "Hoch" ist, kann man daraus die Geschwindigkeit ermitteln. Beides muss mit einer dementsprechenden Auswertelogik passieren. Eine kostengünstige und einfache Variante bietet dabei ein Mikrocontroller. 
+Die Anschlüsse A und B haben die Aufgabe die Drehrichtung zu ermitteln. Je nachdem ob das A- oder B-Signal als erstes positiv ist, dreht sich der Drehgeber mit oder gegen den Uhrzeigersinn. Wenn man beobachtet, wie lange ein Signal auf "{}Hoch"{} ist, kann man daraus die Geschwindigkeit ermitteln. Beides muss mit einer dementsprechenden Auswertelogik passieren. Eine kostengünstige und einfache Variante bietet dabei ein Mikrocontroller. 
 
 \begin{figure}[H]
 \begin{center}
@@ -999,11 +1011,11 @@ Die Anschlüsse A und B haben die Aufgabe die Drehrichtung zu ermitteln. Je nach
 \end{center}
 \end{figure}
 
-Der Inkrementalgeber wird direkt nach der letzten Riemenscheibe angebracht, da der Drehgeber direkt die Drehzahl der Anlage überprüft. Der Arduino Nano ist ein Mikrocontroller, welcher bereits eine fertige Beschaltung hat. Das heißt, dass der Arduino-Baustein bereits die Möglichkeit bietet, direkt mit diesem zu Arbeiten. Er ist mit einem Atmega 328p ausgestattet. Der Arduino Nano kann direkt an einen PC via \ac{USB} angeschlossen werden und anschließend programmiert werden. Der Arduino Nano kostet online zirka 3,80 \textsf{\texteuro} \cite{arduinoNano} \\
-Um die Pferde in der Anlage platzieren zu können, muss zu Beginn die Anlage einen Referenzpunkt anfahren. Dieser ist so gewählt, dass das erste Pferd im den ersten Sektor platziert werden kann. Wenn man weitere Pferde in der Pferdeführanlage platzieren möchte, dreht sich die Anlage um eine Vierteldrehung weiter. Dies passiert solange bis sich alle Pferde in der Anlage befinden. Das gleiche passiert auch, wenn man die Pferde wieder aus der Anlage entfernen will. \newline{}
+Der Inkrementalgeber wird direkt nach der letzten Riemenscheibe angebracht, da der Drehgeber direkt die Drehzahl der Anlage überprüft. Der Arduino Nano ist ein Mikrocontroller, welcher bereits eine fertige Beschaltung hat. Das heißt, dass der Arduino-Baustein bereits die Möglichkeit bietet, direkt mit diesem zu arbeiten. Er ist mit einem Atmega 328p ausgestattet. Der Arduino Nano kann direkt an einen PC via \ac{USB} angeschlossen und anschließend programmiert werden. Der Arduino Nano kostet online zirka 3,80 \textsf{\texteuro} \cite{arduinoNano} \\
+Um die Pferde in der Anlage platzieren zu können, muss zu Beginn die Anlage einen Referenzpunkt anfahren. Dieser ist so gewählt, dass das erste Pferd im ersten Sektor platziert werden kann. Wenn man weitere Pferde in der Pferdeführanlage platzieren möchte, dreht sich die Anlage um eine Vierteldrehung weiter. Dies passiert solange bis sich alle Pferde in der Anlage befinden. Das gleiche passiert auch, wenn man die Pferde wieder aus der Anlage entfernen will. \newline{}
 
-Das Programm am Arduino Nano muss nun die Signale vom Drehgeber einlesen und verarbeiten. Der Drehgeber muss mit seinen vier Anschlüssen mit dem Arduino Nano verbunden werden.
-Mittels Interrupt wartet der Mikrocontroller, bis er ein Signal vom Drehgeber bekommt. Jede Änderung der Flanken muss mit einem Timer überprüft werden und daraufhin mit einem Algorithmus umgewandelt werden. Das Abnahmerad hat einen Durchmesser von 12mm. Die Abfrage erfolgt mit 1440 Pulsen pro Umdrehung. Dadurch lässt sich der Umfang pro Puls berechnen.
+Das Programm am Arduino Nano muss nun die Signale vom Drehgeber einlesen und verarbeiten. Der Drehgeber muss über seine vier Anschlüsse mit dem Arduino Nano verbunden werden.
+Mittels Interrupt wartet der Mikrocontroller, bis er ein Signal vom Drehgeber bekommt. Jede Änderung der Flanken muss mit einem Timer überprüft und daraufhin mit einem Algorithmus umgewandelt werden. Das Abnahmerad hat einen Durchmesser von 12mm. Die Abfrage erfolgt mit 1440 Pulsen pro Umdrehung. Dadurch lässt sich der Umfang pro Puls berechnen.
 
 \begin{center}
 \begin{equation}
@@ -1012,7 +1024,7 @@ Mittels Interrupt wartet der Mikrocontroller, bis er ein Signal vom Drehgeber be
 \end{equation} 
 \end{center}
 
-Da man die Strecke hat, kann man über die Zeit auf die Geschwindigkeit schließen. Sobald der Mikrocontroller eine Flanke erkennt, beginnt der Timer zu zählen. Sobald die Flanke fällt, stoppt dieser wieder und die Zeit aus dem Timer wird verwendet um die Geschwindigkeit zu berechnen. Das ist aber nur die Geschwindigkeit am Drehgeber. Um die Geschwindigkeit des Pferdes zu ermitteln muss man den Drehwinkel über die Übersetzungen berechnen. Die Übersetzung vom Drehgeber auf die Riemenscheibe beträgt 0,08 und von der Riemenscheibe zum Drehzentrum 0,735. Daraus ergibt sich ein Gesamtübersetzungsverhältnis von 0,0588. Durch erneutes Umformen erhält man letztendlich folgende Formel die im Mikrocontroller festgelegt werden muss: 
+Da man die Strecke hat, kann man über die Zeit auf die Geschwindigkeit schließen. Sobald der Mikrocontroller eine Flanke erkennt, beginnt der Timer zu zählen. Sobald die Flanke fällt, stoppt dieser wieder und die Zeit aus dem Timer wird verwendet, um die Geschwindigkeit zu berechnen. Das ist aber nur die Geschwindigkeit am Drehgeber. Um die Geschwindigkeit des Pferdes zu ermitteln, kann man den Drehwinkel von den jeweiligen Übersetzungen ableiten. Die Übersetzung vom Drehgeber auf die Riemenscheibe beträgt 0,08 und von der Riemenscheibe zum Drehzentrum 0,735. Daraus ergibt sich ein Gesamtübersetzungsverhältnis von 0,0588. Durch erneutes Umformen erhält man letztendlich folgende Formel, die im Mikrocontroller zum Berechnen der Geschwindigkeit verwendet wird: 
 
 \begin{center}
 \begin{equation}
@@ -1021,7 +1033,7 @@ Da man die Strecke hat, kann man über die Zeit auf die Geschwindigkeit schließ
 \end{equation} 
 \end{center}
 
-Aus diesen Wert kann man nun die gewünschten Werte ermitteln wie zum Beispiel die Gesamtstrecke oder die Beschleunigung der Anlage. Sollte der Mikrocontroller plötzlich keine Geschwindigkeit mehr feststellen, sendet dieser einen Fehler an die SPS.
+Aus der Geschwindigkeit kann man nun die gewünschten Werte der Anlage ermitteln, wie zum Beispiel die Gesamtstrecke oder die Beschleunigung. Sollte der Mikrocontroller plötzlich keine Geschwindigkeit mehr feststellen, sendet dieser einen Fehler an die SPS.
 
 
 %%%%
@@ -1075,40 +1087,42 @@ Für diese Aufgaben gibt es zwei Systeme die in Frage kommen:
 \end{minipage}
 \end{figure}
 
-Wie bereits erwähnt, sind beide Systeme für die benötigten Aufgaben denkbar. Für welches man sich entscheidet, ist wieder vom gewünschten Aufbau abhängig. Die kompaktere All-in-one-Variante ist mit einer \ac{SPS} gegeben. Bei einem Raspberry-Pi müsste man viele zusätzlich Komponenten suchen, beziehungsweise entwickeln. Beispielsweise würde man, um die analoge Geschwindigkeitsregelung am \ac{FU} vorzunehmen, einen Digital-Analog-Wandler benötigen. Die Vorteile des Raspberry-Pis sind, dass er trotz der vielen Zusatzkomponenten günstiger wäre und durch seinen kleinen Aufbau auch weniger Leistung benötigten würde, als eine \acl{SPS}. Die \ac{SPS} glänzt vor allem durch ihren kompakten Aufbau. Des weiteren würde die \ac{SPS} von Siemens direkt die digitale Spannung für den \ac{FU} liefern. Für den weiteren Verlauf wird deswegen die \acl{SPS} verwendet. 
+Wie bereits erwähnt, sind beide Systeme für die benötigten Aufgaben denkbar. Für welches man sich entscheidet, ist wieder vom gewünschten Aufbau abhängig. Die kompaktere All-in-one-Variante ist mit einer \ac{SPS} gegeben. Bei einem Raspberry-Pi müsste man viele zusätzlich Komponenten suchen, beziehungsweise entwickeln. Beispielsweise würde man, um die analoge Geschwindigkeitsregelung am \ac{FU} vorzunehmen, einen Digital-Analog-Wandler benötigen. Die Vorteile des Raspberry-Pis sind, dass er trotz der vielen Zusatzkomponenten günstiger wäre und durch seinen kleinen Aufbau weniger Leistung benötigten würde, als eine \acl{SPS}. Die \ac{SPS} glänzt vor allem durch ihren kompakten Aufbau. Des Weiteren würde die \ac{SPS} von Siemens direkt die digitale Spannung für den \ac{FU} liefern. Für den weiteren Verlauf wird deswegen die \acl{SPS} verwendet. 
 
 \subsubsection{Steuerung des Frequenzumrichters}
 \label{sec:steuerungFU}
 
-Um den \acl{FU} die jeweiligen Spannungsbefehle zu übergeben, welche im Kapitel \ref{sec:verbindungsmakro} zu finden sind, müssen die jeweiligen Anschlüsse miteinander verbunden werden. An der \ac{SPS} werden diese im Programm ausgewählt und den jeweiligen digitalen Ein- und Ausgängen zugewiesen. Daraufhin muss nur noch die Verkabelung zum \ac{FU} durchgeführt werden.  
+Um dem \acl{FU} die jeweiligen Spannungsbefehle zu übergeben, welche im Kapitel \ref{sec:verbindungsmakro} zu finden sind, müssen die jeweiligen Anschlüsse miteinander verbunden werden. Die jeweiligen Anschlüsse werden durch die \ac{SPS} im Programm ausgewählt und den jeweiligen digitalen Ein- und Ausgängen zugewiesen. Daraufhin muss nur noch die Verkabelung zum \ac{FU} durchgeführt werden.  
 
 \subsubsection{Kommunikation mit dem Raspberry Pi}
 \label{sec:kommunikationZuRaspberry}
 
 %TODO
 
-Um mit dem Raspberry Pi zu kommunizieren wird eine Ethernet-Verbindung gewählt. Die Kommunikation erfolgt über das Protokoll, welches unter Kapitel (?.?.?) deklariert ist. Das Kommunikationsgerät bekommt dadurch die Informationen, ob der Sprühregen aktiviert werden soll oder nicht, wie hoch die maximale Drehgeschwindigkeit der Anlage ist, wie lange sich die Pferdeführanlage drehen soll, wie oft sie die Drehrichtung ändern soll und ob das Programm unterbrochen werden soll.
+Um mit dem Raspberry Pi zu kommunizieren wird eine Ethernet-Verbindung gewählt. Die Kommunikation erfolgt über das Protokoll, welches unter Kapitel (?.?.?) deklariert ist. Das Kommunikationsgerät bekommt dadurch die Informationen, ob der Sprühregen aktiviert werden soll, wie hoch die maximale Drehgeschwindigkeit der Anlage ist, wie lange sich die Pferdeführanlage drehen, wie oft sie die Drehrichtung ändern und ob das Programm unterbrochen werden soll.
 
 \subsubsection{Kommunikation mit dem Arduino Nano}
 \label{sec:kommunikationnZuArduinoNano}
 
 Die Kommunikation mit dem Arduino Nano erfolgt über den \ac{UART}. Dadurch ist ein einfacher Kommunikationsaustausch möglich.\\
-In der Kommunikation werden vom Arduino Nano übertragen: Drehgeschwindigkeit, Umdrehungen, Fehler.\\
+In der Kommunikation werden vom Arduino Nano folgende Werte übertragen: Drehgeschwindigkeit, Umdrehungen, Fehler.\\
 Von der SPS wird geschickt, ob und in welche Richtung die Pferdeführanlage beschleunigt und ob sich die Anlage drehen soll.
 
 \subsection{Arbeitsdurchführung}
 \label{sec:arbeitsdurchführung}
 
 Das Herzstück der Anlage ist die Steuerung für den \acl{FU}. Nachfolgend wird kurz der Ablauf des Programmes erklärt, um eine ungefähre Übersicht über die Steuerung zu bekommen. \newline{}
-Zu Beginn wird überprüft, ob ein Fehler vom \ac{FU} oder vom Arduino Nano aktiv ist. Erst wenn keine Fehler aktiv sind, wird eine Anfrage vom Server erlaubt. Nun wird eine Anfrage an den Server geschickt und überprüft, ob überhaupt eine Verbindung zum Raspberry Pi besteht. Solange keine Antwort vom Server geschickt wird, beziehungsweise sobald keine Antwort mehr vom Server kommt, muss die Anlage sofort gestoppt werden. Wie im Kapitel \ref{sec:kommunikationZuRaspberry} angesprochen, bekommt die Einheit Befehle die abgearbeitet werden müssen. Sollte in dieser Zeit ein Fehler auftreten, wird  ein ERROR an den Server geschickt, damit dieser weiß, dass ein Fehler vorliegt. \newline{}
+Zu Beginn wird überprüft, ob ein Fehler vom \ac{FU} oder vom Arduino Nano aktiv ist. Erst wenn keine Fehler aktiv sind, wird eine Anfrage vom Server erlaubt. Nun wird eine Anfrage an den Server geschickt und überprüft, ob überhaupt eine Verbindung zum Raspberry Pi besteht. Solange keine Antwort vom Server geschickt wird, beziehungsweise sobald keine Antwort mehr vom Server kommt, muss die Anlage sofort gestoppt werden. \newpage
+
+Wie im Kapitel \ref{sec:kommunikationZuRaspberry} angesprochen, bekommt die Einheit Befehle, die abgearbeitet werden müssen. Sollte in dieser Zeit ein Fehler auftreten, wird  ein ERROR an den Server geschickt, damit dieser weiß, dass ein Fehler vorliegt. \newline{}
 Abarbeitung:
 
 \begin{description}
 \item[Wasser ein/aus:]
-Sobald der Befehl "Wasser ein" kommt, muss die SPS die im Kapitel \ref{sec:motortreiberAnsteuerung} angesprochenen Pins, vom Motortreiber ansteuern.
+Sobald der Befehl "{}Wasser ein"{} kommt, muss die SPS, die im Kapitel \ref{sec:motortreiberAnsteuerung} angesprochenen Pins, vom Motortreiber ansteuern.
 
 \item[Trainingszeit, Drehrichtungsänderungen und Drehgeschwindigkeit:]
-Die erste Aktion ist, das ein Timer für die Trainingszeit gestartet wird. Sobald diese erreicht ist, wird die Anlage zum Stillstand gebracht. Die Zeit für die Drehrichtungsänderungen wird je nach Anzahl aufgeteilt. Zum Beispiel bei zehn Minuten Drehzeit, soll die Anlage 1 mal die Richtung wechseln. Dadurch wird nach 5 Minuten die Richtung geändert. Die Drehgeschwindigkeit wird auf dem entsprechenden Analogwert zugewiesen. Auf diesen soll die Anlage beschleunigen und den Wert halten. Die Überwachung erfolgt durch den Inkrementalgeber. 
+Die erste Aktion ist, das ein Timer für die Trainingszeit gestartet wird. Sobald diese erreicht ist, wird die Anlage zum Stillstand gebracht. Die Zeit für die Drehrichtungsänderungen wird je nach Anzahl aufgeteilt. Zum Beispiel bei zehn Minuten Drehzeit, soll die Anlage ein Mal die Richtung wechseln. Dadurch wird nach fünf Minuten die Richtung geändert. Die Drehgeschwindigkeit wird dem entsprechenden Analogwert zugewiesen. Auf diesen soll die Anlage beschleunigen und den Wert halten. Die Überwachung erfolgt durch den Inkrementalgeber. 
 
 \item[Halt oder Stopp:]
 Es ist dem Benutzer jederzeit möglich ein Halt beziehungsweise ein Stopp der Anlage durchführen zu lassen. Stopp heißt, dass der aktuelle Programmzyklus beendet wird. Bei Halt wird das Programm an der aktuellen Position angehalten und sobald der Benutzer die Anlage wieder starten möchte, macht die Anlage dort weiter, wo sie aufgehört hat. 
@@ -1128,7 +1142,7 @@ Der elektrische Arbeitsteil muss nahe dem Zentrum der Anlage platziert werden. F
 \subsection{Kostenübersicht}
 \label{sec:kostenuebersicht}
 
-In der Kostenübersicht fehlen: Kabel für sämtliche Verbindungen.\\
+In der Kostenübersicht fehlen die Kabel für sämtliche Verbindungen.\\
 
 \begin{tabular}{|c|c|c|c|}
 \hline 
@@ -1178,15 +1192,15 @@ Gesamtpreis & - & - & 4473,44\textsf{\texteuro} \\
 \label{sec:allgemeineSicherheitsfragen}
 
 Um die Anlage bei Tieren einsetzten zu dürfen, muss man auch eine Basissicherheit gewährleisten.
-Diesen Bereich darf man nicht vernachlässigen. \\ Im folgenden Abschnitt kann in manchen Fällen nicht zwischen Besitzer oder Eigentümer der Pferdeführanlage unterschieden werden, da es beide Fälle in der Praxis geben kann. Deshalb ist primär der Eigentümer für die Wartungen und den Anlagenschutz haftbar. Sollte der Eigentümer die Anlage in der Regel nicht verwenden, kann er die jeweiligen Wartungs- und Sicherheitsaufgaben auf den Besitzer übertragen. Dieses muss aber in schriftlicher Form erfolgen. In diesen Fall muss der Besitzer im nachfolgenden Kontext die Aufgaben des Eigentümers erfüllen.
+Diesen Bereich darf man nicht vernachlässigen. \\ Im folgenden Abschnitt kann in manchen Fällen nicht zwischen Besitzer oder Eigentümer der Pferdeführanlage unterschieden werden, da es beide Fälle in der Praxis geben kann. Deshalb ist primär der Eigentümer für die Wartungen und den Anlagenschutz haftbar. Sollte der Eigentümer die Anlage in der Regel nicht verwenden, kann er die jeweiligen Wartungs- und Sicherheitsaufgaben auf den Besitzer übertragen. Dieses muss aber in schriftlicher Form erfolgen. In diesem Fall muss der Besitzer im nachfolgenden Kontext die Aufgaben des Eigentümers erfüllen.
 
 Bei unserer Pferdeführanlage können folgende Fehler bewusst auftreten:
 
 \begin{itemize}
 \item{Was passiert, wenn ein Pferd hinfällt?}
-\item{Was passiert wenn ein Pferd stur stehen bleibt?}
-\item{Was passiert wenn das Pferd die Anlage anschieben will (schneller ist)?}
-\item{Was passiert wenn die Anlage nicht arbeitet wie gewünscht?}
+\item{Was passiert, wenn ein Pferd stur stehen bleibt?}
+\item{Was passiert, wenn das Pferd die Anlage anschieben will (schneller ist)?}
+\item{Was passiert, wenn die Anlage nicht arbeitet wie gewünscht?}
 \item{Welche Vorkehrungen gibt es im Bereich Blitzschutz?}
 \end{itemize}
 
@@ -1195,24 +1209,26 @@ Bei unserer Pferdeführanlage können folgende Fehler bewusst auftreten:
 
 \emph{Gemäß §5 Abs. 1 Tierschutzgesetz ist es verboten, 
 einem Tier ungerechtfertigt Schmerzen, Leiden oder Schäden zuzufügen oder es in schwere Angst zu versetzten. 
-Unter §5 Abs. 2 Satz 3 lit. b wird nochmals extra darauf hingewiesen, dass keine technischen Geräte verwendet werden, welche das Verhalten eines Tieres durch Härte oder durch Strafreize zu beeinflussen.} \cite{tierschutzgesetz} \\
+Unter §5 Abs. 2 Satz 3 lit. b wird nochmals extra darauf hingewiesen, dass keine technischen Geräte verwendet werden dürfen, welche das Verhalten eines Tieres durch Härte oder durch Strafreize beeinflussen.} \cite{tierschutzgesetz} \\
 
 Somit darf man dem Ross mit unserer Anlage, keine kleinen Denkimpulse geben, wenn es stur stehen bleibt. Wenn das Reitvieh stehen bleibt, darf ihm und der Anlage selbst nichts passieren. Die einfachste und sicherste Lösung ist, die Anlage zu stoppen. Wenn die Anlage weiter fahren möchte, könnten ungewollte Momente auftreten und somit mechanische Schäden in der Anlage verursachen.
 
 Folgende Vorkehrungen wurden auf der elektrischen Seite zum beidseitigem Schutz getroffen: \newline{}
 
-Sobald die Auswertung des Sensors merkt, dass die Anlage unfreiwillig stehen bleibt, schaltet die Anlage automatisch ab. Daraufhin muss der jeweilige Eigentümer überprüfen, ob es ein technischer Fehler oder ein Problem beim Pferd vorliegt, bevor er diese wieder in Betrieb nimmt
-Die Gitter, hinter beziehungsweise vor dem Pferd, werden zum Schutz des Tieres nicht mit Strom versorgt.
+Sobald die Auswertung des Sensors merkt, dass die Anlage unfreiwillig stehen bleibt, schaltet die Anlage automatisch ab. Daraufhin muss der jeweilige Eigentümer überprüfen, ob ein technischer Fehler oder ein Problem beim Pferd vorliegt, bevor er diese wieder in Betrieb nimmt.
+Die Gitter hinter beziehungsweise vor dem Pferd, werden zum Schutz des Tieres nicht mit Strom versorgt.
 Welcher Zaun neben den Gitter gebaut wird, bleibt dem Eigentümer selbst überlassen.
 
 Sollte man einen Elektrozaun beziehungsweise doch Strom durch die Gitter schicken, werden die Pferde in der Anfangsphase leicht gestresst sein. Sobald sie sich daran gewöhnt haben, funktioniert er wie ein normaler Zaun und die Pferde wissen, dass sie diesen nicht berühren sollten.
-Bei den Gittern mit Strom würden die Pferde sogar mehr geschützt werden, wenn sie mit Strom durchflossen werden. Grund dafür ist, dass sich die Pferde an den Stangen Verletzungen zuziehen könnten, im Vergleich zu kurzen Stromimpulsen. In Österreich ist dies aber nicht gesetzeskonform.
+Bei den Gittern mit Strom würden die Pferde sogar mehr geschützt werden. Grund dafür ist, dass sich die Pferde an den Stangen Verletzungen zuziehen könnten, im Vergleich zu kurzen Stromimpulsen. \cite{stress} In Österreich ist dies aber nicht gesetzeskonform. \newline{}
+
+Als nächster Punkt muss die Pferdeführanlage mit einem Grundsicherheitspaket ausgestattet sein. In diesen fallen zum Beispiel ein Fehlerstromschalter und der Fehlerschutzschalter. Diese werden vor den Hauptkomponenten, \acl{FU} und \acl{SPS}, angebracht. Dadurch wird den Pferden und der Anlage ein zusätzlicher Schutz gewährt. 
 
 \subsection{Blitzschutz}
 \label{sec:blitzschutz}
 
 Da unsere Pferdeführanlage im Freien steht, darf man auch den Fall eines Blitzeinschlags nicht vernachlässigen. 
-Die Durchschnittsanzahl von Blitzen in Österreich wird mit zirka 5 Blitze pro 1km\textsuperscript{2} in einem Jahr geschätzt. \cite{blitze}
+Die Durchschnittsanzahl von Blitzen in Österreich wird mit zirka 5 Blitze pro km\textsuperscript{2} in einem Jahr geschätzt. \cite{blitze}
 Die Anlage darf nicht in Betrieb genommen werden, wenn der Betreiber bemerkt, 
 dass es in wenigen Minuten ein Gewitter geben könnte.
 Sollte die Anlage während eines Gewitters in Betrieb genommen werden, 
@@ -1223,34 +1239,20 @@ Des Weiteren muss die Anlage geerdet werden.
 \subsection{Erdung \cite{erdung}}
 \label{sec:erdung}
 
-Sämtliche aktiven Leiter der Anlage müssen geerdet werden. Auch in Bereich "Erdung" gibt es verschiedene Varianten, diese zu realisieren. Man muss, falls die Anlage weit von einer bereits existierenden Erdung entfernt ist, eine neue Erdungsmöglichkeit bieten. Die Erdung muss an die jeweilige Umgebung angepasst werden. Die jeweiligen Vorgaben können aus der ÖVE/ÖNORM "Errichtung von elektrischen Anlagen mit Nennspannungen bis 1000V AC und 1500V DC" entnommen werden.
+Sämtliche aktiven Leiter der Anlage müssen geerdet werden. Auch in Bereich "{}Erdung"{} gibt es verschiedene Varianten, diese zu realisieren. Man muss, falls die Anlage weit von einer bereits existierenden Erdung entfernt ist, eine neue Erdungsmöglichkeit erstellen. Die Erdung muss an die jeweilige Umgebung angepasst werden. Die jeweiligen Vorgaben können aus der ÖVE/ÖNORM "{}Errichtung von elektrischen Anlagen mit Nennspannungen bis 1000V AC und 1500V DC"{} entnommen werden. 
 
-\begin{description}
-\item[Ermittlung des spezifischen Erdwiderstandes:]
-Jede Bodenart hat einen bestimmten spezifischen Erdungswiderstand. Erde hat einen spezifischen Erdungswiderstand von ungefähr 100 Ohm pro Meter.
-\item[Ausbreitungswiderstand:]
-Wenn man eine Maschenerdung verwendet, kann näherungsweise folgende Formel verwendet werden: \\
-
-\begin{center}
-\begin{equation}
-  \label{eq:10}
-	R_E = \frac{\rho_E}{2D} [\Omega]
-\end{equation} 
-\end{center}
-
-\end{description}
-
+\newpage
 
 \subsection{Winterschutz}
 \label{sec:winterschutz}
 
-Der Zeitraum, in welchem der Winterschutz unserer Pferdeführanlage in Kraft tritt, ist der gleiche wie die Winterreifenpflicht in Österreich. Das heißt, vom 1. November bis zum 15. April muss die Anlage winterfest gemacht sein. 
+Der Zeitraum, in welchem der Winterschutz unserer Pferdeführanlage in Kraft tritt, ist der gleiche wie der Zeitraum der Winterreifenpflicht in Österreich. Das heißt, vom 1. November bis zum 15. April muss die Anlage winterfest gemacht sein. 
 \\
 \\
 In folgenden Bereichen muss ein Winterschutz vorgenommen werden:
 \begin{description}
 \item[Boden:]
-Den Untergrund wo sich die Pferde bewegen muss der Eigentümer selbst wählen. Bei Temperaturen unter 6 Grad Celsius, darf der Sprühregen nicht mehr aktiviert werden. Nachdem das Wasser gefroren ist kann das Reitvieh am glatten Boden ausrutschen und gleichzeitig könnte es zu Komplikationen an der Pferdeführanlage selbst kommen. Hierfür ist die jeweilige Person haftbar, die das Drehsystem in Betrieb genommen hat.
+Den Untergrund, wo sich die Pferde bewegen, muss der Eigentümer selbst wählen. Bei Temperaturen unter 6 Grad Celsius, darf der Sprühregen nicht mehr aktiviert werden. Nachdem das Wasser gefroren ist, kann das Reitvieh am glatten Boden ausrutschen und gleichzeitig könnte es zu Komplikationen an der Pferdeführanlage selbst kommen. Hierfür ist die jeweilige Person haftbar, die das Drehsystem in Betrieb genommen hat.
 
 \item[Wasserrohre:]
 
@@ -1258,20 +1260,22 @@ Um eine hohe Lebensdauer der Wasserrohre gewährleisten zu können, muss der jew
 
 \end{description}
 
-\subsection{Not-Stop/ Not-Halt}
+\subsection{Not-Stopp/ Not-Halt}
 \label{sec:notstop}
 
-Bei einem Not-Stop wird die gesamte Anlage spannungsfrei gemacht. Das heißt, bei keinen der elektrischen Bauteile liegt mehr eine elektrische Betriebsspannung an. Bei einem Not-Halt hingegen, wird nur das Nötigste der Anlage angehalten, damit keine unvorhergesehenen Systemstörungen entstehen. Beides sollte bei der Pferdeführanlage angebracht sein. Egal bei welchen Fall, es muss das Programm wieder von neu gestartet werden, damit keine Komplikationen auftreten, wie zum Beispiel: "Die Steuereinheit gibt noch den Befehl, dass die Anlage mit höchsten Tempo fahren soll." 
+Bei einem Not-Stopp wird die gesamte Anlage spannungsfrei gemacht. Das heißt, bei keinen der elektrischen Bauteile liegt mehr eine elektrische Betriebsspannung an. Bei einem Not-Halt hingegen, wird nur das Nötigste der Anlage angehalten, damit keine unvorhergesehenen Systemstörungen entstehen. Beides sollte bei der Pferdeführanlage angebracht sein. Damit keine Komplikationen auftreten, muss das Programm in beiden Fällen neu gestartet werden. Ein Beispiel für eine Komplikation wäre: "{}Die Steuereinheit gibt noch den Befehl, dass die Anlage mit höchsten Tempo fahren soll."{} 
+\newpage
 
 \subsection{Pferdesicherheit}
 \label{sec:pferdesicherheit}
 
-Prinzipiell ist es schwer möglich zu ermitteln, ob ein Pferd stehen geblieben oder gestürzt ist. Das Grundgerüst der Anlage sieht ein klappbares Tor vor. Sobald dieses aufklappt könnte der Sensor auslösen, daraufhin die Anlage sofort zum Stillstand bringt. Eine Schwierigkeit dabei ist, dass die Spannungsversorgung des Sensors auf einem drehbaren Gestell ist. Dies wäre prinzipiell möglich, bringt aber mehrere Verschleißteile mit sich. Diese sind meistens nicht sehr preiswert. Deswegen musste eine andere Variante gefunden werden. \\
+Prinzipiell ist es schwer möglich zu ermitteln, ob ein Pferd stehen geblieben oder gestürzt ist. Das Grundgerüst der Anlage sieht ein klappbares Tor vor. Sobald dieses aufklappt könnte der jeweilige Sensor auslösen und daraufhin die Anlage sofort zum Stillstand bringen. Eine Schwierigkeit dabei ist, dass sich die Sensoren auf einem drehbaren Gestell befinden müssten. Dadurch können diese nur schwer mit Spannung versorgt und die gewünschten Signale übertragen werden. Dies wäre prinzipiell möglich, bringt aber mehrere Verschleißteile mit sich. Diese sind meistens nicht sehr preiswert. Deswegen musste eine andere Variante gefunden werden. \\
 Der folgende Grundgedanke kam erst sehr spät und konnte deswegen nicht mehr in der Konstruktion berücksichtigt werden. Dieser müsste im Zuge einer etwaigen zukünftigen Optimierung der Konstruktion neu bearbeitet werden:\newline{}
 
-Jedes der Treibgitter bekommt einen Sicherheitsbolzen mit einer Sollbruchstelle. Dieser reißt ab, sobald eine die Gegenkraft vom Pferd auf das Gitter einwirkt. Des Weiteren muss der Keilriemen so dimensioniert werden, dass keine Drehübertragung auf die Anlage mehr möglich ist. Anders gesagt: "Durch eine Rutschkupplung kann der Keilriemen durchrutschen. Der Drehgeber müsste in diesen Fall bei der Riemenscheibe befestigt werden, welche mit der Anlage verbunden ist. Die Auswertung des Inkrementalgebers müsste dementsprechend angepasst werden. Da die Anzahl der Pulse im Inkrementalgeber sehr hoch ist, würde dieser eine sofortige Geschwindigkeitsänderung bemerken. Sobald dieser Fall festgestellt wurde, gibt dieser das Signal, die Anlage sofort zu stoppen. \newline{}
+Jedes der Treibgitter bekommt einen Sicherheitsbolzen mit einer Sollbruchstelle. Dieser reißt ab, sobald eine Gegenkraft vom Pferd auf das Gitter einwirkt. Des Weiteren muss der Keilriemen so dimensioniert werden, dass keine Drehübertragung auf die Anlage mehr möglich ist. Anders gesagt: Durch eine Rutschkupplung kann der Keilriemen durchrutschen. Der Drehgeber müsste in diesen Fall bei der Riemenscheibe befestigt werden, welche mit der Anlage verbunden ist. Die Auswertung des Inkrementalgebers müsste dementsprechend angepasst werden. Da die Anzahl der Pulse im Inkrementalgeber sehr hoch ist, würde dieser eine sofortige Geschwindigkeitsänderung bemerken. Sobald dieser Fall festgestellt wurde, gibt dieser das Signal, die Anlage sofort zu stoppen. \newline{}
 
-Welche Variante auf Dauer kostengünstiger wäre, müsste durch Risikoabschätzungen und Lebensdauerrechnungen analysiert werden. 
+Welche Variante auf Dauer kostengünstiger wäre, müsste durch Risikoabschätzungen und Lebensdauerrechnung analysiert werden. 
+
 
 %%%
 \newpage
@@ -1286,14 +1290,14 @@ Welche Variante auf Dauer kostengünstiger wäre, müsste durch Risikoabschätzu
 \subsubsection{Motor}
 \label{sec:verbesserungMotor}
 
-Als ersten Hauptpunkt wäre eine andere Antriebsart zu wählen. Ein Getriebemotor dieser Dimension  ist unüblich und daher unbrauchbar. Außerdem überschreiten die Anschaffungskosten von 3300€ jegliche wirtschaftliche Betrachtungsweise. In diesen Bereich muss weiter nach Alternativen gesucht werden. 
+Als erster Hauptpunkt wäre eine andere Antriebsart zu wählen. Ein Getriebemotor dieser Dimension  ist unüblich und daher unbrauchbar. Außerdem überschreiten die Anschaffungskosten von 3300€ jegliche wirtschaftliche Betrachtungsweise. In diesen Bereich muss weiter nach Alternativen gesucht werden. 
 
 \subsubsection{Raspberry Pi für Kommunikation}
 \label{sec:raspberryPiKommunikation}
 
-Der zweite Punkt ist die Kommunikationsschnittstelle. Wie schon im Kapitel \ref{sec:kommunikationsschnittstelle} erwähnt ist der günstigere Weg für die Kommunikation, die Verwendung von einem Raspberry Pi. Mit zusätzlichen Komponenten könnten die benötigten Spannung und analogen Signale erzeugt werden. Nicht nur der Anschaffungspreis ist günstiger, sondern auch die Betriebskosten. Zusätzliche würden nur die Kosten für die Zusatzelektronik aufkommen. 
+Der zweite Punkt ist die Kommunikationsschnittstelle. Wie schon im Kapitel \ref{sec:kommunikationsschnittstelle} erwähnt, ist der günstigere Weg für die Kommunikation die Verwendung von einem Raspberry Pi. Mit zusätzlichen Komponenten könnten die benötigten Spannungen und analogen Signale erzeugt werden, da der Raspberry Pi diese nicht alleine realisieren kann. Der Raspberry Pi hat geringe Betriebskosten und ist auch im Anschaffungspreis um einiges günstiger. Zusätzlich würden nur die Kosten für die Zusatzelektronik aufkommen. 
 
 \subsection{Persönliche Rückschlüsse}
 \label{sec:persönlicheRückschlüsse}
 
-Mit wenig Erfahrung und Leichtsinnigkeit wurde die Arbeit gestartet. Im Laufe der Zeit änderten sich die Ansichten und Betrachtungsweisen und man kam zu der Erkenntnis, dass die Diplomarbeit doch nicht aus leichter Hand durchführen lässt. Die Hauptpunkte sind prinzipiell schnell und einfach abgearbeitet und angesprochen. Doch hinter diesen Punkten häufen sich die kleinen Arbeiten und Herausforderungen. Step-by-Step wurden diese angenommen. Neben einem erweiterten Wissenstand im Bereich der Antriebstechnik und deren Komponenten, konnte auch ein großer Schritt im Bereich Erfahrung im Projektmanagement gewonnen werden. Mit der Zeit wurde einem klar, dass man erfahreneren Leute doch den nötigen Glauben schenken sollte, um etwaige Komplikationen zu vermeiden. 
+Mit wenig Erfahrung und Leichtsinnigkeit wurde die Arbeit gestartet. Im Laufe der Zeit änderten sich die Ansichten und Betrachtungsweisen und man kam zu der Erkenntnis, dass sich die Diplomarbeit doch nicht aus leichter Hand durchführen lässt. Die Hauptpunkte sind prinzipiell schnell und einfach abgearbeitet und angesprochen. Doch hinter diesen Punkten häufen sich die kleinen Arbeiten und Herausforderungen. Step-by-Step wurden diese angenommen. Neben einem erweiterten Wissenstand im Bereich der Antriebstechnik und deren Komponenten, konnte auch ein großer Schritt im Bereich Erfahrung im Projektmanagement gewonnen werden. Mit der Zeit wurde klar, dass man erfahreneren Leute doch den nötigen Glauben schenken sollte, um etwaige Komplikationen zu vermeiden. 
